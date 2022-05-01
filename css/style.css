@@ -1,7 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
+:root {
+    --Lato: "Lato", light;
+    --Lato2: "Lato", regular;
+    --Montserrat: "Montserrat", thin;
+    --Montserrat2: "Montserrat", medium;
+    --light-black: #1e1e1e;
+    --hover-color: #03f769;
+    --bggradient: linear-gradient(to bottom left,
+            #1e1e1e, #2c303a);
+    --light-gray: rgba(255, 255, 255, 0.877)
+}
+
 html {
-    background-color: antiquewhite;
+    background: var(--bggradient);
+    height: 100%;
+}
+
+body {
+    margin: 0vmin 6vmin;
+}
+.navbar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    margin-top:2vmin;
+    margin-bottom:2vmin;
+}
+
+header .navbar-brand {
+    color:whitesmoke;
+    margin-right: auto;
+}
+
+header .navbar-brand:hover {
+color:var(--hover-color);
+transition: 0.5s;
+}
+
+header .nav-list {
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+}
+
+header li a {
+    display:block;
+    font-family: var(--Montserrat);
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    color:whitesmoke;
+    padding: 2vmin;
+    margin-left: auto;
+}
+
+header li a:hover {
+    color:var(--hover-color);
+    transition: 0.5s;
+}
+
+.dropdown-content {
+    background-color:var(--hover-color);
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 16px;
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+.dropdown-content a {
+    background-color:var(--hover-color);
+    color: #1e1e1e !important;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--hover-color);
+    color: #ffffff !important;
+}
+
+
+.section-main h1 {
+    font-family: var(--Montserrat);
+    font-weight: 450;
+    color:whitesmoke;
+}
+
+.section-main p {
+    font-family: var(--Montserrat2);
+    font-weight: 300;
+    color:whitesmoke;
+}
+
+@-webkit-keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
 }
