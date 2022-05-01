@@ -10,9 +10,9 @@
     --Montserrat: "Montserrat", thin;
     --Montserrat2: "Montserrat", medium;
     --light-black: #1e1e1e;
-    --hover-color: #03f769;
+    --hover-color: #24c472;
     --bggradient: linear-gradient(to bottom left,
-            #1e1e1e, #2c303a);
+            #1e1e1e, #030f08);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
 
@@ -24,18 +24,32 @@ html {
 body {
     margin: 0vmin 6vmin;
 }
-.navbar {
+
+#navbar {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     width:100%;
-    margin-top:2vmin;
-    margin-bottom:2vmin;
+    position: relative;
+}
+
+#navbar.sticky {
+    position: fixed;
+    top:0;
+    width:calc(100% - 12vmin) !important;
+}
+
+.navbarOffsetMargin {
+    padding-top: 80px;
 }
 
 header .navbar-brand {
     color:whitesmoke;
     margin-right: auto;
+}
+
+header .navbar-brand i {
+    height:auto;
 }
 
 header .navbar-brand:hover {
@@ -51,13 +65,12 @@ header .nav-list {
 
 header li a {
     display:block;
-    font-family: var(--Montserrat);
-    font-size: 12px;
+    font-family: var(--Lato);
+    font-size: 14px;
     text-align: center;
     text-decoration: none;
     color:whitesmoke;
     padding: 2vmin;
-    margin-left: auto;
 }
 
 header li a:hover {
@@ -92,17 +105,43 @@ header li a:hover {
     color: #ffffff !important;
 }
 
-
-.section-main h1 {
-    font-family: var(--Montserrat);
-    font-weight: 450;
-    color:whitesmoke;
+section {
+    min-height: 100vh;
 }
 
-.section-main p {
-    font-family: var(--Montserrat2);
+article {
+        width: 90%;
+        max-width: 600px;
+        padding: 20px;
+        margin: 0px auto;
+}
+
+#section-main h1 {
+    font-family: var(--Lato);
+    font-weight: 450;
+    color:whitesmoke;
+    text-align: center;
+}
+
+#section-main p {
+    font-family: var(--Lato);
     font-weight: 300;
     color:whitesmoke;
+    text-align: center;
+}
+
+#section-main-2 h1 {
+    font-family: var(--Lato);
+    font-weight: 450;
+    color:whitesmoke;
+    text-align: center;
+}
+
+#section-main-2 p {
+    font-family: var(--Lato);
+    font-weight: 300;
+    color:whitesmoke;
+    text-align: center;
 }
 
 @-webkit-keyframes fadeIn {
@@ -112,4 +151,11 @@ header li a:hover {
 @keyframes fadeIn {
     from { opacity: 0; }
       to { opacity: 1; }
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
