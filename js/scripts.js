@@ -26,21 +26,21 @@ window.addEventListener("scroll", e => {
 
 function toggleNav() {
   var element = document.getElementById("sidenavid");
-  if (element.style.width == "250px"){
+  if (element.style.width == "350px") {
     element.style.width = "0px";
   } else {
-    element.style.width = "250px";
+    element.style.width = "350px";
   }
   var element = document.getElementById("main");
-  if (element.style.marginLeft == "250px"){
+  if (element.style.marginLeft == "350px") {
     element.style.marginLeft = "0px";
   } else {
-    element.style.marginLeft = "250px";
+    element.style.marginLeft = "350px";
   }
-}
+  }
 
 
-function toggleIcon(x) {
-  x.classList.toggle("fa-xmark");
-  x.classList.toggle("fa-bars");
-}
+  function toggleIcon(x) {
+    x.classList.toggle("fa-xmark");
+    x.classList.toggle("fa-bars");
+  }

@@ -38,9 +38,8 @@ body {
 #navbar.sticky {
     position: fixed;
     top: 0;
-    width: calc(100% - 0vmin) !important;
     box-shadow: 5px -1px 6px 5px #dad7d7;
-    clip-path: inset(-5px -5px -5px -0px);
+    clip-path: inset(-5px -5px -200px -0px);
     background-color: #e3f4f1;
     transition: 0.5s;
     z-index: 1000;
@@ -174,8 +173,13 @@ article {
     width: 100%;
 }
 
+.article-container {
+    padding-top:100px;
+}
+
 #section-main h1 {
     font-family: var(--Lato);
+    font-size: 28px;
     font-weight: 450;
     color: var(--text-color);
     text-align: left;
