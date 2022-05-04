@@ -26,44 +26,56 @@
 
 <body>
     <header>
-        <nav id="navbar">
-            <a class="navbar-brand" href="#">
-                <i class="fa fa-user fa-2x" aria-hidden="true"></i>
+        <div id="sidenavid" class="sidenavclass">
+            <a href="#" class="closeicon">
+                <h1 class="h1-top" aria-hidden="true">Rolling in the deep</h1>
             </a>
-            <ul class="nav-list">
-                <li class="nav-list-items"><a href="#">Home</a></li>
-                <li class="nav-list-items"><a href="#section-main-2">About</a></li>
-                <li class="nav-list-items dropdown"><a href="#">Sections</a>
-                    <div class="dropdown-content">
-                        <a href="#">Courses</a>
-                        <a href="#">Tutorials</a>
+            <a href="#">Menu</a>
+            <a href="#">Menu</a>
+            <a href="#">Menu</a>
+            <a href="#">Menu</a>
+        </div>
+        <div id="main">
+            <nav id="navbar">
+                <span onclick="toggleNav()">
+                    <div class="navbar-brand">
+                        <i onclick="toggleIcon(this)" class="fa fa-bars fa-2x"></i>
                     </div>
-                </li>
-                <li class="nav-list-items dropdown"><a href="#">Educate</a>
-                    <div class="dropdown-content">
-                        <a href="#">Courses</a>
-                        <a href="#">Tutorials</a>
-                    </div>
-                </li>
-                <li class="nav-list-items"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <section id="section-main">
-            <article class="section-container">
-                <h1>This is the title of the section</h1>
-                <p class="section-text">
-                    Here is the main section text in a paragraph tag that is supposed to xyz
-                </p>
-            </article>
-        </section>
-        <section id="section-main">
-            <article class="section-container">
-                <h1>This is the title of the second section</h1>
-                <p class="section-text">
-                    Here is the main section text in a paragraph tag that is supposed to xyz
-                </p>
-            </article>
-        </section>
+                </span>
+                <ul class="nav-list">
+                    <li class="nav-list-items"><a href="#">Home</a></li>
+                    <li class="nav-list-items dropdown"><a href="#">Products</a>
+                        <div class="dropdown-content">
+                            <a href="#">Product #1</a>
+                            <a href="#">Product #2</a>
+                        </div>
+                    </li>
+                    <li class="nav-list-items dropdown"><a href="#">Information</a>
+                        <div class="dropdown-content">
+                            <a href="#">Courses</a>
+                            <a href="#">Tutorials</a>
+                        </div>
+                    </li>
+                    <li class="nav-list-items"><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <section id="section-main">
+                <article class="section-container">
+                    <h1>This is the title of the section</h1>
+                    <p class="section-text">
+                        Here is the main section text in a paragraph tag that is supposed to xyz
+                    </p>
+                </article>
+            </section>
+            <section id="section-main">
+                <article class="section-container">
+                    <h1>This is the title of the second section</h1>
+                    <p class="section-text">
+                        Here is the main section text in a paragraph tag that is supposed to xyz
+                    </p>
+                </article>
+            </section>
+        </div>
     </header>
     <script src="https://kit.fontawesome.com/9beebcdd4b.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>

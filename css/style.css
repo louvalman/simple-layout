@@ -10,8 +10,9 @@
     --Montserrat: "Montserrat", thin;
     --Montserrat2: "Montserrat", medium;
     --light-black: #1e1e1e;
-    --hover-color: #418CB7;
-    --bggradient: #3e3e3e;
+    --hover-color: #6bbeef;
+    --text-color: #1e1e1e;
+    --bggradient: #e3f4f1;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -22,21 +23,32 @@ html {
 }
 
 body {
-    margin: 0vmin 6vmin;
+    margin: 0vmin 0vmin;
 }
 
 #navbar {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width:100%;
+    width: 100%;
     position: relative;
+
 }
 
 #navbar.sticky {
     position: fixed;
-    top:0;
-    width:calc(100% - 12vmin) !important;
+    top: 0;
+    width: calc(100% - 0vmin) !important;
+    box-shadow: 5px -1px 6px 5px #dad7d7;
+    clip-path: inset(-5px -5px -5px -0px);
+    background-color: #e3f4f1;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+#sidenavid.sticky {
+    box-shadow: -1.5px -1px 6px 5px #dad7d7;
+    transition: 0.5s;
 }
 
 .navbarOffsetMargin {
@@ -44,17 +56,20 @@ body {
 }
 
 header .navbar-brand {
-    color:whitesmoke;
+    color: var(--text-color);
     margin-right: auto;
+    margin-left: 6vmin;
+    font-size: 10px;
 }
 
 header .navbar-brand i {
-    height:auto;
+    height: auto;
+    user-select: none;
 }
 
 header .navbar-brand:hover {
-color:var(--hover-color);
-transition: 0.5s;
+    color: var(--hover-color);
+    transition: 0.5s;
 }
 
 header .icons {
@@ -66,30 +81,32 @@ header .nav-list {
     list-style-type: none;
     overflow: hidden;
     display: flex;
+    margin-right: 6vmin;
+    margin-left: auto;
 }
 
 header li a {
-    display:block;
-    font-family: var(--Montserrat);
+    display: block;
+    font-family: var(--Lato);
     font-size: 14px;
     text-align: center;
     text-decoration: none;
-    color:whitesmoke;
+    color: var(--text-color);
     padding: 2vmin;
 }
 
 header li a:hover {
-    color:var(--hover-color);
+    color: var(--hover-color);
     transition: 0.5s;
     text-decoration: none;
 }
 
 .dropdown-content {
-    background-color:var(--hover-color);
+    background-color: var(--hover-color);
     display: none;
     position: absolute;
-    background: white;
-    min-width: 16px;
+    background: var(--text-color);
+    min-width: 100px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -100,51 +117,104 @@ header li a:hover {
 }
 
 .dropdown-content a {
-    background-color:var(--hover-color);
+    background-color: var(--hover-color);
     color: #1e1e1e !important;
     text-decoration: none;
     display: block;
+    text-align: left;
 }
 
 .dropdown-content a:hover {
     background-color: var(--hover-color);
-    color: #ffffff !important;
+    color: #f3f3f3 !important;
+}
+
+.sidenavclass {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--bggradient);
+    overflow-x: hidden;
+    padding-top: 0vmin;
+    transition: 0.5s;
+}
+
+.sidenavclass a {
+    font-family: var(--Lato);
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--text-color);
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenavclass a:hover {
+    color:var(--hover-color);
+}
+
+.sidenavclass .h1-top {
+    font-family: var(--Lato);
+    font-size:20px;
+}
+
+#main {
+    transition: margin-left 0.5s;
 }
 
 section {
     min-height: 100vh;
+    margin: 0vmin 6vmin;
 }
 
 article {
-        width: 100%;
+    width: 100%;
 }
 
 #section-main h1 {
-    font-family: var(--Montserrat);
+    font-family: var(--Lato);
     font-weight: 450;
-    color:whitesmoke;
+    color: var(--text-color);
     text-align: left;
 }
 
 #section-main p {
-    font-family: var(--Montserrat);
+    font-family: var(--Lato);
     font-weight: 300;
-    color:whitesmoke;
+    color: var(--text-color);
     text-align: left;
 }
 
 @-webkit-keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
-}
-@keyframes fadeIn {
-    from { opacity: 0; }
-      to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-@media
-(prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
   }
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
 }
