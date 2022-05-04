@@ -46,11 +46,6 @@ body {
     z-index: 1000;
 }
 
-#sidenavid.sticky {
-    box-shadow: -1.5px -1px 6px 5px #dad7d7;
-    transition: 0.5s;
-}
-
 .navbarOffsetMargin {
     padding-top: 80px;
 }
@@ -139,6 +134,11 @@ header li a:hover {
     background-color: var(--bggradient);
     overflow-x: hidden;
     padding-top: 0vmin;
+    box-shadow: 1px -1px 6px 5px #dad7d7;
+    transition: 0.5s;
+}
+
+#sidenavid.sticky {
     transition: 0.5s;
 }
 
