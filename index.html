@@ -12,7 +12,7 @@
 
     <meta property="og:title" content="A simple layout - louvalman">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.simplelay.netlify.com">
+    <meta property="og:url" content="https://www.simplelay.netlify.app">
     <meta property="og:description" content="A simple layout - louvalman">
     <meta property="og:image" content="image.png">
 
@@ -27,15 +27,34 @@
 <body>
     <header>
         <div id="sidenavid" class="sidenavclass">
-            <a href="#" class="closeicon">
-                <h1 class="h1-top" aria-hidden="true">h1 title</h1>
-            </a>
-            <a href="#">Menu</a>
-            <a href="#">Menu</a>
-            <a href="#">Menu</a>
-            <a href="#">Menu</a>
+            <div class="sidebartop">
+                <a href="#" class="closeicon">
+                    <h1 class="h1-top" aria-hidden="true">projectName</h1>
+                </a>
+            </div>
+            <div class="sidebarmain">
+                <div class="sidebarmain-links">
+                    <a href="#">Menu</a>
+                </div>
+                <div class="sidebarmain-links">
+                    <a href="#">Menu</a>
+                </div>
+                <div class="sidebarmain-links">
+                    <a href="#">Menu</a>
+                </div>
+                <div class="sidebarmain-links">
+                    <a href="#">Menu</a>
+                </div>
+            </div>
+            <div class="sidebarbottom">
+                <div class="socials">
+                    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
+                    <a href="#"><i class="fa fa-twitch fa-2x"></i></a>
+                </div>
+            </div>
         </div>
-        <div id="main">
+        <div id="main" class="main">
             <nav id="navbar">
                 <span onclick="toggleNav()">
                     <div class="navbar-brand">
@@ -43,20 +62,24 @@
                     </div>
                 </span>
                 <ul class="nav-list" id="navlist">
-                    <li class="nav-list-items"><a href="#">Home</a></li>
-                    <li class="nav-list-items dropdown"><a href="#">Products</a>
+                    <li class="nav-listitems"><a href="#">Home</a></li>
+                    <li class="nav-listitems dropdown"><a href="#">Products</a>
                         <div class="dropdown-content">
                             <a href="#">Product #1</a>
                             <a href="#">Product #2</a>
+                            <a href="#">Product #3</a>
+                            <a href="#">Product #4</a>
                         </div>
                     </li>
-                    <li class="nav-list-items dropdown"><a href="#">Information</a>
+                    <li class="nav-listitems dropdown"><a href="#">Information</a>
                         <div class="dropdown-content">
                             <a href="#">Courses</a>
                             <a href="#">Tutorials</a>
                         </div>
                     </li>
-                    <li class="nav-list-items"><a href="#">Contact</a></li>
+                    <button class="wallet-container">
+                        <p class="nav-listitems connect-wallet"><a href="#">Donate</a></p>
+                    </button>
                 </ul>
             </nav>
             <section id="section-main">

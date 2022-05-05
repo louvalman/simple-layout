@@ -7,10 +7,10 @@ window.addEventListener("scroll", e => {
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
     navbar.classList.add('sticky');
-    sectionMain.classList.add('navbarOffsetMargin');
+    // sectionMain.classList.add('navbarOffsetMargin');
   } else {
     navbar.classList.remove('sticky');
-    sectionMain.classList.remove('navbarOffsetMargin');
+    // sectionMain.classList.remove('navbarOffsetMargin');
   }
 });
 
