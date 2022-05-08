@@ -14,6 +14,17 @@ window.addEventListener("scroll", e => {
   }
 });
 
+window.addEventListener("scroll", e => {
+  let viewportHeight = window.innerHeight;
+  let scrollPos = window.scrollY;
+  if (scrollPos > navPos) {
+    sidenavid.classList.add('sticky');
+  } else {
+    sidenavid.classList.remove('sticky');
+  }
+});
+
+
 if($(window).width() > 600){
 function toggleNav() {
   var element = document.getElementById("sidenavid");
