@@ -50,15 +50,13 @@ body {
 }
 
 header .navbar-brand {
-    color: var(--text-color);
-    margin-right: auto;
     margin-left: 6vmin;
-    font-size: 10px;
 }
 
-header .navbar-brand i {
-    height: auto;
-    user-select: none;
+header .navbar-brand svg {
+    color: var(--text-color);
+    margin-right: auto;
+    font-size: 20px;
 }
 
 header .navbar-brand:hover {
