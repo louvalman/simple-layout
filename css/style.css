@@ -307,8 +307,8 @@ article {
 
     }
     header .nav-list .wallet-container a {
-        font-size:16px;
-        font-weight: 200;
+        font-size:14px;
+        font-weight: 50;
         letter-spacing: 0px;
         color: var(--text-color) !important;
     }
@@ -331,7 +331,7 @@ article {
     }
 
 .sidebartop {
-    margin-top:-2vmin;
+    margin-top:3vmin;
 }
 
 .sidebartop svg {
