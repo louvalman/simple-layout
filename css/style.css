@@ -336,6 +336,10 @@ article {
         margin-top: -4vmin;
     }
 
+    .sidebarmain {
+        height:70vh;
+    }
+
     .sidebartop {
         margin-top: 0vmin;
     }
