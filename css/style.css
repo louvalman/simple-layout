@@ -309,7 +309,7 @@ article {
     }
     header .nav-list .wallet-container a {
         font-size:14px;
-        font-weight: 50;
+        font-weight: 250;
         letter-spacing: 0px;
         color: var(--text-color) !important;
     }
