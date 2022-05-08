@@ -40,6 +40,13 @@ if ($(window).width() > 600) {
     } else {
       element.style.marginLeft = "350px";
     }
+
+    var element = document.getElementById("navbar");
+    if(element.style.borderBottomLeftRadius == "0px") {
+      element.style.borderBottomLeftRadius = "8px";
+    } else {
+      element.style.borderBottomLeftRadius = "0px";
+    }
   }
 } else {
   function toggleNav() {

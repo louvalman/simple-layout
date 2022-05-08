@@ -43,6 +43,8 @@ body {
     background-color: #e3f4f1;
     transition: 0.5s;
     z-index: 2;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius:8px;
 }
 
 .navbarOffsetMargin {
@@ -226,17 +228,59 @@ header .nav-list button {
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.2);
     /* Black w/ opacity */
+
 }
 
 /* Modal Content/Box */
 .modal-content {
-    background-color: #fefefe;
+    position: relative;
+    background-color: var(--bggradient);
     margin: 10% auto;
     /* 15% from the top and centered */
-    padding: 20px;
+    padding:2vmin;
     width: 60vmin;
+    border-radius: 8px;
     /* Could be more or less, depending on screen size */
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
+
+@-webkit-keyframes animatetop {
+    from {right:-300px; opacity:0} 
+    to {right:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {right:-300px; opacity:0}
+    to {right:0; opacity:1}
+  }
+
+.modal-header {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right:1.5vmin;
+    padding-left: 1.5vmin;
+    top:0;
+    width:100%;
+}
+
+.modal-header svg {
+    display: block;
+    color:var(--text-color);
+    font-size: 20px;
+}
+
+.modal-body {
+    padding-right:1.5vmin;
+    padding-left:1.5vmin;
+    padding-bottom: 6vmin;
+    padding-top: 3vmin;
+}
+
+
 
 .sidenavclass {
     height: 100vh;
@@ -250,7 +294,7 @@ header .nav-list button {
     padding-top: 0vmin;
     box-shadow: 1px -1px 6px 5px #dad7d7;
     transition: 0.5s;
-    border-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 
 #sidenavid.sticky {
