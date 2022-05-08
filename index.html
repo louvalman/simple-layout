@@ -68,10 +68,8 @@
                     <li class="nav-listitems remove-mobile"><a href="#">Home</a></li>
                     <li class="nav-listitems dropdown remove-mobile"><a href="#">Products</a>
                         <div class="dropdown-content">
-                            <a href="#">Product #1</a>
-                            <a href="#">Product #2</a>
-                            <a href="#">Product #3</a>
-                            <a href="#">Product #4</a>
+                            <a href="#">Product - a</a>
+                            <a href="#">Product - b</a>
                         </div>
                     </li>
                     <li class="nav-listitems dropdown remove-mobile"><a href="#">Docs</a>
@@ -80,11 +78,19 @@
                             <a href="#">Github</a>
                         </div>
                     </li>
-                    <button class="wallet-container">
-                        <p class="nav-listitems connect-wallet"><a href="#">Connect</a></p>
+                    <button class="wallet-container btn draw-border" id="connect-open">
+                        Connect
                     </button>
                 </ul>
             </nav>
+            <div id="connect-modal" class="modal">
+                <div class="modal-content">
+                    <span class="closeicon-2">
+                        <i class="fa fa-xmark fa-2x"></i>
+                    </span>
+                    <p>Connect wallets here</p>
+                </div>
+            </div>
             <section id="section-main">
                 <div class="article-container">
                     <article class="section-container">
