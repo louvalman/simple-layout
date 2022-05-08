@@ -31,6 +31,9 @@
                 <a href="#" class="closeicon">
                     <h1 class="h1-top" aria-hidden="true">projectName</h1>
                 </a>
+                <span onclick="toggleNav()">
+                    <i class="fa fa-xmark fa-2x"></i>
+                </span>
             </div>
             <div class="sidebarmain">
                 <div class="sidebarmain-links">
@@ -62,8 +65,8 @@
                     </div>
                 </span>
                 <ul class="nav-list" id="navlist">
-                    <li class="nav-listitems"><a href="#">Home</a></li>
-                    <li class="nav-listitems dropdown"><a href="#">Products</a>
+                    <li class="nav-listitems remove-mobile"><a href="#">Home</a></li>
+                    <li class="nav-listitems dropdown remove-mobile"><a href="#">Products</a>
                         <div class="dropdown-content">
                             <a href="#">Product #1</a>
                             <a href="#">Product #2</a>
@@ -71,7 +74,7 @@
                             <a href="#">Product #4</a>
                         </div>
                     </li>
-                    <li class="nav-listitems dropdown"><a href="#">Information</a>
+                    <li class="nav-listitems dropdown remove-mobile"><a href="#">Information</a>
                         <div class="dropdown-content">
                             <a href="#">Courses</a>
                             <a href="#">Tutorials</a>
@@ -104,6 +107,7 @@
             </section>
         </div>
     </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/9beebcdd4b.js" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
