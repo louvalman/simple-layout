@@ -25,21 +25,21 @@ window.addEventListener("scroll", e => {
 });
 
 
-if($(window).width() > 600){
-function toggleNav() {
-  var element = document.getElementById("sidenavid");
-  if (element.style.width == "350px") {
-    element.style.width = "0px";
-  } else {
-    element.style.width = "350px";
-  }
+if ($(window).width() > 600) {
+  function toggleNav() {
+    var element = document.getElementById("sidenavid");
+    if (element.style.width == "350px") {
+      element.style.width = "0px";
+    } else {
+      element.style.width = "350px";
+    }
 
-  var element = document.getElementById("main");
-  if (element.style.marginLeft == "350px") {
-    element.style.marginLeft = "0px";
-  } else {
-    element.style.marginLeft = "350px";
-  }
+    var element = document.getElementById("main");
+    if (element.style.marginLeft == "350px") {
+      element.style.marginLeft = "0px";
+    } else {
+      element.style.marginLeft = "350px";
+    }
   }
 } else {
   function toggleNav() {
@@ -49,14 +49,14 @@ function toggleNav() {
     } else {
       element.style.width = "100%";
     }
-    }
+  }
 }
 
-if($(window).width() > 600){
-  function toggleIcon(x) {
+function toggleIcon(x) {
+  if ($(window).width() > 600) {
     x.classList.toggle("fa-xmark");
     x.classList.toggle("fa-bars");
-  }
   } else {
     x.classList.toggle("none")
-    }
+  }
+}
