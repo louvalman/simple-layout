@@ -77,7 +77,7 @@ header .nav-list {
     overflow: hidden;
     display: flex;
     margin-right: 6vmin;
-    gap:10px;
+    gap: 10px;
 }
 
 header .nav-list li a {
@@ -129,15 +129,15 @@ header .nav-list .wallet-container {
     justify-content: center;
     align-items: center;
     width: 88px;
-    height:40px;    
+    height: 40px;
     text-decoration: none;
     background-color: transparent;
     border-style: solid;
-    border-color:var(--hover-color);
-    border-width:1px;
-    border-radius:8px;
+    border-color: var(--hover-color);
+    border-width: 1px;
+    border-radius: 8px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
 }
 
 header .nav-list .wallet-container:hover {
@@ -146,14 +146,14 @@ header .nav-list .wallet-container:hover {
 
 header .nav-list .wallet-container a {
     text-decoration: none;
-    font-size:14px;
+    font-size: 14px;
     font-weight: 200;
     letter-spacing: 0px;
     color: var(--text-color) !important;
 }
 
 header .nav-list button {
-    margin-left:40px;
+    margin-left: 40px;
 }
 
 .sidenavclass {
@@ -194,7 +194,7 @@ header .nav-list button {
 }
 
 .sidebartop svg {
-    display:none;
+    display: none;
 }
 
 .sidebarmain {
@@ -300,43 +300,48 @@ article {
 
 @media screen and (max-width: 600px) {
     header .remove-mobile {
-        display:none;
-        }
+        display: none;
+    }
 
     header .nav-list li a {
         font-size: 16px !important;
 
     }
+
     header .nav-list .wallet-container a {
-        font-size:14px;
+        font-size: 14px;
         font-weight: 250;
         letter-spacing: 0px;
         color: var(--text-color) !important;
     }
-    
+
     header .nav-list button {
-        margin-left:60px;
+        margin-left: 60px;
     }
 
     header .nav-list .wallet-container {
         width: 100px;
-        height:40px;    
+        height: 40px;
         text-decoration: none;
         background-color: transparent;
         border-style: solid;
-        border-color:var(--hover-color);
-        border-width:2px;
-        border-radius:8px;
+        border-color: var(--hover-color);
+        border-width: 2px;
+        border-radius: 8px;
         cursor: pointer;
-        transition: all 0.5s ease-in-out; 
+        transition: all 0.5s ease-in-out;
     }
 
-.sidebartop {
-    margin-top:0vmin;
-}
+    .sidebarbottom .socials {
+        padding-bottom: 8vmin;
+    }
 
-.sidebartop svg {
-        display:block;
+    .sidebartop {
+        margin-top: 0vmin;
+    }
+
+    .sidebartop svg {
+        display: block;
         margin-right: 6vmin;
         font-size: 20px;
     }
@@ -349,7 +354,7 @@ article {
     #section-main h1 {
         font-size: 32px;
     }
-    
+
     #section-main p {
         font-weight: 300;
         font-size: 20px;
