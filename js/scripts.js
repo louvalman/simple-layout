@@ -47,5 +47,5 @@ if($(window).width() > 600){
     x.classList.toggle("fa-bars");
   }
   } else {
-    x.classList.toggle("fa-xmark")
+    x.classList.toggle("fa-bars")
     }
