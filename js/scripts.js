@@ -58,5 +58,5 @@ if($(window).width() > 600){
     x.classList.toggle("fa-bars");
   }
   } else {
-    x.classList.toggle("fa-bars")
+    x.classList.toggle("none")
     }

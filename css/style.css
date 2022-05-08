@@ -77,6 +77,7 @@ header .nav-list {
     overflow: hidden;
     display: flex;
     margin-right: 6vmin;
+    gap:10px;
 }
 
 header .nav-list li a {
@@ -100,7 +101,7 @@ header .nav-list .dropdown-content {
     display: none;
     position: absolute;
     background: var(--text-color);
-    min-width: 100px;
+    min-width: 110px;
     box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -128,12 +129,12 @@ header .nav-list .wallet-container {
     justify-content: center;
     align-items: center;
     width: 88px;
-    height:36px;    
+    height:40px;    
     text-decoration: none;
     background-color: transparent;
     border-style: solid;
     border-color:var(--hover-color);
-    border-width:2px;
+    border-width:1px;
     border-radius:8px;
     cursor: pointer;
     transition: all 0.5s ease-in-out; 
