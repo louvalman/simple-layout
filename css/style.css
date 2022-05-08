@@ -139,7 +139,7 @@ header .nav-list .wallet-container {
     border-width:1px;
     border-radius:8px;
     cursor: pointer;
-    transition: all 0.5s ease-in-out; 
+    transition: all 0.5s ease-in-out;
 }
 
 header .nav-list .wallet-container:hover {
@@ -196,7 +196,7 @@ header .nav-list button {
 }
 
 .sidebartop svg {
-    display:none;
+    display: none;
 }
 
 .sidebarmain {
@@ -302,43 +302,52 @@ article {
 
 @media screen and (max-width: 600px) {
     header .remove-mobile {
-        display:none;
-        }
+        display: none;
+    }
 
     header .nav-list li a {
         font-size: 16px !important;
 
     }
+
     header .nav-list .wallet-container a {
-        font-size:16px;
-        font-weight: 200;
+        font-size: 14px;
+        font-weight: 250;
         letter-spacing: 0px;
         color: var(--text-color) !important;
     }
-    
+
     header .nav-list button {
-        margin-left:60px;
+        margin-left: 60px;
     }
 
     header .nav-list .wallet-container {
         width: 100px;
-        height:40px;    
+        height: 40px;
         text-decoration: none;
         background-color: transparent;
         border-style: solid;
-        border-color:var(--hover-color);
-        border-width:2px;
-        border-radius:8px;
+        border-color: var(--hover-color);
+        border-width: 1px;
+        border-radius: 8px;
         cursor: pointer;
-        transition: all 0.5s ease-in-out; 
+        transition: all 0.5s ease-in-out;
     }
 
-.sidebartop {
-    margin-top:-2vmin;
-}
+    .sidebarbottom .socials {
+        margin-top: -32vmin;
+    }
 
-.sidebartop svg {
-        display:block;
+    .sidebarmain {
+        height:70vh;
+    }
+
+    .sidebartop {
+        margin-top: 0vmin;
+    }
+
+    .sidebartop svg {
+        display: block;
         margin-right: 6vmin;
         font-size: 20px;
     }
@@ -351,7 +360,7 @@ article {
     #section-main h1 {
         font-size: 32px;
     }
-    
+
     #section-main p {
         font-weight: 300;
         font-size: 20px;
