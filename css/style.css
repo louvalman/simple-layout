@@ -10,9 +10,9 @@
     --Montserrat: "Montserrat", thin;
     --Montserrat2: "Montserrat", medium;
     --light-black: #1e1e1e;
-    --hover-color: #92e0a5;
-    --text-color: #1e1e1e;
-    --bggradient: #e3f4f1;
+    --hover-color: #4DCCBD;
+    --text-color: #231651;
+    --bggradient: #D6FFF6;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -26,6 +26,8 @@ body {
     margin: 0vmin 0vmin;
 }
 
+/** Navigation top bar **/
+
 #navbar {
     display: inline-flex;
     align-items: center;
@@ -38,13 +40,13 @@ body {
 #navbar.sticky {
     position: sticky;
     top: 0;
-    box-shadow: 5px -1px 6px 5px #dad7d7;
+    box-shadow: 1px -1px 3px 2px #abaeb3;
     clip-path: inset(-5px -5px -800px -0px);
-    background-color: #e3f4f1;
     transition: 0.5s;
     z-index: 2;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius:8px;
+    background-color: var(--bggradient);
 }
 
 .navbarOffsetMargin {
@@ -66,11 +68,6 @@ header .navbar-brand svg:hover {
     transition: 0.5s;
 }
 
-header .icons {
-    height: 50px;
-    width: 50px;
-}
-
 header .nav-list {
     list-style-type: none;
     align-items: center;
@@ -85,6 +82,7 @@ header .nav-list li a {
     color: var(--text-color);
     font-family: var(--Lato);
     font-size: 15px;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     padding: 2vmin;
@@ -138,12 +136,13 @@ header .nav-list .wallet-container {
     cursor: pointer;
     font-family: var(--Lato);
     font-size: 15px;
+    font-weight: 200;
     text-align: center;
     text-decoration: none;
     padding: 1.5vmin;
     border: none;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0.5px;
     border-color: var(--text-color);
 }
 
@@ -176,14 +175,14 @@ header .nav-list button {
 }
 
 .draw-border::before {
-    border-bottom-width: 2px;
-    border-left-width: 2px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
     border-radius: 8px;
 }
 
 .draw-border::after {
-    border-top-width: 2px;
-    border-right-width: 2px;
+    border-top-width: 1px;
+    border-right-width: 1px;
     border-radius: 8px;
 }
 
@@ -209,52 +208,45 @@ header .nav-list button {
     transition-delay: 0s, 0.25s, 0s;
 }
 
+/** Modal **/
+
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 3;
-    /* Sit on top */
     left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
-    /* Fallback color */
     background-color: rgba(0, 0, 0, 0.2);
-    /* Black w/ opacity */
-
+    transition: ease-in-out 2s;
 }
 
 /* Modal Content/Box */
 .modal-content {
     position: relative;
+    transition: ease-in-out 1.5s;
     background-color: var(--bggradient);
-    margin: 10% auto;
-    /* 15% from the top and centered */
+    margin: 15% auto;
     padding:2vmin;
     width: 60vmin;
     border-radius: 8px;
-    /* Could be more or less, depending on screen size */
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+    -webkit-animation-name: animatebot;
+    -webkit-animation-duration: 0.5s;
+    animation-name: animatebot;
+    animation-duration: 0.5s
 }
 
-@-webkit-keyframes animatetop {
-    from {right:-300px; opacity:0} 
-    to {right:0; opacity:1}
+@-webkit-keyframes animatebot {
+    from {bottom:-300px; opacity:0} 
+    to {bottom:0; opacity:1}
   }
   
-  @keyframes animatetop {
-    from {right:-300px; opacity:0}
-    to {right:0; opacity:1}
+  @keyframes animatebot {
+    from {bottom:-300px; opacity:0}
+    to {bottom:0; opacity:1}
   }
 
 .modal-header {
@@ -280,7 +272,7 @@ header .nav-list button {
     padding-top: 3vmin;
 }
 
-
+/** Sidenav **/
 
 .sidenavclass {
     height: 100vh;
@@ -292,13 +284,8 @@ header .nav-list button {
     background-color: var(--bggradient);
     overflow-x: hidden;
     padding-top: 0vmin;
-    box-shadow: 1px -1px 6px 5px #dad7d7;
     transition: 0.5s;
     border-bottom-right-radius: 8px;
-}
-
-#sidenavid.sticky {
-    transition: 0.5s;
 }
 
 .sidebartop {
@@ -340,7 +327,7 @@ header .nav-list button {
 
 .sidebarmain a {
     font-family: var(--Lato);
-    font-weight: 700;
+    font-weight: 300;
     padding: 12px 0px 12px 0px;
     text-decoration: none;
     font-size: 14px;
@@ -372,6 +359,8 @@ header .nav-list button {
 .sidenavclass a:hover {
     color: var(--hover-color);
 }
+
+/** Main **/
 
 #main {
     transition: margin-left 0.5s;
@@ -424,6 +413,8 @@ article {
         opacity: 1;
     }
 }
+
+/** Media query **/
 
 @media screen and (max-width: 600px) {
     header .remove-mobile {
