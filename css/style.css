@@ -258,12 +258,13 @@ header .nav-list button {
     width:100%;
     font-family: var(--Lato);
     font-size: 15px;
+    font-weight: 300;
 }
 
 .modal-header svg {
     display: block;
     color:var(--text-color);
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .modal-body {
@@ -271,6 +272,34 @@ header .nav-list button {
     padding-left:1.5vmin;
     padding-bottom: 6vmin;
     padding-top: 3vmin;
+}
+
+.modal-body .walletscontainer {
+}
+
+.walletscontainer p {
+    padding-right:12vmin;
+    font-family: var(--Lato);
+    font-size: 15px;
+    font-weight: 200;
+    float:left;
+}
+
+.namiwallet {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-radius: 8px;
+    border-width: 1px;
+    padding:2vmin;
+}
+
+.namiwallet .namiicon {
+    width: 30px;
+    height:30px;
+    float: right;
 }
 
 /** Sidenav **/
