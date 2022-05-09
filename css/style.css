@@ -480,6 +480,14 @@ article {
         transition: all 0.5s ease-in-out;
     }
 
+    .modal-content {
+        position: relative;
+        background-color: var(--bggradient);
+        margin: 20% auto;
+        padding:2vmin;
+        width: 120vmin;
+    }
+
     .sidebarbottom .socials {
         margin-top: -32vmin;
     }
