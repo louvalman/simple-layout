@@ -14,7 +14,7 @@ window.addEventListener("scroll", e => {
   }
 });
 
-if ($(window).width() > 600) {
+if ($(window).width() > 768) {
   function toggleNav() {
     var element = document.getElementById("sidenavid");
     if (element.style.width == "350px") {
@@ -25,7 +25,7 @@ if ($(window).width() > 600) {
 
     var element = document.getElementById("sidenavid");
     if (element.style.width == "350px") {
-      element.style.boxShadow = "1px -1px 3px 1px #abaeb3";
+      element.style.boxShadow = "1px -1px 3px 1px #6d6e72";
     } else {
       element.style.boxShadow = "none";
     }
@@ -56,7 +56,7 @@ if ($(window).width() > 600) {
 }
 
 function toggleIcon(x) {
-  if ($(window).width() > 600) {
+  if ($(window).width() > 768) {
     x.classList.toggle("fa-xmark");
     x.classList.toggle("fa-bars");
   } else {

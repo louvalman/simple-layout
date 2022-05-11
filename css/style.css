@@ -10,9 +10,10 @@
     --Montserrat: "Montserrat", thin;
     --Montserrat2: "Montserrat", medium;
     --light-black: #1e1e1e;
-    --hover-color: #598381;
-    --text-color: #231651;
-    --bggradient: #D6FFF6;
+    --hover-color: #A59E8C;
+    --third-color: #dfd6c2;
+    --text-color: #2e2e2e;
+    --bggradient: #D7CEB2;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -40,7 +41,7 @@ body {
 #navbar.sticky {
     position: sticky;
     top: 0;
-    box-shadow: 1px -1px 3px 2px #abaeb3;
+    box-shadow: 1px -1px 3px 2px #6d6e72;
     clip-path: inset(-5px -5px -800px -0px);
     transition: 0.5s;
     z-index: 2;
@@ -66,6 +67,7 @@ header .navbar-brand svg {
 header .navbar-brand svg:hover {
     color: var(--hover-color);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 header .nav-list {
@@ -82,7 +84,7 @@ header .nav-list li a {
     color: var(--text-color);
     font-family: var(--Lato);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 350;
     text-align: center;
     text-decoration: none;
     padding: 2vmin;
@@ -127,12 +129,12 @@ header .nav-list .wallet-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 120px;
+    min-width: 120px;
     height: 40px;
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: transparent;
+    background-color: var(--third-color);
     cursor: pointer;
     font-family: var(--Lato);
     font-size: 15px;
@@ -250,21 +252,31 @@ header .nav-list button {
 
 .modal-header {
     display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-right:1.5vmin;
-    padding-left: 1.5vmin;
-    top:0;
+    align-items:center;
+    justify-content: center;
+    padding: 0vmin 3vmin 0vmin 3vmin;
     width:100%;
-    font-family: var(--Lato);
-    font-size: 15px;
-    font-weight: 300;
 }
 
-.modal-header svg {
-    display: block;
+.modalheadertitle {
+    font-family: var(--Lato);
+    font-size: 16px;
+    font-weight: 400;
+    margin-left:auto
+}
+
+.modalheadericon {
+    margin-left:auto
+}
+
+.modalheadericon svg {
     color:var(--text-color);
     font-size: 18px;
+}
+
+.modal-header svg:hover {
+    color: var(--hover-color);
+    cursor: pointer;
 }
 
 .modal-body {
@@ -275,31 +287,56 @@ header .nav-list button {
 }
 
 .modal-body .walletscontainer {
+    top:50%;
+    left:50%;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--text-color);
+    margin: 0vmin 1vmin 0vmin 1vmin;   
+    background-color: var(--third-color);
 }
 
-.walletscontainer p {
-    padding-right:12vmin;
+.walletitem {
+    padding:1.5vmin 2vmin 1.5vmin 2vmin;
+    transition: 0.2s;
+}
+
+.walletitem:hover {
+    background-color: var(--hover-color);
+    color: #f3f3f3;
+}
+
+.walletitem p {
     font-family: var(--Lato);
     font-size: 15px;
     font-weight: 200;
     float:left;
 }
 
-.namiwallet {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    border-style: solid;
-    border-color: var(--text-color);
-    border-radius: 8px;
-    border-width: 1px;
-    padding:2vmin;
+.walletitem img {
+    height:38px;
+    float: right;
 }
 
-.namiwallet .namiicon {
-    width: 30px;
-    height:30px;
-    float: right;
+.first:hover {
+    border-top-left-radius:8px;
+    border-top-right-radius: 8px;
+}
+
+.last:hover {
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius: 8px;
+}
+
+.walletcontent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.walletborder {
+    border-bottom: 1px solid var(--text-color);
 }
 
 /** Sidenav **/
@@ -446,7 +483,7 @@ article {
 
 /** Media query **/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header .remove-mobile {
         display: none;
     }
@@ -481,11 +518,10 @@ article {
     }
 
     .modal-content {
-        position: relative;
         background-color: var(--bggradient);
         margin: 20% auto;
         padding:2vmin;
-        width: 120vmin;
+        width: 80vmin;
     }
 
     .sidebarbottom .socials {
