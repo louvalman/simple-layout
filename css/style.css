@@ -10,10 +10,10 @@
     --Montserrat: "Montserrat", thin;
     --Montserrat2: "Montserrat", medium;
     --light-black: #1e1e1e;
-    --hover-color: #A59E8C;
-    --third-color: #dfd6c2;
+    --hover-color: #f5ad49;
+    --third-color: #ffefcd;
     --text-color: #2e2e2e;
-    --bggradient: #D7CEB2;
+    --bggradient: #ece6d5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -230,7 +230,7 @@ header .nav-list button {
 .modal-content {
     position: relative;
     background-color: var(--bggradient);
-    margin: 15% auto;
+    margin: 10% auto;
     padding:2vmin;
     width: 60vmin;
     border-radius: 8px;
@@ -305,6 +305,7 @@ header .nav-list button {
 .walletitem:hover {
     background-color: var(--hover-color);
     color: #f3f3f3;
+    cursor: pointer;
 }
 
 .walletitem p {
