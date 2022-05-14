@@ -25,7 +25,7 @@ if ($(window).width() > 768) {
 
     var element = document.getElementById("sidenavid");
     if (element.style.width == "350px") {
-      element.style.boxShadow = "1px -1px 3px 1px #6d6e72";
+      element.style.boxShadow = "1px -1px 3px 1px #929498";
     } else {
       element.style.boxShadow = "none";
     }
