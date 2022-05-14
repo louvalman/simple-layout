@@ -1,19 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&family=Roboto+Slab:wght@200;300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
 * {
     box-sizing: border-box;
 }
 
 :root {
-    --Lato: "Lato", light;
-    --Lato2: "Lato", regular;
-    --Montserrat: "Montserrat", thin;
-    --Montserrat2: "Montserrat", medium;
+    --Lato: "Lato", sans-serif;
+    --Montserrat: "Montserrat", sans-serif;
+    --Robotoslab: "Roboto Slab", serif;
+    --Rubik: "Rubik", sans-serif;
     --light-black: #1e1e1e;
-    --hover-color: #f5ad49;
-    --third-color: #ffefcd;
+    --hover-color: #386FA4;
+    --third-color: #caf6ff;
     --text-color: #2e2e2e;
-    --bggradient: #ece6d5;
+    --bggradient: #e4f4f7;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -82,9 +81,9 @@ header .nav-list {
 header .nav-list li a {
     display: block;
     color: var(--text-color);
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 15px;
-    font-weight: 350;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     padding: 2vmin;
@@ -135,9 +134,9 @@ header .nav-list .wallet-container {
     text-overflow: ellipsis;
     background-color: var(--third-color);
     cursor: pointer;
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     padding: 1.5vmin;
@@ -257,7 +256,7 @@ header .nav-list button {
 }
 
 .modalheadertitle {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 16px;
     font-weight: 400;
     margin-left:auto
@@ -307,7 +306,7 @@ header .nav-list button {
 }
 
 .walletitem p {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 15px;
     font-weight: 200;
     float:left;
@@ -364,7 +363,7 @@ header .nav-list button {
 }
 
 .sidebartop a {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     text-decoration: none;
     font-size: 10px;
     color: var(--text-color);
@@ -392,8 +391,8 @@ header .nav-list button {
 }
 
 .sidebarmain a {
-    font-family: var(--Lato);
-    font-weight: 300;
+    font-family: var(--Rubik);
+    font-weight: 400;
     padding: 12px 0px 12px 0px;
     text-decoration: none;
     font-size: 14px;
