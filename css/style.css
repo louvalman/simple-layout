@@ -132,7 +132,7 @@ header .nav-list .wallet-container {
     text-decoration: none;
     overflow: hidden;
     text-overflow: ellipsis;
-    background-color: var(--third-color);
+    background-color: transparent;
     cursor: pointer;
     font-family: var(--Rubik);
     font-size: 15px;
