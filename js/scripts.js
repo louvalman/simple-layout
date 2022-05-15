@@ -57,8 +57,8 @@ if ($(window).width() > 768) {
 
 function toggleIcon(x) {
   if ($(window).width() > 768) {
-    x.classList.toggle("fa-xmark");
-    x.classList.toggle("fa-bars");
+    x.classList.toggle("iconoir-cancel");
+    x.classList.toggle("iconoir-menu");
   } else {
     x.classList.toggle("none")
   }

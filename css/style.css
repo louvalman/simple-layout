@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&family=Roboto+Slab:wght@200;300;400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&family=Roboto+Slab:wght@200;300;400;500;700&family=Rubik:wght@100;200;300;400;500;600&display=swap');
 * {
     box-sizing: border-box;
 }
@@ -7,12 +7,12 @@
     --Lato: "Lato", sans-serif;
     --Montserrat: "Montserrat", sans-serif;
     --Robotoslab: "Roboto Slab", serif;
-    --Rubik: "Rubik", sans-serif;
+    --Rubik: "Lato", sans-serif;
     --light-black: #1e1e1e;
-    --hover-color: #329F5B;
-    --third-color: #8FD5A6;
+    --hover-color: #B9BBDB;
+    --third-color: #F2F3FF;
     --text-color: #2e2e2e;
-    --bggradient: #F7F0F5;
+    --bggradient: #f0f7f7;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -57,16 +57,20 @@ header .navbar-brand {
     margin-left: 6vmin;
 }
 
-header .navbar-brand svg {
+header .navbar-brand i {
     color: var(--text-color);
     margin-right: auto;
-    font-size: 18px;
+    font-size: 20px;
 }
 
-header .navbar-brand svg:hover {
+header .navbar-brand i:hover {
     color: var(--hover-color);
-    transition: 0.5s;
+    transition: 0.25s;
     cursor: pointer;
+}
+
+.iconoir-cancel {
+    font-size: 22px !important;
 }
 
 header .nav-list {
@@ -83,7 +87,7 @@ header .nav-list li a {
     color: var(--text-color);
     font-family: var(--Rubik);
     font-size: 15px;
-    font-weight: 300;
+    font-weight: 100;
     text-align: center;
     text-decoration: none;
     padding: 2vmin;
@@ -127,7 +131,7 @@ header .nav-list .wallet-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 120px;
+    min-width: 112px;
     height: 40px;
     text-decoration: none;
     overflow: hidden;
@@ -140,9 +144,14 @@ header .nav-list .wallet-container {
     text-align: center;
     text-decoration: none;
     padding: 1.5vmin;
-    border-style: solid;
+    border-style: none;
     border-width: 0.5px;
     border-color: var(--text-color);
+}
+
+header .nav-list .wallet-container i {
+    padding-left: 8px;
+    font-size: 16px;
 }
 
 header .nav-list .wallet-container:hover {
@@ -258,7 +267,7 @@ header .nav-list button {
 .modalheadertitle {
     font-family: var(--Rubik);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 300;
     margin-left:auto
 }
 
@@ -266,14 +275,15 @@ header .nav-list button {
     margin-left:auto
 }
 
-.modalheadericon svg {
+.modalheadericon i {
     color:var(--text-color);
-    font-size: 18px;
+    font-size: 20px;
 }
 
-.modal-header svg:hover {
+.modal-header i:hover {
     color: var(--hover-color);
     cursor: pointer;
+    transition: 0.25s;
 }
 
 .modal-body {
@@ -308,7 +318,7 @@ header .nav-list button {
 .walletitem p {
     font-family: var(--Rubik);
     font-size: 15px;
-    font-weight: 200;
+    font-weight: 400;
     float:left;
 }
 
@@ -372,7 +382,7 @@ header .nav-list button {
     margin-left: 3vmin;
 }
 
-.sidebartop svg {
+.sidebartop i {
     display: none;
 }
 
@@ -412,13 +422,14 @@ header .nav-list button {
     gap: 20px;
 }
 
-.sidebarbottom .socials svg {
+.sidebarbottom .socials i {
     color: #1e1e1e;
     font-size: 24px;
 }
 
-.sidebarbottom .socials svg:hover {
+.sidebarbottom .socials i:hover {
     color: var(--hover-color);
+    transition: 0.25s;
 }
 
 .sidenavclass a:hover {
@@ -534,7 +545,7 @@ article {
         margin-top: 0vmin;
     }
 
-    .sidebartop svg {
+    .sidebartop i {
         display: block;
         margin-right: 6vmin;
         font-size: 20px;
