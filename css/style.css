@@ -149,9 +149,10 @@ header .nav-list .wallet-container {
     border-color: var(--text-color);
 }
 
-header .nav-list .wallet-container i {
-    padding-left: 8px;
-    font-size: 18px;
+header .nav-list .wallet-container svg {
+    padding-left: 14px;
+    font-size: 10px;
+    color:rgb(215, 61, 61);
 }
 
 header .nav-list .wallet-container:hover {
@@ -518,7 +519,7 @@ article {
         height: 40px;
         text-decoration: none;
         background-color: transparent;
-        border-style: solid;
+        border-style: none;
         border-color: var(--text-color);
         border-width: 1px;
         border-radius: 8px;

@@ -7,9 +7,11 @@ window.addEventListener("scroll", e => {
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
     navbar.classList.add('sticky');
+    sidenavid.style.borderTopRightRadius = "0px";
     // sectionMain.classList.add('navbarOffsetMargin');
   } else {
     navbar.classList.remove('sticky');
+    sidenavid.style.borderTopRightRadius = "8px";
     // sectionMain.classList.remove('navbarOffsetMargin');
   }
 });
