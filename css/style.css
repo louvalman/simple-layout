@@ -73,8 +73,12 @@ header .nav-list {
     align-items: center;
     display: flex;
     margin-right: 6vmin;
-    gap: 28px;
 }
+
+header .nav-list .nav-listcontainer {
+    display:flex;
+    gap:28px;
+    }
 
 header .nav-list li a {
     display: block;
