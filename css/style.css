@@ -78,6 +78,7 @@ header .nav-list {
 header .nav-list .nav-listcontainer {
     display:flex;
     gap:28px;
+    margin-right: 80px;
     }
 
 header .nav-list li a {
@@ -132,7 +133,6 @@ header .nav-list .wallet-container {
     min-width: 112px;
     height: 40px;
     text-decoration: none;
-    overflow: hidden;
     text-overflow: ellipsis;
     background-color: transparent;
     cursor: pointer;
@@ -147,6 +147,14 @@ header .nav-list .wallet-container {
     border-color: var(--text-color);
 }
 
+header .nav-list text {
+    padding-left:12px;
+}
+
+header .nav-list span {
+    margin-top:-0.4vmin;
+}
+
 header .nav-list svg {
     font-size: 10px;
     color:rgb(215, 61, 61);
@@ -157,7 +165,7 @@ header .nav-list .wallet-container:hover {
 }
 
 header .nav-list button {
-    margin-left: 80px;
+    margin-left: 0px;
 }
 
 .draw-border {
@@ -449,23 +457,33 @@ article {
     width: 100%;
 }
 
+.section-container {
+}
+
 .article-container {
-    padding-top: 10px;
+    margin-top: 16vmin;
+    margin-left:24vmin;
+    margin-right:24vmin;
+    text-overflow: ellipsis;
 }
 
 #section-main h1 {
     font-family: var(--Lato);
     font-size: 28px;
-    font-weight: 450;
+    font-weight: 300;
     color: var(--text-color);
-    text-align: left;
+    text-align: center;
+    margin:auto;
+    max-width:70%;
+    line-height: 40px;
+    letter-spacing: 0px;
 }
 
 #section-main p {
     font-family: var(--Lato);
     font-weight: 300;
     color: var(--text-color);
-    text-align: left;
+    text-align: center;
 }
 
 @-webkit-keyframes fadeIn {
@@ -492,7 +510,7 @@ article {
 
 [data-tooltip] {
     position: relative;
-    z-index: 100;
+    z-index: 4;
   }
   
   /* Positioning and visibility settings of the tooltip */
@@ -511,20 +529,20 @@ article {
   /* The actual tooltip with a dynamic width */
   [data-tooltip]:before {
     content: attr(data-tooltip);
-    padding: 10px 18px;
-    min-width: 50px;
-    max-width: 300px;
+    padding: 4px 8px;
+    min-width: 24px;
+    max-width: 150px;
     width: max-content;
     width: -moz-max-content;
     border-radius: 6px;
-    font-size: 14px;
-    background-color: rgba(59, 72, 80, 0.9);
+    font-size: 12px;
+    background-color: var(--hover-color);
     background-image: linear-gradient(30deg,
       rgba(59, 72, 80, 0.44),
       rgba(59, 68, 75, 0.44),
       rgba(60, 82, 88, 0.44));
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
-    color: #fff;
+    color: #f2f2f2;
     text-align: center;
     white-space: pre-wrap;
     transform: translate(-50%, -5px) scale(0.5);
@@ -535,7 +553,7 @@ article {
     content: '';
     border-style: solid;
     border-width: 5px 5px 0px 5px; /* CSS triangle */
-    border-color: rgba(55, 64, 70, 0.9) transparent transparent transparent;
+    border-color: var(--text-color) transparent transparent transparent;
     transition-duration: 0s; /* If the mouse leaves the element, 
                                 the transition effects for the 
                                 tooltip arrow are "turned off" */
@@ -564,21 +582,6 @@ article {
     transition-duration: 0.2s;
     transform: translateX(-50%) scaleY(1);
   }
-  /*
-    That's it for the basic tooltip.
-  
-    If you want some adjustability
-    here are some orientation settings you can use:
-  */
-  
-  /* LEFT */
-  /* Tooltip + arrow */
-  [data-tooltip-location="left"]:before,
-  [data-tooltip-location="left"]:after {
-    left: auto;
-    right: calc(100% + 5px);
-    bottom: 50%;
-  }
   
   /* Tooltip */
   [data-tooltip-location="left"]:before {
@@ -591,7 +594,7 @@ article {
   /* Arrow */
   [data-tooltip-location="left"]:after {
     border-width: 5px 0px 5px 5px;
-    border-color: transparent transparent transparent rgba(55, 64, 70, 0.9);
+    border-color: transparent transparent transparent var(--hover-color);
     transform-origin: left;
     transform: translateY(50%) scaleX(0);
   }
@@ -602,7 +605,7 @@ article {
   /* BOTTOM */
   [data-tooltip-location="bottom"]:before,
   [data-tooltip-location="bottom"]:after {
-    top: calc(100% + 5px);
+    top: calc(100% + 16px);
     bottom: auto;
   }
   
@@ -615,7 +618,7 @@ article {
   
   [data-tooltip-location="bottom"]:after {
     border-width: 0px 5px 5px 5px;
-    border-color: transparent transparent rgba(55, 64, 70, 0.9) transparent;
+    border-color: transparent transparent var(--hover-color) transparent;
     transform-origin: bottom;
   }
 
