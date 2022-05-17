@@ -467,9 +467,9 @@ article {
 }
 
 #section-main h1 {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 28px;
-    font-weight: 300;
+    font-weight: 200;
     color: var(--text-color);
     text-align: center;
     margin:auto;
@@ -480,7 +480,7 @@ article {
 }
 
 #section-main p {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-weight: 300;
     color: var(--text-color);
     text-align: center;
@@ -503,7 +503,7 @@ article {
 }
 
 .toph3 {
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-weight: 500;
     font-size: 16px;
 }
@@ -523,7 +523,7 @@ article {
 .slick-item {
     background: var(--third-color);
     color: var(--text-color);
-    font-family: var(--Lato);
+    font-family: var(--Rubik);
     font-size: 48px;
     line-height: 100px;
     padding: 24%;
