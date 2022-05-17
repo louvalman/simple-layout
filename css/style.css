@@ -148,16 +148,16 @@ header .nav-list .wallet-container {
 }
 
 header .nav-list text {
-    padding-left:12px;
+    padding-left:1.5vmin;
 }
 
 header .nav-list span {
-    margin-top:-0.4vmin;
+    margin-top:-0.3vmin;
 }
 
 header .nav-list svg {
     font-size: 10px;
-    color:rgb(215, 61, 61);
+    color:rgb(227, 50, 50);
 }
 
 header .nav-list .wallet-container:hover {
@@ -462,8 +462,8 @@ article {
 
 .article-container {
     margin-top: 16vmin;
-    margin-left:24vmin;
-    margin-right:24vmin;
+    margin-left:4vmin;
+    margin-right:4vmin;
 }
 
 #section-main h1 {
@@ -473,9 +473,10 @@ article {
     color: var(--text-color);
     text-align: center;
     margin:auto;
-    max-width:70%;
+    max-width:60%;
     line-height: 40px;
     letter-spacing: 0px;
+    padding-bottom: 16vmin;
 }
 
 #section-main p {
@@ -483,6 +484,60 @@ article {
     font-weight: 300;
     color: var(--text-color);
     text-align: center;
+}
+
+/** Slider **/
+
+.sliderParent {
+    margin: auto;
+    max-width: 95%;
+}
+
+.sliderTopRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:3vmin;
+    margin-right:3vmin;
+    height:2vmin;
+}
+
+.toph3 {
+    font-family: var(--Lato);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.arrow {
+    display:flex;
+    font-size: 20px;
+    gap:20px;
+}
+
+.arrow i:hover {
+    color:var(--hover-color);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.slick-item {
+    background: var(--third-color);
+    color: var(--text-color);
+    font-family: var(--Lato);
+    font-size: 48px;
+    line-height: 100px;
+    padding: 24%;
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    margin:3vmin;
+}
+
+.slick-item:hover {
+    background-color: var(--hover-color);
+    color:#f3f3f3;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 
@@ -659,6 +714,10 @@ article {
         transition: all 0.5s ease-in-out;
     }
 
+    header .nav-list text {
+        padding-left:3vmin;
+    }
+
     .modal-content {
         background-color: var(--bggradient);
         margin: 20% auto;
@@ -685,7 +744,7 @@ article {
     }
 
     #navbar.sticky {
-        z-index: 0;
+        z-index: 3;
     }
 
 
