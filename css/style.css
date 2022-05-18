@@ -235,6 +235,7 @@ header .nav-list button {
     height: 100%;
     overflow: auto;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.1);
     transition: ease-in-out 2s;
 }
