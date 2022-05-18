@@ -759,6 +759,7 @@ article {
         margin: 20% auto;
         padding: 2vmin;
         width: 80vmin;
+        backdrop-filter: blur(2px);
     }
 
     .walletitem {
@@ -776,6 +777,7 @@ article {
 
     .sidenavclass {
         z-index: 5;
+        transition: 0.2s !important;
     }
 
     .sidebarbottom .socials {
