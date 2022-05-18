@@ -93,7 +93,7 @@ window.onclick = function(event) {
 $(document).ready(function(){
   $('.slick-content').slick({
   dots: false,
-  infinite: false,
+  infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
