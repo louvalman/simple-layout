@@ -810,6 +810,10 @@ article {
     .sliderTopRow {
         height: 8vmin;
     }
+
+    .arrow  {
+        display:none;
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
