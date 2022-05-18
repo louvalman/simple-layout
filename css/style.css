@@ -9,10 +9,10 @@
     --Robotoslab: "Roboto Slab", serif;
     --Rubik: "Lato", sans-serif;
     --light-black: #1e1e1e;
-    --hover-color: #B9BBDB;
-    --third-color: #F2F3FF;
+    --hover-color: #64748B;
+    --third-color: #6EE7B7;
     --text-color: #2e2e2e;
-    --bggradient: #f0f7f7;
+    --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --light-gray: rgba(255, 255, 255, 0.877)
 }
@@ -201,13 +201,13 @@ header .nav-list button {
 }
 
 .draw-border:hover {
-    color: var(--hover-color);
+    color: var(--third-color);
     border-radius: 8px;
 }
 
 .draw-border:hover::before,
 .draw-border:hover::after {
-    border-color: var(--hover-color);
+    border-color: var(--third-color);
     transition: border-color 0s, width 0.25s, height 0.25s;
     width: 100%;
     height: 100%;
@@ -215,11 +215,11 @@ header .nav-list button {
 }
 
 .draw-border:hover::before {
-    transition-delay: 0s, 0s, 0.25s;
+    transition-delay: 0s, 0s, 0.30s;
 }
 
 .draw-border:hover::after {
-    transition-delay: 0s, 0.25s, 0s;
+    transition-delay: 0s, 0.30s, 0s;
 }
 
 /** Modal **/
@@ -227,7 +227,7 @@ header .nav-list button {
 .modal {
     display: none;
     position: fixed;
-    z-index: 3;
+    z-index: 4;
     left: 0;
     top: 0;
     width: 100%;
@@ -462,8 +462,6 @@ article {
 
 .article-container {
     margin-top: 16vmin;
-    margin-left:4vmin;
-    margin-right:4vmin;
 }
 
 #section-main h1 {
@@ -490,7 +488,7 @@ article {
 
 .sliderParent {
     margin: auto;
-    max-width: 95%;
+    max-width: 100%;
 }
 
 .sliderTopRow {
@@ -697,25 +695,17 @@ article {
         color: var(--text-color) !important;
     }
 
-    header .nav-list button {
-        margin-left: 60px;
-    }
-
     header .nav-list .wallet-container {
         width: 100px;
         height: 40px;
         text-decoration: none;
         background-color: transparent;
-        border-style: none;
-        border-color: var(--text-color);
-        border-width: 1px;
-        border-radius: 8px;
         cursor: pointer;
         transition: all 0.5s ease-in-out;
     }
 
     header .nav-list text {
-        padding-left:3vmin;
+        padding-left:2vmin;
     }
 
     .modal-content {
@@ -724,6 +714,10 @@ article {
         padding:2vmin;
         width: 80vmin;
     }
+
+.sidenavclass {
+    z-index: 5;
+}
 
     .sidebarbottom .socials {
         margin-top: -32vmin;
@@ -743,8 +737,21 @@ article {
         font-size: 20px;
     }
 
+    .walletitem {
+        padding:1.5vmin 6vmin 1.5vmin 6vmin;
+        transition: 0.2s;
+    }
+    
+    .walletitem p {
+        font-size: 18px;
+    }
+    
+    .walletitem img {
+        height:40px;
+    }
+
     #navbar.sticky {
-        z-index: 3;
+        z-index: 2;
     }
 
 
