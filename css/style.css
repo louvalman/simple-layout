@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@100;200;300;500&family=Roboto+Slab:wght@200;300;400;500;700&family=Rubik:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -7,7 +8,7 @@
     --Lato: "Lato", sans-serif;
     --Montserrat: "Montserrat", sans-serif;
     --Robotoslab: "Roboto Slab", serif;
-    --Rubik: "Lato", sans-serif;
+    --Rubik: "Work Sans", sans-serif;
     --light-black: #1e1e1e;
     --hover-color: #64748B;
     --third-color: #6EE7B7;
@@ -44,7 +45,7 @@ body {
     transition: 0.5s;
     z-index: 2;
     border-bottom-left-radius: 8px;
-    border-bottom-right-radius:8px;
+    border-bottom-right-radius: 8px;
     background-color: var(--bggradient);
 }
 
@@ -76,17 +77,17 @@ header .nav-list {
 }
 
 header .nav-list .nav-listcontainer {
-    display:flex;
-    gap:28px;
+    display: flex;
+    gap: 28px;
     margin-right: 80px;
-    }
+}
 
 header .nav-list li a {
     display: block;
     color: var(--text-color);
     font-family: var(--Rubik);
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 300;
     text-align: center;
     text-decoration: none;
     padding: 2vmin;
@@ -148,16 +149,16 @@ header .nav-list .wallet-container {
 }
 
 header .nav-list text {
-    padding-left:1.5vmin;
+    padding-left: 1.5vmin;
 }
 
 header .nav-list span {
-    margin-top:-0.3vmin;
+    margin-top: -0.3vmin;
 }
 
 header .nav-list svg {
     font-size: 10px;
-    color:rgb(227, 50, 50);
+    color: rgb(227, 50, 50);
 }
 
 header .nav-list .wallet-container:hover {
@@ -237,6 +238,7 @@ header .nav-list button {
     height: 100%;
     overflow: auto;
     backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.1);
     transition: ease-in-out 2s;
 }
@@ -246,7 +248,7 @@ header .nav-list button {
     position: relative;
     background-color: var(--bggradient);
     margin: 10% auto;
-    padding:2vmin;
+    padding: 2vmin;
     width: 60vmin;
     border-radius: 8px;
     -webkit-animation-name: animatebot;
@@ -256,36 +258,50 @@ header .nav-list button {
 }
 
 @-webkit-keyframes animatebot {
-    from {bottom:-300px; opacity:0} 
-    to {bottom:0; opacity:1}
-  }
-  
-  @keyframes animatebot {
-    from {bottom:-300px; opacity:0}
-    to {bottom:0; opacity:1}
-  }
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatebot {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
 
 .modal-header {
     display: inline-flex;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     padding: 0vmin 3vmin 0vmin 3vmin;
-    width:100%;
+    width: 100%;
 }
 
 .modalheadertitle {
     font-family: var(--Rubik);
     font-size: 16px;
     font-weight: 300;
-    margin-left:auto
+    margin-left: auto
 }
 
 .modalheadericon {
-    margin-left:auto
+    margin-left: auto
 }
 
 .modalheadericon i {
-    color:var(--text-color);
+    color: var(--text-color);
     font-size: 20px;
 }
 
@@ -296,25 +312,25 @@ header .nav-list button {
 }
 
 .modal-body {
-    padding-right:1.5vmin;
-    padding-left:1.5vmin;
+    padding-right: 1.5vmin;
+    padding-left: 1.5vmin;
     padding-bottom: 6vmin;
     padding-top: 3vmin;
 }
 
 .modal-body .walletscontainer {
-    top:50%;
-    left:50%;
+    top: 50%;
+    left: 50%;
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
     border-color: var(--text-color);
-    margin: 0vmin 1vmin 0vmin 1vmin;   
+    margin: 0vmin 1vmin 0vmin 1vmin;
     background-color: var(--third-color);
 }
 
 .walletitem {
-    padding:1.5vmin 2vmin 1.5vmin 2vmin;
+    padding: 1.5vmin 2vmin 1.5vmin 2vmin;
     transition: 0.2s;
 }
 
@@ -328,21 +344,21 @@ header .nav-list button {
     font-family: var(--Rubik);
     font-size: 15px;
     font-weight: 400;
-    float:left;
+    float: left;
 }
 
 .walletitem img {
-    height:38px;
+    height: 38px;
     float: right;
 }
 
 .first:hover {
-    border-top-left-radius:8px;
+    border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
 .last:hover {
-    border-bottom-left-radius:8px;
+    border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 
@@ -485,21 +501,20 @@ article {
     width: 100%;
 }
 
-.section-container {
-}
+.section-container {}
 
 .article-container {
     margin-top: 16vmin;
 }
 
-#section-main h1 {
+.main-title {
     font-family: var(--Rubik);
     font-size: 28px;
     font-weight: 200;
     color: var(--text-color);
     text-align: center;
-    margin:auto;
-    max-width:60%;
+    margin: auto;
+    max-width: 60%;
     line-height: 40px;
     letter-spacing: 0px;
     padding-bottom: 16vmin;
@@ -509,7 +524,6 @@ article {
     font-family: var(--Rubik);
     font-weight: 300;
     color: var(--text-color);
-    text-align: center;
 }
 
 /** Slider **/
@@ -523,25 +537,41 @@ article {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left:3vmin;
-    margin-right:3vmin;
-    height:2vmin;
+    margin-left: 1.5vmin;
+    margin-right: 1.5vmin;
+    height: 3vmin;
 }
 
 .toph3 {
     font-family: var(--Rubik);
     font-weight: 500;
     font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3vmin;
+}
+
+.toph3 h3:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.toph3 i:hover {
+    color: var(--hover-color);
+    cursor: pointer;
+    transition: 0.3s;
 }
 
 .arrow {
-    display:flex;
+    display: flex;
     font-size: 20px;
-    gap:20px;
+    gap: 20px;
 }
 
 .arrow i:hover {
-    color:var(--hover-color);
+    color: var(--hover-color);
     transition: 0.3s;
     cursor: pointer;
 }
@@ -550,18 +580,26 @@ article {
     background: var(--third-color);
     color: var(--text-color);
     font-family: var(--Rubik);
-    font-size: 48px;
-    line-height: 100px;
+    font-size: 32px;
     padding: 24%;
     position: relative;
-    text-align: center;
     border-radius: 8px;
-    margin:3vmin;
+    margin: 1.5vmin;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-description {
+    font-size: 14px;
+    margin-left: 1.5vmin;
+    margin-top: -1.3vmin;
+
 }
 
 .slick-item:hover {
     background-color: var(--hover-color);
-    color:#f3f3f3;
+    color: #f3f3f3;
     transition: 0.3s;
     cursor: pointer;
 }
@@ -593,23 +631,24 @@ article {
 [data-tooltip] {
     position: relative;
     z-index: 4;
-  }
-  
-  /* Positioning and visibility settings of the tooltip */
-  [data-tooltip]:before,
-  [data-tooltip]:after {
+}
+
+/* Positioning and visibility settings of the tooltip */
+[data-tooltip]:before,
+[data-tooltip]:after {
     position: absolute;
     visibility: hidden;
     opacity: 0;
     left: 50%;
-    bottom: calc(100% + 5px); /* 5px is the size of the arrow */
+    bottom: calc(100% + 5px);
+    /* 5px is the size of the arrow */
     pointer-events: none;
     transition: 0.2s;
     will-change: transform;
-  }
-  
-  /* The actual tooltip with a dynamic width */
-  [data-tooltip]:before {
+}
+
+/* The actual tooltip with a dynamic width */
+[data-tooltip]:before {
     content: attr(data-tooltip);
     padding: 4px 8px;
     min-width: 24px;
@@ -620,89 +659,98 @@ article {
     font-size: 12px;
     background-color: var(--hover-color);
     background-image: linear-gradient(30deg,
-      rgba(59, 72, 80, 0.44),
-      rgba(59, 68, 75, 0.44),
-      rgba(60, 82, 88, 0.44));
+            rgba(59, 72, 80, 0.44),
+            rgba(59, 68, 75, 0.44),
+            rgba(60, 82, 88, 0.44));
     box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.2);
     color: #f2f2f2;
     text-align: center;
     white-space: pre-wrap;
     transform: translate(-50%, -5px) scale(0.5);
-  }
-  
-  /* Tooltip arrow */
-  [data-tooltip]:after {
+}
+
+/* Tooltip arrow */
+[data-tooltip]:after {
     content: '';
     border-style: solid;
-    border-width: 5px 5px 0px 5px; /* CSS triangle */
+    border-width: 5px 5px 0px 5px;
+    /* CSS triangle */
     border-color: var(--text-color) transparent transparent transparent;
-    transition-duration: 0s; /* If the mouse leaves the element, 
+    transition-duration: 0s;
+    /* If the mouse leaves the element, 
                                 the transition effects for the 
                                 tooltip arrow are "turned off" */
-    transform-origin: top;   /* Orientation setting for the
+    transform-origin: top;
+    /* Orientation setting for the
                                 slide-down effect */
     transform: translateX(-50%) scaleY(0);
-  }
-  
-  /* Tooltip becomes visible at hover */
-  [data-tooltip]:hover:before,
-  [data-tooltip]:hover:after {
+}
+
+/* Tooltip becomes visible at hover */
+[data-tooltip]:hover:before,
+[data-tooltip]:hover:after {
     visibility: visible;
     opacity: 1;
     z-index: 10000;
-  }
-  /* Scales from 0.5 to 1 -> grow effect */
-  [data-tooltip]:hover:before {
+}
+
+/* Scales from 0.5 to 1 -> grow effect */
+[data-tooltip]:hover:before {
     transition-delay: 0.3s;
     transform: translate(-50%, -5px) scale(1);
-  }
-  /* 
+}
+
+/* 
     Arrow slide down effect only on mouseenter (NOT on mouseleave)
   */
-  [data-tooltip]:hover:after {
-    transition-delay: 0.5s; /* Starting after the grow effect */
+[data-tooltip]:hover:after {
+    transition-delay: 0.5s;
+    /* Starting after the grow effect */
     transition-duration: 0.2s;
     transform: translateX(-50%) scaleY(1);
-  }
-  
-  /* Tooltip */
-  [data-tooltip-location="left"]:before {
+}
+
+/* Tooltip */
+[data-tooltip-location="left"]:before {
     transform: translate(-5px, 50%) scale(0.5);
-  }
-  [data-tooltip-location="left"]:hover:before {
+}
+
+[data-tooltip-location="left"]:hover:before {
     transform: translate(-5px, 50%) scale(1);
-  }
-  
-  /* Arrow */
-  [data-tooltip-location="left"]:after {
+}
+
+/* Arrow */
+[data-tooltip-location="left"]:after {
     border-width: 5px 0px 5px 5px;
     border-color: transparent transparent transparent var(--hover-color);
     transform-origin: left;
     transform: translateY(50%) scaleX(0);
-  }
-  [data-tooltip-location="left"]:hover:after {
+}
+
+[data-tooltip-location="left"]:hover:after {
     transform: translateY(50%) scaleX(1);
-  }
- 
-  /* BOTTOM */
-  [data-tooltip-location="bottom"]:before,
-  [data-tooltip-location="bottom"]:after {
+}
+
+/* BOTTOM */
+[data-tooltip-location="bottom"]:before,
+[data-tooltip-location="bottom"]:after {
     top: calc(100% + 16px);
     bottom: auto;
-  }
-  
-  [data-tooltip-location="bottom"]:before {
+}
+
+[data-tooltip-location="bottom"]:before {
     transform: translate(-50%, 5px) scale(0.5);
-  }
-  [data-tooltip-location="bottom"]:hover:before {
+}
+
+[data-tooltip-location="bottom"]:hover:before {
     transform: translate(-50%, 5px) scale(1);
-  }
-  
-  [data-tooltip-location="bottom"]:after {
+}
+
+[data-tooltip-location="bottom"]:after {
     border-width: 0px 5px 5px 5px;
     border-color: transparent transparent var(--hover-color) transparent;
     transform-origin: bottom;
-  }
+}
 
 /** Media query **/
 
@@ -733,19 +781,34 @@ article {
     }
 
     header .nav-list text {
-        padding-left:2vmin;
+        padding-left: 2vmin;
     }
 
     .modal-content {
         background-color: var(--bggradient);
         margin: 20% auto;
-        padding:2vmin;
+        padding: 2vmin;
         width: 80vmin;
+        backdrop-filter: blur(2px);
     }
 
-.sidenavclass {
-    z-index: 5;
-}
+    .walletitem {
+        padding: 1.5vmin 6vmin 1.5vmin 6vmin;
+        transition: 0.2s;
+    }
+
+    .walletitem p {
+        font-size: 18px;
+    }
+
+    .walletitem img {
+        height: 40px;
+    }
+
+    .sidenavclass {
+        z-index: 5;
+        transition: 0.2s !important;
+    }
 
     .sidebarbottom .socials {
         margin-top: -32vmin;
@@ -765,31 +828,20 @@ article {
         font-size: 20px;
     }
 
-    .walletitem {
-        padding:1.5vmin 6vmin 1.5vmin 6vmin;
-        transition: 0.2s;
-    }
-    
-    .walletitem p {
-        font-size: 18px;
-    }
-    
-    .walletitem img {
-        height:40px;
-    }
-
     #navbar.sticky {
         z-index: 2;
     }
 
-
-    #section-main h1 {
-        font-size: 32px;
+    .main-title {
+        max-width: 100%;
     }
 
-    #section-main p {
-        font-weight: 300;
-        font-size: 20px;
+    .sliderTopRow {
+        height: 8vmin;
+    }
+
+    .arrow  {
+        display:none;
     }
 }
 
