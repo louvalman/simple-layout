@@ -48,7 +48,7 @@ body {
 }
 
 header .navbar-brand {
-    margin-left: 6vmin;
+    margin-left: 7.5vmin;
 }
 
 header .navbar-brand i {
@@ -71,7 +71,7 @@ header .nav-list {
     list-style-type: none;
     align-items: center;
     display: flex;
-    margin-right: 6vmin;
+    margin-right: 7.5vmin;
 }
 
 header .nav-list .nav-listcontainer {
@@ -443,15 +443,14 @@ header .nav-list button {
 
 .sidebarbottom .primary-btn {
 width:128px;
-height:36px;
+height:40px;
 margin-right: 28px;
-border-radius: 8px;
 border-style: solid;
-border-width: 1px;
+border-width: 0.5px;
 border-color: var(--text-color);
 background-color:transparent;
 font-family: var(--Rubik);
-font-size: 16px;
+font-size: 14px;
 font-weight: 400;
 }
 
@@ -806,7 +805,7 @@ article {
         transition: 0.2s !important;
     }
 
-    .sidebarbottom .socials {
+    .sidebarbottom {
         margin-top: -32vmin;
     }
 
