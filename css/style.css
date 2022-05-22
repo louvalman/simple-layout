@@ -186,6 +186,7 @@ header .nav-list button {
     height: 0;
     bottom: 0;
     right: 0;
+    border-radius: 8px;
 }
 
 .draw-border::before {
@@ -216,10 +217,12 @@ header .nav-list button {
 
 .draw-border:hover::before {
     transition-delay: 0s, 0s, 0.30s;
+    border-radius: 8px;
 }
 
 .draw-border:hover::after {
     transition-delay: 0s, 0.30s, 0s;
+    border-radius: 8px;
 }
 
 /** Modal **/
@@ -419,18 +422,43 @@ header .nav-list button {
 
 .sidebarbottom {
     min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarbottom .primary-btn {
+width:128px;
+height:36px;
+margin-right: 28px;
+border-radius: 8px;
+border-style: solid;
+border-width: 1px;
+border-color: var(--text-color);
+background-color:transparent;
+font-family: var(--Rubik);
+font-size: 16px;
+font-weight: 400;
+}
+
+.sidebarbottom .primary-btn:hover{
+    background-color: var(--bggradient-color);
+    cursor: pointer;
+    transition: 1s;
+    border-style: none;
+    border-radius: 8px;
 }
 
 .sidebarbottom .socials {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .sidebarbottom .socials i {
     color: #1e1e1e;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .sidebarbottom .socials i:hover {
