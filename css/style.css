@@ -38,7 +38,7 @@ body {
 #navbar.sticky {
     position: sticky;
     top: 0;
-    box-shadow: 1px -1px 3px 2px #929498;
+    box-shadow: 1px -1px 2px 1px #929498;
     clip-path: inset(-5px -5px -800px -0px);
     transition: 0.5s;
     z-index: 2;
