@@ -142,7 +142,7 @@ header .nav-list .wallet-container {
     text-decoration: none;
     padding: 1.5vmin;
     border-style: none;
-    border-width: 0.5px;
+    border-width: 1px;
     border-color: var(--text-color);
 }
 
@@ -446,7 +446,7 @@ width:128px;
 height:40px;
 margin-right: 28px;
 border-style: solid;
-border-width: 0.5px;
+border-width: 1px;
 border-color: var(--text-color);
 background-color:transparent;
 font-family: var(--Rubik);
@@ -756,7 +756,6 @@ article {
 
     header .nav-list li a {
         font-size: 16px !important;
-
     }
 
     header .nav-list .wallet-container a {
@@ -808,6 +807,8 @@ article {
     .sidebarbottom {
         margin-top: -32vmin;
     }
+
+    .sidebarbottom 
 
     .sidebarmain {
         height: 70vh;
