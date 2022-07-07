@@ -94,8 +94,8 @@ $(document).ready(function(){
   $('.slick-content').slick({
   dots: false,
   infinite: true,
-  speed: 300,
-  slidesToShow: 3,
+  speed: 400,
+  slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: $('.prev-arrow'),
   nextArrow: $('.next-arrow'),
@@ -119,7 +119,7 @@ $(document).ready(function(){
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1.75,
+        slidesToShow: 1,
         slidesToScroll: 1,
         infinite:false
       }
