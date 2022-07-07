@@ -524,7 +524,7 @@ article {
 /** Slider **/
 
 .sliderParent {
-    margin: auto;
+    margin: 0 6vmin;
     max-width: 100%;
 }
 
