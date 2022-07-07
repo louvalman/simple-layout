@@ -122,7 +122,7 @@ $(document).ready(function(){
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
-        infinite:false
+        infinite:true
       }
     }
     // You can unslick at a given breakpoint now by adding:
