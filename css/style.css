@@ -38,7 +38,7 @@ body {
 #navbar.sticky {
     position: sticky;
     top: 0;
-    box-shadow: 1px -1px 2px 1px #929498;
+    box-shadow: 1px -1px 2px 1px #aaadb1;
     clip-path: inset(-5px -5px -800px -0px);
     transition: 0.5s;
     z-index: 2;
@@ -624,16 +624,19 @@ article {
 /** Footer **/
 
 .footer-main {
-    border-color: #929498;
-    border-style: solid;
-    border-width: 1px 0 0 0;
+    border-top: none;
     height: 28vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 1px -1px 2px -0.5px #929498;
+}
+
+.footer-main:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .footer-section {
+    float: left;
     width:33%;
     text-align: center;
 }
