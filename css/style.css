@@ -8,7 +8,7 @@
     --Lato: "Lato", sans-serif;
     --Rubik: "Work Sans", sans-serif;
     --light-black: #1e1e1e;
-    --hover-color: #64748B;
+    --hover-color: #72a687;
     --third-color: #6EE7B7;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
@@ -647,14 +647,25 @@ article {
 
 .footer-content {
 text-align: center;
+justify-items: center;
 }
 
-.footer-section li{
+.footer-content i {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.footer-content li{
     display: block;
 }
 
-.footer-section a{
+.footer-content a{
     text-decoration:none;
+    color: var(--text-color);
+}
+
+.footer-content a:hover{
+    color: var(--hover-color);
 }
 
 h4 {
