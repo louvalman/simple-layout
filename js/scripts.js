@@ -43,6 +43,14 @@ if ($(window).width() > 768) {
     } else {
       element.style.borderBottomLeftRadius = "0px";
     }
+
+/*    var element = document.getElementById("footer-main");
+    if(element.classList.contains('sticky')) {
+      element.classList.add('sticky');
+    } else {
+      element.classList.remove('sticky');
+    }
+    */
   }
 } else {
   function toggleNav() {
