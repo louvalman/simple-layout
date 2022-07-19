@@ -65,12 +65,12 @@ header .navbar-brand i:hover {
     cursor: pointer;
 }
 
-.navbar-brand svg {
+#logotop {
     color:var(--third-color);
-    margin-left: 9.5vmin;
+    margin-left:-68vmin;
 }
 
-.navbar-brand svg:hover {
+#logotop:hover {
     cursor: pointer;
     color: var(--hover-color);
 }
@@ -825,6 +825,11 @@ h4 {
 @media screen and (max-width: 768px) {
     header .remove-mobile {
         display: none;
+    }
+
+    #logotop {
+        color:var(--third-color);
+        margin-left:14vmin;
     }
 
     header .nav-list {
