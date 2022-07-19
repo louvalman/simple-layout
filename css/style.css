@@ -886,7 +886,12 @@ h4 {
     }
 
     .sidebartop {
-        margin-top: 0vmin;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        min-height: 10vh;
+        position: relative;
     }
 
     .sidebartop i {
@@ -894,6 +899,11 @@ h4 {
         margin-right: 6vmin;
         font-size: 20px;
     }
+
+    .sidebartop svg {
+        margin-left: 6vmin;
+    }
+
 
     #navbar.sticky {
         z-index: 2;
