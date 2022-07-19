@@ -43,6 +43,13 @@ if ($(window).width() > 768) {
     } else {
       element.style.borderBottomLeftRadius = "0px";
     }
+
+    var element = document.getElementById("logotop");
+    if(element.style.display == "none") {
+      element.style.display = "flex";
+    } else {
+      element.style.display = "none";
+    }
     
   }
 } else {

@@ -8,8 +8,9 @@
     --Lato: "Lato", sans-serif;
     --Rubik: "Work Sans", sans-serif;
     --light-black: #1e1e1e;
-    --hover-color: #72a687;
+    --hover-color: #55a987;
     --third-color: #6EE7B7;
+    --logo-color: #55a987;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
@@ -49,11 +50,12 @@ body {
 
 header .navbar-brand {
     margin-left: 7.5vmin;
+    display: flex;
+    align-items: center;
 }
 
 header .navbar-brand i {
     color: var(--text-color);
-    margin-right: auto;
     font-size: 18px;
 }
 
@@ -61,6 +63,16 @@ header .navbar-brand i:hover {
     color: var(--hover-color);
     transition: 0.25s;
     cursor: pointer;
+}
+
+.navbar-brand svg {
+    color:var(--third-color);
+    margin-left: 9.5vmin;
+}
+
+.navbar-brand svg:hover {
+    cursor: pointer;
+    color: var(--hover-color);
 }
 
 .iconoir-cancel {
@@ -401,7 +413,7 @@ header .nav-list button {
 
 .sidebartop svg:hover {
     cursor: pointer;
-    color: var(--hover-color);
+    color: var(--logo-color);
 }
 
 .sidebartop a {
@@ -509,19 +521,6 @@ article {
 
 .article-container {
     margin-top: 8vmin;
-}
-
-.article-container svg {
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 6vmin;
-    color:var(--third-color);
-}
-
-.article-container svg:hover {
-    cursor: pointer;
-    color: var(--hover-color);
 }
 
 .main-title {
