@@ -67,7 +67,6 @@ header .navbar-brand i:hover {
 
 #logotop {
     color:var(--third-color);
-    margin-left:-68vmin;
 }
 
 #logotop:hover {
@@ -410,21 +409,12 @@ header .nav-list button {
 
 .sidebartop svg {
     color:var(--third-color);
+    margin-top: 1vmin;
 }
 
 .sidebartop svg:hover {
     cursor: pointer;
     color: var(--logo-color);
-}
-
-.sidebartop a {
-    font-family: var(--WorkSans);
-    text-decoration: none;
-    font-size: 10px;
-    color: var(--text-color);
-    display: block;
-    transition: 0.5s;
-    margin-left: 3vmin;
 }
 
 .sidebartop i {
@@ -829,7 +819,6 @@ h4 {
 
     #logotop {
         color:var(--third-color);
-        margin-left:14vmin;
     }
 
     header .nav-list {
