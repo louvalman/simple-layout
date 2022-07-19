@@ -49,7 +49,7 @@ body {
 }
 
 header .navbar-brand {
-    margin-left: 7.5vmin;
+    padding-left: 7.5vmin;
     display: flex;
     align-items: center;
 }
@@ -83,7 +83,7 @@ header .nav-list {
     list-style-type: none;
     align-items: center;
     display: flex;
-    margin-right: 7.5vmin;
+    padding-right: 7.5vmin;
 }
 
 header .nav-list .nav-listcontainer {
@@ -828,6 +828,10 @@ h4 {
 
     header .nav-list li a {
         font-size: 16px !important;
+    }
+
+    header .nav-list .nav-listcontainer {
+        display: none;
     }
 
     header .nav-list .wallet-container a {
