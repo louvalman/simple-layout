@@ -624,9 +624,8 @@ article {
 /** Footer **/
 
 .footer-main {
-    border-top: none;
     height: 28vmin;
-    box-shadow: 1px -1px 2px -0.5px #929498;
+    box-shadow: 1px 0px 2px -0.5px #929498;
 }
 
 .footer-main:after {
@@ -638,7 +637,6 @@ article {
 .footer-section {
     float: left;
     padding-top: 6vmin;
-    padding-bottom: 6vmin;
     width:33%;
     color: var(--text-color);
     font-family: var(--Rubik);
@@ -654,6 +652,7 @@ justify-items: center;
 .footer-content i {
     display: inline-block;
     font-size: 20px;
+    padding-bottom: 12vmin;
 }
 
 .footer-content li{
@@ -705,7 +704,7 @@ h4 {
     width: -moz-max-content;
     border-radius: 6px;
     font-size: 12px;
-    background-color: var(--hover-color);
+    background-color: #1e1e1e;
     background-image: linear-gradient(30deg,
             rgba(59, 72, 80, 0.44),
             rgba(59, 68, 75, 0.44),
@@ -770,7 +769,7 @@ h4 {
 /* Arrow */
 [data-tooltip-location="left"]:after {
     border-width: 5px 0px 5px 5px;
-    border-color: transparent transparent transparent var(--hover-color);
+    border-color: transparent transparent transparent #1e1e1e;
     transform-origin: left;
     transform: translateY(50%) scaleX(0);
 }
@@ -796,7 +795,7 @@ h4 {
 
 [data-tooltip-location="bottom"]:after {
     border-width: 0px 5px 5px 5px;
-    border-color: transparent transparent var(--hover-color) transparent;
+    border-color: transparent transparent #1e1e1e transparent;
     transform-origin: bottom;
 }
 
