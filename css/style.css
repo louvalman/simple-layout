@@ -389,10 +389,19 @@ header .nav-list button {
 .sidebartop {
     display: inline-flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
     min-height: 10vh;
     position: relative;
+}
+
+.sidebartop svg {
+    color:var(--third-color);
+}
+
+.sidebartop svg:hover {
+    cursor: pointer;
+    color: var(--hover-color);
 }
 
 .sidebartop a {
@@ -499,7 +508,20 @@ article {
 }
 
 .article-container {
-    margin-top: 16vmin;
+    margin-top: 8vmin;
+}
+
+.article-container svg {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 6vmin;
+    color:var(--third-color);
+}
+
+.article-container svg:hover {
+    cursor: pointer;
+    color: var(--hover-color);
 }
 
 .main-title {
@@ -858,8 +880,6 @@ h4 {
     .sidebarbottom {
         margin-top: -32vmin;
     }
-
-    .sidebarbottom 
 
     .sidebarmain {
         height: 70vh;
