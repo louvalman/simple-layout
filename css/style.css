@@ -6,7 +6,7 @@
 
 :root {
     --Lato: "Lato", sans-serif;
-    --Rubik: "Work Sans", sans-serif;
+    --WorkSans: "Work Sans", sans-serif;
     --light-black: #1e1e1e;
     --hover-color: #55a987;
     --third-color: #6EE7B7;
@@ -49,7 +49,7 @@ body {
 }
 
 header .navbar-brand {
-    padding-left: 7.5vmin;
+    margin-left: 7.5vmin;
     display: flex;
     align-items: center;
 }
@@ -83,7 +83,8 @@ header .nav-list {
     list-style-type: none;
     align-items: center;
     display: flex;
-    padding-right: 7.5vmin;
+    margin-right: 7.5vmin;
+    padding-inline-start: 0;
 }
 
 header .nav-list .nav-listcontainer {
@@ -95,7 +96,7 @@ header .nav-list .nav-listcontainer {
 header .nav-list li a {
     display: block;
     color: var(--text-color);
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 15px;
     font-weight: 300;
     text-align: center;
@@ -147,7 +148,7 @@ header .nav-list .wallet-container {
     text-overflow: ellipsis;
     background-color: transparent;
     cursor: pointer;
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 15px;
     font-weight: 300;
     text-align: center;
@@ -300,7 +301,7 @@ header .nav-list button {
 }
 
 .modalheadertitle {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 16px;
     font-weight: 300;
     margin-left: auto
@@ -351,7 +352,7 @@ header .nav-list button {
 }
 
 .walletitem p {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 15px;
     font-weight: 400;
     float: left;
@@ -417,7 +418,7 @@ header .nav-list button {
 }
 
 .sidebartop a {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     text-decoration: none;
     font-size: 10px;
     color: var(--text-color);
@@ -445,7 +446,7 @@ header .nav-list button {
 }
 
 .sidebarmain a {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-weight: 400;
     padding: 12px 0px 12px 0px;
     text-decoration: none;
@@ -470,7 +471,7 @@ border-style: solid;
 border-width: 1px;
 border-color: var(--text-color);
 background-color:transparent;
-font-family: var(--Rubik);
+font-family: var(--WorkSans);
 font-size: 14px;
 font-weight: 400;
 }
@@ -524,7 +525,7 @@ article {
 }
 
 .main-title {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 28px;
     font-weight: 200;
     color: var(--text-color);
@@ -537,7 +538,7 @@ article {
 }
 
 #section-main p {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-weight: 300;
     color: var(--text-color);
 }
@@ -559,7 +560,7 @@ article {
 }
 
 .toph3 {
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-weight: 500;
     font-size: 16px;
     display: flex;
@@ -595,7 +596,7 @@ article {
 .slick-item {
     background: var(--third-color);
     color: var(--text-color);
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 32px;
     padding: 24%;
     position: relative;
@@ -660,7 +661,7 @@ article {
     padding-bottom: 8vmin;
     width:33%;
     color: var(--text-color);
-    font-family: var(--Rubik);
+    font-family: var(--WorkSans);
     font-size: 15px;
     font-weight: 300;
 }
@@ -824,6 +825,11 @@ h4 {
 @media screen and (max-width: 768px) {
     header .remove-mobile {
         display: none;
+    }
+
+    header .nav-list {
+        font-size: 16px !important;
+        margin-right: 0.8rem;
     }
 
     header .nav-list li a {
