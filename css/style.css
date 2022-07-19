@@ -911,6 +911,14 @@ h4 {
 
     .main-title {
         max-width: 100%;
+        font-size: 22px;
+    }
+
+    .article-container svg {
+        height: 58px;
+        width: 272px;
+        margin-bottom: 8vmin;
+        margin-top: 0vmin;
     }
 
     .sliderParent {
