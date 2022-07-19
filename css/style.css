@@ -638,6 +638,7 @@ article {
 .footer-section {
     float: left;
     padding-top: 6vmin;
+    padding-bottom: 6vmin;
     width:33%;
     color: var(--text-color);
     font-family: var(--Rubik);
