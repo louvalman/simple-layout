@@ -624,7 +624,6 @@ article {
 /** Footer **/
 
 .footer-main {
-    height: 28vmin;
     box-shadow: 1px 0px 2px -0.5px #929498;
 }
 
@@ -636,7 +635,8 @@ article {
 
 .footer-section {
     float: left;
-    padding-top: 6vmin;
+    padding-top: 8vmin;
+    padding-bottom: 8vmin;
     width:33%;
     color: var(--text-color);
     font-family: var(--Rubik);
@@ -652,7 +652,6 @@ justify-items: center;
 .footer-content i {
     display: inline-block;
     font-size: 20px;
-    padding-bottom: 12vmin;
 }
 
 .footer-content li{
