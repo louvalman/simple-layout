@@ -67,6 +67,7 @@ header .navbar-brand i:hover {
 
 #logotop {
     color:var(--third-color);
+    margin-left:9vmin;
 }
 
 #logotop:hover {
