@@ -66,8 +66,8 @@ header .navbar-brand i:hover {
 }
 
 #logotop {
-    color:var(--third-color);
-    margin-left:9vmin;
+    color: var(--third-color);
+    margin-left: 9vmin;
 }
 
 #logotop:hover {
@@ -409,7 +409,7 @@ header .nav-list button {
 }
 
 .sidebartop svg {
-    color:var(--third-color);
+    color: var(--third-color);
     margin-top: 1vmin;
 }
 
@@ -455,19 +455,19 @@ header .nav-list button {
 }
 
 .sidebarbottom .primary-btn {
-width:128px;
-height:40px;
-margin-right: 28px;
-border-style: solid;
-border-width: 1px;
-border-color: var(--text-color);
-background-color:transparent;
-font-family: var(--WorkSans);
-font-size: 14px;
-font-weight: 400;
+    width: 128px;
+    height: 40px;
+    margin-right: 28px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--text-color);
+    background-color: transparent;
+    font-family: var(--WorkSans);
+    font-size: 14px;
+    font-weight: 400;
 }
 
-.sidebarbottom .primary-btn:hover{
+.sidebarbottom .primary-btn:hover {
     background-color: var(--bggradient-color);
     cursor: pointer;
     transition: 1s;
@@ -526,6 +526,16 @@ article {
     line-height: 40px;
     letter-spacing: 0px;
     padding-bottom: 16vmin;
+}
+
+.main-title a {
+    text-decoration: none;
+    color: var(--third-color);
+}
+
+.main-title a:hover {
+    text-decoration: none;
+    color: var(--hover-color);
 }
 
 #section-main p {
@@ -650,7 +660,7 @@ article {
     float: left;
     padding-top: 8vmin;
     padding-bottom: 8vmin;
-    width:33%;
+    width: 33%;
     color: var(--text-color);
     font-family: var(--WorkSans);
     font-size: 15px;
@@ -658,8 +668,8 @@ article {
 }
 
 .footer-content {
-text-align: center;
-justify-items: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .footer-content i {
@@ -667,16 +677,16 @@ justify-items: center;
     font-size: 20px;
 }
 
-.footer-content li{
+.footer-content li {
     display: block;
 }
 
-.footer-content a{
-    text-decoration:none;
+.footer-content a {
+    text-decoration: none;
     color: var(--text-color);
 }
 
-.footer-content a:hover{
+.footer-content a:hover {
     color: var(--hover-color);
 }
 
@@ -819,7 +829,7 @@ h4 {
     }
 
     #logotop {
-        color:var(--third-color);
+        color: var(--third-color);
     }
 
     header .nav-list {
@@ -934,12 +944,12 @@ h4 {
         height: 8vmin;
     }
 
-    .arrow  {
-        display:none;
+    .arrow {
+        display: none;
     }
 
     .footer-section {
-        width:100%;
+        width: 100%;
         text-align: center;
     }
 }
