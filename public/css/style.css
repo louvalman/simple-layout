@@ -395,7 +395,7 @@ header .nav-list button {
     background-color: var(--bggradient);
     overflow-x: hidden;
     padding-top: 0vmin;
-    transition: 0.5s;
+    transition: ease-in-out 0.33s;
     border-bottom-right-radius: 8px;
 }
 
@@ -430,10 +430,10 @@ header .nav-list button {
 
 .sidebarmain-links {
     margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding-top: 12px;
+    display: flex;
+    margin-left:135px;
+    transition: 0.5s;
 }
 
 .sidebarmain a {
@@ -445,6 +445,14 @@ header .nav-list button {
     color: var(--text-color);
     display: block;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+}
+
+.sidebarmain i {
+    font-size: 18px;
 }
 
 .sidebarbottom {
