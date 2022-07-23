@@ -63,6 +63,14 @@ if ($(window).width() > 768) {
   }
 }
 
+function hoverEffect(x) {
+  x.style.color = "var(--hover-color)";
+}
+
+function nohoverEffect(x) {
+  x.style.color = "var(--third-color)";
+}
+
 function toggleIcon(x) {
   if ($(window).width() > 768) {
     x.classList.toggle("iconoir-cancel");

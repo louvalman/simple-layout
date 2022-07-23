@@ -436,11 +436,6 @@ header .nav-list button {
     transition: 0.5s;
 }
 
-.sidebarmain-links :hover {
-    color: var(--hover-color);
-    transition: 0.3s;
-}
-
 .sidebarmain a {
     font-family: var(--WorkSans);
     font-weight: 400;
@@ -503,10 +498,6 @@ font-weight: 400;
 .sidebarbottom .socials i:hover {
     color: var(--hover-color);
     transition: 0.25s;
-}
-
-.sidenavclass a:hover {
-    color: var(--hover-color);
 }
 
 /** Main **/
@@ -896,6 +887,10 @@ h4 {
 
     .sidebarmain {
         height: 70vh;
+    }
+
+    .sidebarmain-links {
+        margin-left:175px;
     }
 
     .sidebartop {
