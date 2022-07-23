@@ -431,9 +431,14 @@ header .nav-list button {
 .sidebarmain-links {
     margin: 0;
     padding-top: 12px;
-    display: flex;
-    margin-left:140px;
+    display: inline-flex;
+    margin-left:155px;
     transition: 0.5s;
+}
+
+.sidebarmain-links :hover {
+    color: var(--hover-color);
+    transition: 0.3s;
 }
 
 .sidebarmain a {
@@ -443,16 +448,16 @@ header .nav-list button {
     text-decoration: none;
     font-size: 14px;
     color: var(--text-color);
-    display: block;
     transition: 0.5s;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1vmin;
+    gap: 2vmin;
 }
 
 .sidebarmain i {
     font-size: 18px;
+    color: var(--third-color);
 }
 
 .sidebarbottom {
