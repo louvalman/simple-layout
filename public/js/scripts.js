@@ -104,7 +104,7 @@ $(document).ready(function(){
   infinite: true,
   autoplay: true,
   speed: 1200,
-  slidesToShow: 3,
+  slidesToShow: 4,
   slidesToScroll: 1,
   prevArrow: $('.prev-arrow'),
   nextArrow: $('.next-arrow'),
