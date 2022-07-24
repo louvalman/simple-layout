@@ -452,7 +452,7 @@ header .nav-list button {
 
 .sidebarmain i {
     font-size: 18px;
-    color: var(--third-color);
+    color: var(--hover-color);
 }
 
 .sidebarbottom {
@@ -820,6 +820,7 @@ h4 {
 
     #logotop {
         color:var(--third-color);
+        display: none;
     }
 
     header .nav-list {
@@ -890,7 +891,7 @@ h4 {
     }
 
     .sidebarmain-links {
-        margin-left:175px;
+        margin-left:145;
     }
 
     .sidebartop {

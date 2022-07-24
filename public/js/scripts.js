@@ -65,10 +65,12 @@ if ($(window).width() > 768) {
 
 function hoverEffect(x) {
   x.style.color = "var(--hover-color)";
+  x.style.fontSize = "14.5px";
 }
 
 function nohoverEffect(x) {
-  x.style.color = "var(--third-color)";
+  x.style.color = "var(--text-color)";
+  x.style.fontSize = "14px";
 }
 
 function toggleIcon(x) {
