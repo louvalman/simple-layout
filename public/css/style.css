@@ -49,7 +49,7 @@ body {
 }
 
 header .navbar-brand {
-    margin-left: 7.5vmin;
+    margin-left: 8.6vmin;
     display: flex;
     align-items: center;
 }
@@ -67,7 +67,7 @@ header .navbar-brand i:hover {
 
 #logotop {
     color:var(--third-color);
-    margin-left:9vmin;
+    margin-left:8.6vmin;
 }
 
 #logotop:hover {
@@ -83,7 +83,7 @@ header .nav-list {
     list-style-type: none;
     align-items: center;
     display: flex;
-    margin-right: 7.5vmin;
+    margin-right: 8.6vmin;
     padding-inline-start: 0;
 }
 
@@ -426,14 +426,17 @@ header .nav-list button {
     min-height: 80vh;
     padding-top: 80px;
     position: relative;
+    text-align: center;
 }
 
 .sidebarmain-links {
     margin: 0;
     padding-top: 12px;
-    display: inline-flex;
-    margin-left:120px;
     transition: 0.5s;
+}
+
+.sidebarmenu {
+    margin-left: 120px;
 }
 
 .sidebarmain a {
@@ -445,14 +448,19 @@ header .nav-list button {
     color: var(--text-color);
     transition: 0.5s;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 2vmin;
+    gap: 1.5vmin;
 }
 
 .sidebarmain i {
     font-size: 18px;
     color: var(--hover-color);
+    transition: 0.15s;
+}
+
+.sidebarmain i:hover {
+    font-size: 20px;
+    color: var(--third-color);
 }
 
 .sidebarbottom {
@@ -890,8 +898,8 @@ h4 {
         height: 70vh;
     }
 
-    .sidebarmain-links {
-        margin-left:145;
+    .sidebarmenu {
+        margin-left: 145px;
     }
 
     .sidebartop {
