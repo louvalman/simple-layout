@@ -938,6 +938,7 @@ h4 {
 
     .main-title a {
 color: var(--hover-color);
+text-decoration: none;
     }
 
     .main-title a:hover {
