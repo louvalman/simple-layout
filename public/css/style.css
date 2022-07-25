@@ -936,6 +936,14 @@ h4 {
         font-size: 22px;
     }
 
+    .main-title a {
+color: var(--hover-color);
+    }
+
+    .main-title a:hover {
+        color: var(--hover-color);
+            }
+
     .article-container svg {
         height: 58px;
         width: 272px;
