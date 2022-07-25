@@ -49,7 +49,7 @@ body {
 }
 
 header .navbar-brand {
-    margin-left: 8.6vmin;
+    margin-left: 8.7vmin;
     display: flex;
     align-items: center;
 }
@@ -67,7 +67,7 @@ header .navbar-brand i:hover {
 
 #logotop {
     color:var(--third-color);
-    margin-left:8.6vmin;
+    margin-left:8.7vmin;
 }
 
 #logotop:hover {
@@ -83,7 +83,7 @@ header .nav-list {
     list-style-type: none;
     align-items: center;
     display: flex;
-    margin-right: 8.6vmin;
+    margin-right: 8.7vmin;
     padding-inline-start: 0;
 }
 
