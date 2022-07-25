@@ -558,6 +558,7 @@ article {
     max-width: 60%;
     margin: auto;
     flex-direction: column;
+    padding-top: 3.95rem;
 }
 
 #faq h1 {
