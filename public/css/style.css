@@ -677,11 +677,11 @@ justify-items: center;
 .footer-content i {
     display: inline-block;
     font-size: 24px;
-    color: var(--third-color);
+    color: var(--hover-color);
 }
 
 .footer-content i:hover {
-    color: var(--hover-color);
+    color: var(--third-color);
 }
 
 .footer-content li{
