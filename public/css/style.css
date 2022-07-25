@@ -559,9 +559,6 @@ article {
 
 .faq {
     margin: 0vmin 8.7vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /** Slider **/
