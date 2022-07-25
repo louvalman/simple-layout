@@ -558,7 +558,10 @@ article {
 }
 
 .faq {
-    margin-left: 0vmin 8.7vmin;
+    margin: 0vmin 8.7vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /** Slider **/
