@@ -495,16 +495,16 @@ font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 6px;
 }
 
 .sidebarbottom .socials i {
-    color: #1e1e1e;
+    color: var(--hover-color);
     font-size: 20px;
 }
 
 .sidebarbottom .socials i:hover {
-    color: var(--hover-color);
+    color: var(--third-color);
     transition: 0.25s;
 }
 
