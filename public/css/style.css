@@ -542,12 +542,12 @@ article {
 
 .main-title a {
     color: var(--hover-color);
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .main-title a:hover {
     color: var(--third-color);
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 #section-main p {
