@@ -660,8 +660,8 @@ article {
 
 .footer-section {
     float: left;
-    padding-top: 8vmin;
-    padding-bottom: 8vmin;
+    padding-top: 6vmin;
+    padding-bottom: 6vmin;
     width:33%;
     color: var(--text-color);
     font-family: var(--WorkSans);
