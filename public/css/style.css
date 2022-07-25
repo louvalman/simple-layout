@@ -557,6 +557,10 @@ article {
     color: var(--text-color);
 }
 
+.faq {
+    margin-left: 0vmin 8.7vmin;
+}
+
 /** Slider **/
 
 .sliderParent {
