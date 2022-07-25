@@ -575,7 +575,7 @@ article {
 
 .toph3 {
     font-family: var(--WorkSans);
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     display: flex;
     justify-content: center;
@@ -597,8 +597,8 @@ article {
 
 .arrow {
     display: flex;
-    font-size: 20px;
-    gap: 20px;
+    font-size: 18px;
+    gap: 16px;
 }
 
 .arrow i:hover {
