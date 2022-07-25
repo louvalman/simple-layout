@@ -541,13 +541,13 @@ article {
 }
 
 .main-title a {
-    color: var(--hover-color);
-    text-decoration: none;
+    color: var(--third-color);
+    text-decoration: underline;
 }
 
 .main-title a:hover {
-    color: var(--third-color);
-    text-decoration: underline;
+    color: var(--hover-color);
+    text-decoration: none;
 }
 
 #section-main p {
