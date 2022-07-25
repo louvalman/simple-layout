@@ -10,6 +10,7 @@
     --light-black: #1e1e1e;
     --hover-color: #55a987;
     --third-color: #6EE7B7;
+    --fourth-color: #DFEBEA;
     --logo-color: #55a987;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
@@ -555,7 +556,7 @@ article {
 
 #faq {
     display: flex;
-    max-width: 60%;
+    max-width: 75%;
     margin: auto;
     flex-direction: column;
     padding-top: 3.95rem;
@@ -568,6 +569,36 @@ article {
     font-weight: 300;
     font-size: 24px;
 }
+
+.accordion {
+    background-color: var(--fourth-color);
+    color: var(--text-color);
+    font-family: var(--WorkSans);
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 8px;
+    border:none;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    transition: 0.4s;
+    outline: none;
+    margin-top:16px;
+  }
+  
+
+  .active, .accordion:hover {
+    background-color: var(--hover-color);
+    color: #f3f3f3;
+  }
+
+  .panelAccordion {
+    padding: 0 18px;
+    background-color: var(--bggradient);
+    display: none;
+    overflow: hidden;
+  }
 
 /** Slider **/
 
