@@ -941,7 +941,7 @@ color: var(--hover-color);
     }
 
     .main-title a:hover {
-        color: var(--hover-color);
+        color: var(--third-color);
         text-decoration: underline;
             }
 
