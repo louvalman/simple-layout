@@ -580,7 +580,7 @@ article {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3vmin;
+    gap: 2vmin;
 }
 
 .toph3 h3:hover {
@@ -597,7 +597,7 @@ article {
 
 .arrow {
     display: flex;
-    font-size: 18px;
+    font-size: 20px;
     gap: 16px;
 }
 
