@@ -680,6 +680,10 @@ justify-items: center;
     color: var(--third-color);
 }
 
+.footer-content i:hover {
+    color: var(--hover-color);
+}
+
 .footer-content li{
     display: block;
 }
