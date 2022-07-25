@@ -540,6 +540,16 @@ article {
     padding-bottom: 16vmin;
 }
 
+.main-title a {
+    color: var(--hover-color);
+    text-decoration: none;
+}
+
+.main-title a:hover {
+    color: var(--third-color);
+    text-decoration: underline;
+}
+
 #section-main p {
     font-family: var(--WorkSans);
     font-weight: 300;
@@ -926,25 +936,10 @@ h4 {
         margin-left: 6vmin;
     }
 
-
-    #navbar.sticky {
-        z-index: 2;
-    }
-
     .main-title {
         max-width: 100%;
         font-size: 22px;
     }
-
-    .main-title a {
-color: var(--hover-color);
-text-decoration: none;
-    }
-
-    .main-title a:hover {
-        color: var(--third-color);
-        text-decoration: underline;
-            }
 
     .article-container svg {
         height: 58px;
