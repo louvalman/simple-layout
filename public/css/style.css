@@ -543,6 +543,7 @@ article {
 .main-title a {
     color: var(--hover-color);
     text-decoration: none;
+    font-weight: 300;
 }
 
 .main-title a:hover {
