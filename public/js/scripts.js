@@ -82,6 +82,15 @@ function toggleIcon(x) {
   }
 }
 
+function toggleIconAcc(x) {
+  if (arrowactive.classList.contains("iconoir-nav-arrow-right")) {
+    arrowactive.classList.toggle("iconoir-nav-arrow-down");
+    arrowactive.classList.toggle("iconoir-nav-arrow-right");
+  } else {
+    arrowactive.classList.toggle("none")
+  }
+}
+
 // Get the modal
 var modal = document.getElementById("connect-modal");
 
@@ -155,16 +164,12 @@ var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
     this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
     var panelAccordion = this.nextElementSibling;
-    if (panelAccordion.style.display === "block") {
-      panelAccordion.style.display = "none";
+    if (panelAccordion.style.maxHeight) {
+      panelAccordion.style.maxHeight = null;
     } else {
-      panelAccordion.style.display = "block";
-    }
+      panelAccordion.style.maxHeight = panelAccordion.scrollHeight + "px";
+    } 
   });
 }

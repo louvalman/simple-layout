@@ -7,11 +7,9 @@
 :root {
     --Lato: "Lato", sans-serif;
     --WorkSans: "Work Sans", sans-serif;
-    --light-black: #1e1e1e;
-    --hover-color: #55a987;
-    --third-color: #6EE7B7;
-    --fourth-color: #DFEBEA;
-    --logo-color: #55a987;
+    --hover-color: #028090;
+    --third-color: #03B2C9;
+    --fourth-color: #D7FAFE;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
@@ -412,7 +410,7 @@ header .nav-list button {
 
 .sidebartop svg:hover {
     cursor: pointer;
-    color: var(--logo-color);
+    color: var(--hover-color);
 }
 
 .sidebartop i {
@@ -571,20 +569,21 @@ article {
 }
 
 .accordion {
+    display: flex;
+    align-items: center;
     background-color: var(--fourth-color);
-    color: var(--text-color);
+    color:var(--text-color);
     font-family: var(--WorkSans);
-    font-size: 16px;
-    font-weight: 400;
     cursor: pointer;
     border-radius: 8px;
     border:none;
-    padding: 18px;
+    padding: 12px;
     width: 100%;
+    height: 60px;
     text-align: left;
     transition: 0.4s;
     outline: none;
-    margin-top:16px;
+    margin-top:4px;
   }
   
 
@@ -595,9 +594,11 @@ article {
 
   .panelAccordion {
     padding: 0 18px;
+    font-size: 14px;
     background-color: var(--bggradient);
-    display: none;
     overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
   }
 
 /** Slider **/
@@ -992,6 +993,14 @@ h4 {
         margin-top: 0vmin;
     }
 
+    #faq {
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        flex-direction: column;
+        padding-top: 3.95rem;
+    }
+
     .sliderParent {
         margin: auto;
         max-width: 100%;
@@ -1004,6 +1013,7 @@ h4 {
     .arrow {
         display: none;
     }
+
 
     .footer-section {
         width: 100%;
