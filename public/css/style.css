@@ -652,7 +652,7 @@ article {
 }
 
 .slick-item {
-    background: var(--third-color);
+    background: var(--fourth-color);
     color: var(--text-color);
     font-family: var(--WorkSans);
     font-size: 32px;
