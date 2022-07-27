@@ -332,7 +332,7 @@ header .nav-list button {
     border-style: solid;
     border-color: var(--text-color);
     margin: 0vmin 1vmin 0vmin 1vmin;
-    background-color: var(--third-color);
+    background-color: var(--fourth-color);
 }
 
 .walletitem {
