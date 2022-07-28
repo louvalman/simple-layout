@@ -1012,10 +1012,28 @@ h4 {
 
     #faq {
         display: flex;
-        max-width: 90%;
+        max-width: 100%;
         margin: auto;
         flex-direction: column;
         padding-top: 16vmin;
+    }
+
+    .accordion {
+        display: flex;
+        align-items: center;
+        font-family: var(--WorkSans);
+        background-color: var(--fourth-color);
+        color: var(--text-color);
+        cursor: pointer;
+        border-radius: 8px;
+        border: none;
+        padding: 12px;
+        width: 100%;
+        height: 60px;
+        text-align: left;
+        transition: 0.25s;
+        outline: none;
+        margin-top: 4px;
     }
 
     .sliderParent {
