@@ -82,11 +82,6 @@ function toggleIcon(x) {
   }
 }
 
-function toggleIconAcc(element) {
-  element.classList.toggle("iconoir-nav-arrow-right");
-  element.classList.toggle("iconoir-nav-arrow-down");
-}
-
 // Get the modal
 var modal = document.getElementById("connect-modal");
 
@@ -154,17 +149,19 @@ $(document).ready(function () {
   });
 });
 
-var acc = document.getElementsByClassName("accordion");
-var i;
+var acc = document.querySelectorAll(".accordion");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+acc.forEach(function (el) {
+  el.addEventListener("click", function (e) {
     this.classList.toggle("active");
-    var panelAccordion = this.nextElementSibling;
+    let icon = this.querySelector("i");
+    icon.classList.toggle("iconoir-nav-arrow-right");
+    icon.classList.toggle("iconoir-nav-arrow-down");
+    let panelAccordion = this.nextElementSibling;
     if (panelAccordion.style.maxHeight) {
       panelAccordion.style.maxHeight = null;
     } else {
       panelAccordion.style.maxHeight = panelAccordion.scrollHeight + "px";
     }
   });
-}
+});
