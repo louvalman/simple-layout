@@ -38,19 +38,19 @@ if ($(window).width() > 768) {
     }
 
     var element = document.getElementById("navbar");
-    if(element.style.borderBottomLeftRadius == "0px") {
+    if (element.style.borderBottomLeftRadius == "0px") {
       element.style.borderBottomLeftRadius = "8px";
     } else {
       element.style.borderBottomLeftRadius = "0px";
     }
 
     var element = document.getElementById("logotop");
-    if(element.style.display == "none") {
+    if (element.style.display == "none") {
       element.style.display = "flex";
     } else {
       element.style.display = "none";
     }
-    
+
   }
 } else {
   function toggleNav() {
@@ -82,13 +82,9 @@ function toggleIcon(x) {
   }
 }
 
-function toggleIconAcc(x) {
-  if (arrowactive.classList.contains("iconoir-nav-arrow-right")) {
-    arrowactive.classList.toggle("iconoir-nav-arrow-down");
-    arrowactive.classList.toggle("iconoir-nav-arrow-right");
-  } else {
-    arrowactive.classList.toggle("none")
-  }
+function toggleIconAcc(element) {
+  element.classList.toggle("iconoir-nav-arrow-right");
+  element.classList.toggle("iconoir-nav-arrow-down");
 }
 
 // Get the modal
@@ -101,61 +97,60 @@ var btn = document.getElementById("connect-open");
 var span = document.getElementsByClassName("closeicon-2")[0];
 
 // When the user clicks on the button, open the modal
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.slick-content').slick({
-  dots: false,
-  infinite: true,
-  autoplay: true,
-  speed: 1200,
-  slidesToShow: 4,
-  slidesToScroll: 1,
-  prevArrow: $('.prev-arrow'),
-  nextArrow: $('.next-arrow'),
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: false
+    dots: false,
+    infinite: true,
+    autoplay: true,
+    speed: 1200,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: $('.prev-arrow'),
+    nextArrow: $('.next-arrow'),
+    responsive: [{
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true
+        }
       }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite:true
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
   });
 });
 
@@ -163,13 +158,13 @@ var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     var panelAccordion = this.nextElementSibling;
     if (panelAccordion.style.maxHeight) {
       panelAccordion.style.maxHeight = null;
     } else {
       panelAccordion.style.maxHeight = panelAccordion.scrollHeight + "px";
-    } 
+    }
   });
 }

@@ -7,8 +7,8 @@
 :root {
     --Lato: "Lato", sans-serif;
     --WorkSans: "Work Sans", sans-serif;
-    --hover-color: #028090;
-    --third-color: #03B2C9;
+    --hover-color: #084f58;
+    --third-color: #028090;
     --fourth-color: #D7FAFE;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
@@ -536,13 +536,13 @@ article {
 }
 
 .main-title a {
-    color: var(--hover-color);
+    color: var(--third-color);
     text-decoration: none;
     font-weight: 300;
 }
 
 .main-title a:hover {
-    color: var(--third-color);
+    color: var(--hover-color);
     text-decoration: underline;
 }
 
@@ -554,10 +554,10 @@ article {
 
 #faq {
     display: flex;
-    max-width: 75%;
+    max-width: 55%;
     margin: auto;
     flex-direction: column;
-    padding-top: 3.95rem;
+    padding-top: 16vmin;
 }
 
 #faq h1 {
@@ -572,34 +572,35 @@ article {
     display: flex;
     align-items: center;
     background-color: var(--fourth-color);
-    color:var(--text-color);
+    color: var(--text-color);
     font-family: var(--WorkSans);
     cursor: pointer;
     border-radius: 8px;
-    border:none;
+    border: none;
     padding: 12px;
     width: 100%;
     height: 60px;
     text-align: left;
-    transition: 0.4s;
+    transition: 0.25s;
     outline: none;
-    margin-top:4px;
-  }
-  
+    margin-top: 4px;
+}
 
-  .active, .accordion:hover {
+
+.active,
+.accordion:hover {
     background-color: var(--hover-color);
     color: #f3f3f3;
-  }
+}
 
-  .panelAccordion {
+.panelAccordion {
     padding: 0 18px;
     font-size: 14px;
     background-color: var(--bggradient);
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
-  }
+}
 
 /** Slider **/
 
