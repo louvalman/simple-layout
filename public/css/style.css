@@ -967,24 +967,12 @@ h4 {
         transition: 0.2s !important;
     }
 
-    .sidebarbottom {
-        margin-top: -32vmin;
-    }
-
-    .sidebarmain {
-        height: 70vh;
-    }
-
-    .sidebarmenu {
-        margin-left: 145px;
-    }
-
     .sidebartop {
         display: inline-flex;
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        min-height: 10vh;
+        min-height: 8vh;
         position: relative;
     }
 
@@ -992,6 +980,18 @@ h4 {
         display: block;
         margin-right: 6vmin;
         font-size: 20px;
+    }
+
+    .sidebarmain {
+        height: 70vh;
+    }
+
+    .sidebarbottom {
+        margin-top: -32vmin;
+    }
+
+    .sidebarmenu {
+        margin-left: 150px;
     }
 
     .main-title {
