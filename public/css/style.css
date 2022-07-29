@@ -569,13 +569,13 @@ article {
 }
 
 .iconoir-nav-arrow-right {
-    transition: all 1.5s, color 0s;
-    -webkit-transition: all 1.5s, color 0s;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
 }
 
 .iconoir-nav-arrow-down {
-    transition: all 1.5s, color 0s;
-    -webkit-transition: all 1.5s, color 0s;
+    transition: all 1.5s;
+    -webkit-transition: all 1.5s;
 }
 
 .accordion {
