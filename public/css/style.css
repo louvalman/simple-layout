@@ -570,12 +570,12 @@ article {
 
 .iconoir-nav-arrow-right {
     transition: 1.33s;
-    -webkit-transition: 0.5s;
+    -webkit-transition: all 0.5s, color 0s;
 }
 
 .iconoir-nav-arrow-down {
     transition: 1.33s;
-    -webkit-transition: 0.5s;
+    -webkit-transition: all 0.5s, color 0s;
 }
 
 .accordion {
