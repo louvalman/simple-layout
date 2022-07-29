@@ -406,7 +406,6 @@ header .nav-list button {
 
 .sidebartop svg {
     color: var(--third-color);
-    margin-top: 1vmin;
 }
 
 .sidebartop svg:hover {
