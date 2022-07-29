@@ -33,6 +33,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: relative;
+    height:8vh;
 }
 
 #navbar.sticky {
@@ -399,7 +400,7 @@ header .nav-list button {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: 10vh;
+    min-height: 8vh;
     position: relative;
 }
 
