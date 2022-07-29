@@ -397,7 +397,7 @@ header .nav-list button {
 .sidebartop {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
     min-height: 10vh;
     position: relative;
