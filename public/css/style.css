@@ -655,6 +655,10 @@ article {
     transition: 0.3s;
 }
 
+.toph3 i {
+    font-size: 12px;
+}
+
 .toph3 i:hover {
     color: var(--hover-color);
     cursor: pointer;
