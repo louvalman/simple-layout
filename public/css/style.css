@@ -10,6 +10,7 @@
     --hover-color: #084f58;
     --third-color: #028090;
     --fourth-color: #D7FAFE;
+    --placeholder-color: #828A95;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
@@ -33,7 +34,7 @@ body {
     justify-content: space-between;
     width: 100%;
     position: relative;
-    height:8vh;
+    height: 8vh;
 }
 
 #navbar.sticky {
@@ -121,8 +122,8 @@ header .nav-list .dropdown-content {
 
 header .nav-list .dropdown:hover .dropdown-content {
     display: block;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    -webkit-animation: fadeIn 0.33s;
+    animation: fadeIn 0.33s;
 }
 
 header .nav-list .dropdown-content a {
@@ -573,13 +574,13 @@ article {
 }
 
 .iconoir-nav-arrow-right {
-    transition: all 1.5s;
-    -webkit-transition: all 1.5s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
 .iconoir-nav-arrow-down {
-    transition: all 1.5s;
-    -webkit-transition: all 1.5s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
 }
 
 .accordion {
@@ -778,6 +779,10 @@ h4 {
     font-size: 14px;
 }
 
+.copyright {
+    padding-top: 24px;
+}
+
 /** Tooltip **/
 
 [data-tooltip] {
@@ -898,6 +903,68 @@ h4 {
     border-width: 0px 5px 5px 5px;
     border-color: transparent transparent #1e1e1e transparent;
     transform-origin: bottom;
+}
+
+/** Sign up **/
+
+.signupmain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--WorkSans), sans-serif;
+}
+
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    height: 80px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    display: block;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background: var(--fourth-color);
+    border: none;
+    outline: none;
+    margin: 20px 0;
+    text-transform: capitalize;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 300;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    font-family: var(--Lato), sans-serif;
+}
+
+::placeholder {
+    color: var(--placeholder-color);
 }
 
 /** Media query **/
