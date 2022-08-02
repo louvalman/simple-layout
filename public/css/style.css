@@ -160,7 +160,7 @@ header .nav-list .wallet-container {
     border-color: var(--text-color);
 }
 
-.wallet-container-btn {
+.wallet-container-inline {
     display: flex;
 }
 
