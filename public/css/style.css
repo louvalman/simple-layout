@@ -941,7 +941,7 @@ h4 {
 
 .logo {
     height: 80px;
-    display: flex !important;
+    display: none !important;
     align-items: center;
     justify-content: center;
 }
@@ -955,11 +955,12 @@ textarea {
     height: 40px;
     padding: 20px;
     border-radius: 8px;
-    background: var(--fourth-color);
-    border: none;
+    background: var(--bggradient);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--third-color);
     outline: none;
     margin: 20px 0;
-    text-transform: capitalize;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 300;
@@ -969,6 +970,61 @@ textarea {
 
 ::placeholder {
     color: var(--placeholder-color);
+}
+
+.submit-btn {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: var(--third-color);
+    color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 30px 0;
+}
+
+.submit-btn:hover {
+    background: var(--hover-color);
+    color: #fff;
+}
+
+/* checkbox styles */
+
+.checkbox {
+    -webkit-appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 4px;
+    background: #fff;
+    border: 1px solid #383838;
+    cursor: pointer;
+}
+
+.checkbox:checked {
+    background: #383838;
+}
+
+.checkbox::after {
+    content: '';
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    pointer-events: none;
+    background-image: url(../img/check.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: none;
+}
+
+.checkbox:checked::after {
+    display: block;
 }
 
 /** Media query **/
