@@ -666,7 +666,7 @@ article {
 
 .arrow {
     display: flex;
-    font-size: 20px;
+    font-size: 16px;
     gap: 4px;
 }
 
@@ -1170,6 +1170,17 @@ textarea {
 
     .sliderTopRow {
         height: 8vmin;
+    }
+
+    .slick-item {
+        width: 38vw;
+        height: 26vw;
+    }
+
+    .slick-description {
+        font-size: 14px;
+        margin-left: 1.5vmin;
+        margin-top: -1.3vmin;
     }
 
     .arrow {
