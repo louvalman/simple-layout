@@ -171,22 +171,32 @@
                             <div class="container">
                                 <i class="iconoir-add-circled-outline logo" alt=""></i>
                                 <div>
-                                    <input type="text" autocomplete="off" id="name" placeholder="Full name">
-                                    <input type="email" autocomplete="off" id="email" placeholder="E-mail">
-                                    <input type="text" autocomplete="off" id="number" placeholder="Phone">
+                                    <input type="text" focus autocomplete="off" id="name" placeholder="Full name">
+                                    <input type="email" focus autocomplete="off" id="email" placeholder="E-mail">
+                                    <input type="text" focus autocomplete="off" id="number" placeholder="Phone">
                                     <input type="password" autocomplete="off" minlength="8" id="password"
                                         placeholder="Password">
                                     <input type="password" autocomplete="off" minlength="8" id="password"
                                         placeholder="Confirm password">
-                                    <input type="checkbox" checked class="checkbox" id="terms-and-cond">
-                                    <label for="terms-and-cond">Agree to our <a href="">terms and
-                                            conditions</a></label>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+                                        <label class="label-style" for="terms-and-cond">Agree to our <a href="">terms
+                                                and
+                                                conditions</a></label>
+                                    </div>
                                     <br>
-                                    <input type="checkbox" class="checkbox" id="notification">
-                                    <label for="notification">Sign up to our newsletter</a></label>
+                                    <div class="checkbox-container">
+                                        <input type="checkbox" class="checkbox" id="notification">
+                                        <label class="label-style" for="notification">Sign up to our
+                                            newsletter</a></label>
+                                    </div>
                                     <button class="submit-btn">Create account</button>
                                 </div>
-                                <a href="/login" class="link">Already have an account? Log in here</a>
+                                <a href="/login" class="label-style-alternative">Already have an account?</a>
+                            </div>
+                            <div class="alert-box">
+                                <img src="assets/ev-plug-error.svg" class="alert-img" alt="Something went wrong">
+                                <p class="alert-msg">Error message</p>
                             </div>
                             <p class="section-text">
                             </p>
@@ -200,6 +210,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script src="https://kit.fontawesome.com/9beebcdd4b.js" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script>
+        <script src="js/form.js"></script>
     </header>
     <footer>
         <div class="footer-main">

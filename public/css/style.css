@@ -981,6 +981,13 @@ textarea {
     font-family: var(--Lato), sans-serif;
 }
 
+input[type="text"]:focus::after,
+input[type="password"]:focus::after,
+input[type="email"]:focus::after,
+textarea:focus::after {
+    background-color: red;
+}
+
 ::placeholder {
     color: var(--placeholder-color);
 }
@@ -1006,19 +1013,26 @@ textarea {
 
 /* checkbox styles */
 
+.checkbox-container {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 1vmin;
+}
+
 .checkbox {
     -webkit-appearance: none;
     position: relative;
     width: 16px;
     height: 16px;
     border-radius: 4px;
-    background: #fff;
-    border: 1px solid #383838;
+    background: var(--bggradient);
+    border: 1px solid var(--third-color);
     cursor: pointer;
+    margin: 0;
 }
 
 .checkbox:checked {
-    background: #383838;
+    background: var(--bggradient);
 }
 
 .checkbox::after {
@@ -1030,7 +1044,7 @@ textarea {
     width: 80%;
     height: 100%;
     pointer-events: none;
-    background-image: url(../img/check.png);
+    background-image: url(../assets/bars.svg);
     background-size: contain;
     background-repeat: no-repeat;
     display: none;
@@ -1038,6 +1052,61 @@ textarea {
 
 .checkbox:checked::after {
     display: block;
+}
+
+.label-style {
+    font-family: var(--WorkSans);
+    font-size: 12px;
+    font-weight: 300;
+    padding-left: 0.5vmin;
+}
+
+.label-style-alternative {
+    font-family: var(--WorkSans);
+    font-size: 12px;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    margin-bottom: 10vmin;
+}
+
+/** Error message **/
+
+.alert-box {
+    width: 300px;
+    min-height: 150px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 1s;
+}
+
+.alert-box.show {
+    opacity: 1;
+    pointer-events: all;
+    top: 50%;
+}
+
+.alert-img {
+    display: block;
+    margin: 10px auto 20px;
+    height: 60px;
+}
+
+.alert-msg {
+    color: #e24c4b;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 500;
 }
 
 /** Media query **/
