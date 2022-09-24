@@ -14,10 +14,6 @@ const app = express();
 app.use(express.static(staticPath));
 app.use(express.json());
 
-app.listen(3000, () => {
-    console.log('listening on port 3000.......');
-})
-
 //routes
 //home route
 app.get("/", (req, res) => {
@@ -39,7 +35,7 @@ app.post('/signup', (req, res) => {
         notification
     } = req.body;
 
-    // form validations
+    // backend form validations
     if (name.length < 3) {
         return res.json({
             'alert': 'name must be 3 letters long'
@@ -64,7 +60,10 @@ app.post('/signup', (req, res) => {
         return res.json({
             'alert': 'you must agree to our terms and conditions'
         });
+    } else {
+        //store user in e.g. firebase
     }
+    res.json('data recieved');
 })
 
 // 404 route
@@ -74,4 +73,8 @@ app.get('/404', (req, res) => {
 
 app.use((req, res) => {
     res.redirect('/404');
+})
+
+app.listen(3000, () => {
+    console.log('listening on port 3000.......');
 })
