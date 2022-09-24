@@ -1044,7 +1044,7 @@ textarea:focus::after {
     width: 80%;
     height: 100%;
     pointer-events: none;
-    background-image: url(../assets/bars.svg);
+    background-image: url(../assets/check.svg);
     background-size: contain;
     background-repeat: no-repeat;
     display: none;

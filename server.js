@@ -75,10 +75,3 @@ app.get('/404', (req, res) => {
 app.use((req, res) => {
     res.redirect('/404');
 })
-
-const processData = (data) => {
-    loader.style.display = null;
-    if (data.alert) {
-        showAlert(data.alert);
-    }
-}
