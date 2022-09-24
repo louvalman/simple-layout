@@ -441,7 +441,10 @@ header .nav-list button {
     display: flex;
     align-items: center;
     gap: 1.5vmin;
+}
 
+.sidebarmain a:hover {
+    transform: scale(1.1);
 }
 
 .sidebarmain i {
@@ -1189,10 +1192,6 @@ input:focus {
 
     .sidebarbottom {
         margin-top: -32vmin;
-    }
-
-    .sidebarmenu {
-        margin-left: 150px;
     }
 
     .main-title {
