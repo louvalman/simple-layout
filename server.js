@@ -26,6 +26,7 @@ app.get('/signup', (req, res) => {
 })
 
 app.post('/signup', (req, res) => {
+    console.log(req.body);
     let {
         name,
         email,
