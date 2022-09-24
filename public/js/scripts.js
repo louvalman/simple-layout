@@ -65,7 +65,7 @@ if ($(window).width() > 768) {
 
 function hoverEffect(x) {
   x.style.color = "var(--hover-color)";
-  x.style.fontSize = "14.5px";
+  x.style.fontSize = "15px";
 }
 
 function nohoverEffect(x) {
@@ -108,6 +108,8 @@ window.onclick = function (event) {
   }
 }
 
+// Slick carousel 
+
 $(document).ready(function () {
   $('.slick-content').slick({
     dots: false,
@@ -149,6 +151,8 @@ $(document).ready(function () {
     ]
   });
 });
+
+// FAQ accordion functionality
 
 var acc = document.querySelectorAll(".accordion");
 

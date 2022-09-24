@@ -10,6 +10,7 @@
     --hover-color: #084f58;
     --third-color: #028090;
     --fourth-color: #D7FAFE;
+    --focus-color: #307d58;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
     --bggradient: #fffdf5;
@@ -424,19 +425,9 @@ header .nav-list button {
 
 .sidebarmain {
     min-height: 80vh;
-    padding-top: 80px;
-    position: relative;
-    text-align: center;
-}
-
-.sidebarmain-links {
-    margin: 0;
-    padding-top: 12px;
-    transition: 0.5s;
-}
-
-.sidebarmenu {
-    margin-left: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebarmain a {
@@ -450,17 +441,12 @@ header .nav-list button {
     display: flex;
     align-items: center;
     gap: 1.5vmin;
+
 }
 
 .sidebarmain i {
-    font-size: 18px;
-    color: var(--hover-color);
-    transition: 0.15s;
-}
-
-.sidebarmain i:hover {
     font-size: 20px;
-    color: var(--third-color);
+    color: var(--hover-color);
 }
 
 .sidebarbottom {
@@ -982,11 +968,9 @@ textarea {
     font-family: var(--Lato), sans-serif;
 }
 
-input[type="text"]:focus::after,
-input[type="password"]:focus::after,
-input[type="email"]:focus::after,
-textarea:focus::after {
-    background-color: red;
+input:focus {
+    border-color: var(--focus-color);
+    border-width: 1.5px;
 }
 
 ::placeholder {
@@ -1010,6 +994,10 @@ textarea:focus::after {
 .submit-btn:hover {
     background: var(--hover-color);
     color: #fff;
+}
+
+.submit-btn:focus {
+    border-color: var(--focus-color);
 }
 
 /* checkbox styles */
