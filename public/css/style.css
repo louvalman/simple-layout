@@ -430,7 +430,11 @@ header .nav-list button {
     align-items: center;
 }
 
-.sidebarmain a {
+.sidebarmenu {
+    margin-top: -24vmin;
+}
+
+.sidebarmenu a {
     font-family: var(--WorkSans);
     font-weight: 400;
     padding: 12px 0px 12px 0px;
@@ -443,8 +447,9 @@ header .nav-list button {
     gap: 1.5vmin;
 }
 
-.sidebarmain a:hover {
-    transform: scale(1.1);
+.sidebarmenu a:hover {
+    transform: scale(1.05);
+    color: var(--hover-color);
 }
 
 .sidebarmain i {
