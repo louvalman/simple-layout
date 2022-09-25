@@ -922,7 +922,7 @@ h4 {
     max-width: 40%;
     line-height: 40px;
     letter-spacing: 0px;
-    padding-bottom: 4vmin;
+    padding-bottom: 2vmin;
 }
 
 .loader {
@@ -1101,6 +1101,7 @@ input:focus {
 .submit-btn-social i {
     font-size: 16px;
     padding-right: 10px;
+    color: var(--third-color);
 }
 
 .submit-btn-social a {
