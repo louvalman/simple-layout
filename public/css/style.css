@@ -968,7 +968,7 @@ textarea {
     border-width: 1px;
     border-color: var(--third-color);
     outline: none;
-    margin: 20px 0;
+    margin: 10px 0;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 300;
@@ -985,35 +985,12 @@ input:focus {
     color: var(--placeholder-color);
 }
 
-.submit-btn {
-    width: 300px;
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    background: var(--third-color);
-    color: whitesmoke;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    display: block;
-    margin: 30px 0;
-}
-
-.submit-btn:hover {
-    background: var(--hover-color);
-    color: #fff;
-}
-
-.submit-btn:focus {
-    border-color: var(--focus-color);
-}
-
 /* checkbox styles */
 
 .checkbox-container {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 1vmin;
+    margin: 5px 0 0 0;
 }
 
 .checkbox {
@@ -1055,7 +1032,7 @@ input:focus {
     font-family: var(--WorkSans);
     font-size: 12px;
     font-weight: 300;
-    padding-left: 0.5vmin;
+    padding-left: 8px;
 }
 
 .label-style-alternative {
@@ -1064,7 +1041,71 @@ input:focus {
     font-weight: 300;
     text-align: center;
     display: block;
+    margin-top: 2.5vmin;
     margin-bottom: 10vmin;
+}
+
+/** Buttons **/
+
+.submit-btn {
+    width: 300px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: var(--third-color);
+    color: whitesmoke;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.submit-btn a {
+    font-family: var(--WorkSans);
+    font-weight: 300;
+}
+
+.submit-btn:hover {
+    background: var(--hover-color);
+    color: whitesmoke;
+}
+
+.submit-btn:focus {
+    border-color: var(--focus-color);
+}
+
+.submit-btn-social {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 8px;
+    border-width: 1px;
+    border-color: var(--third-color);
+    border-style: solid;
+    background: var(--bggradient);
+    margin-top: -2vmin;
+    padding-left: 72px;
+}
+
+.submit-btn-social i {
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.submit-btn-social a {
+    justify-content: center;
+    font-family: var(--WorkSans);
+    font-weight: 300;
+}
+
+.submit-btn-social:hover {
+    background: var(--hover-color);
+    color: #fff;
 }
 
 /** Error message **/
