@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/louvalman/simple-layouts.git"
+    "url": "https://github.com/louvalman/simple-layout.git"
   },
   "keywords": [
     "simple",
@@ -18,9 +18,9 @@
   "author": "louvalman",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/louvalman/simple-layouts/issues"
+    "url": "https://github.com/louvalman/simple-layout/issues"
   },
-  "homepage": "https://github.com/louvalman/simple-layouts/blob/main/public/README.md",
+  "homepage": "https://github.com/louvalman/simple-layout/blob/main/public/README.md",
   "dependencies": {
     "bcrypt": "^5.0.1",
     "express.js": "^1.0.0",

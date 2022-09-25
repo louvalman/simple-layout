@@ -355,8 +355,8 @@ header .nav-list button {
 
 .walletitem p {
     font-family: var(--WorkSans);
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     float: left;
 }
 
@@ -674,7 +674,7 @@ article {
     background: var(--fourth-color);
     color: var(--text-color);
     font-family: var(--WorkSans);
-    font-size: 32px;
+    font-size: 24px;
     position: relative;
     width: 20vw;
     height: 14vw;
@@ -1224,7 +1224,7 @@ input:focus {
     }
 
     .walletitem p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .walletitem img {
