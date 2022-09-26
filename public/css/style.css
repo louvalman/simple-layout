@@ -1051,14 +1051,15 @@ input:focus {
 .submit-btn {
     width: 300px;
     height: 40px;
-    text-align: center;
     line-height: 40px;
     background: var(--third-color);
     color: whitesmoke;
     border-radius: 8px;
     border: none;
     cursor: pointer;
-    display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
     margin-top: 16px;
     margin-bottom: 16px;
     font-size: 14px;
@@ -1091,6 +1092,9 @@ input:focus {
     border-style: solid;
     background: var(--bggradient);
     color: var(--text-color);
+    font-family: var(--WorkSans);
+    font-weight: 300;
+    font-size: 14px;
     margin-bottom: 4px;
 }
 
@@ -1106,8 +1110,6 @@ input:focus {
 
 .submit-btn-social a {
     justify-content: center;
-    font-family: var(--WorkSans);
-    font-weight: 300;
 }
 
 .submit-btn-social:hover {
@@ -1280,11 +1282,6 @@ input:focus {
     }
 
     .accordion {
-        display: flex;
-        align-items: center;
-        font-family: var(--WorkSans);
-        background-color: var(--fourth-color);
-        color: var(--text-color);
         cursor: pointer;
         border-radius: 8px;
         border: none;
