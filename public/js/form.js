@@ -11,17 +11,17 @@ const notification = document.querySelector('#notification');
 
 submitBtn.addEventListener('click', () => {
     if (name.value.length < 3) {
-        showAlert('name must be 3 letters long');
+        showAlert('Your name must be at least three letters long');
     } else if (!email.value.length) {
-        showAlert('enter your email');
-    } else if (password.value.length < 8) {
-        showAlert('password should be 8 letters long');
+        showAlert('Enter your e-mail address');
     } else if (!number.value.length) {
-        showAlert('enter your phone number');
-    } else if (!Number(number.value) || number.value.length < 10) {
-        showAlert('invalid number, please enter valid one');
+        showAlert('Please enter your phone number');
+    } else if (!Number(number.value) || number.value.length < 8) {
+        showAlert('Invalid phone number, please enter valid one (at least eight numbers)');
+    } else if (password.value.length < 8) {
+        showAlert('Your password should be at least eight letters long');
     } else if (!tac.checked) {
-        showAlert('you must agree to our terms and conditions');
+        showAlert('You must agree to our terms and conditions');
     } else {
         // submit form
         loader.style.display = 'block';

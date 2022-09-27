@@ -20,6 +20,11 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
 })
 
+//login route
+app.get('/login', (req, res) => {
+    res.sendFile(path.join(staticPath, "login.html"));
+})
+
 //signup route
 app.get('/signup', (req, res) => {
     res.sendFile(path.join(staticPath, "signup.html"));
@@ -39,32 +44,32 @@ app.post('/signup', (req, res) => {
     // backend form validations
     if (name.length < 3) {
         return res.json({
-            'alert': 'name must be 3 letters long'
+            'alert': 'Your name must be at least three letters long'
         });
     } else if (!email.length) {
         return res.json({
-            'alert': 'enter your email'
-        });
-    } else if (password.length < 8) {
-        return res.json({
-            'alert': 'password should be 8 letters long'
+            'alert': 'Enter your e-mail address'
         });
     } else if (!number.length) {
         return res.json({
-            'alert': 'enter your phone number'
+            'alert': 'Please enter your phone number'
         });
     } else if (!Number(number) || number.length < 10) {
         return res.json({
-            'alert': 'invalid number, please enter valid one'
+            'alert': 'Invalid phone number, please enter valid one (at least eight numbers)'
+        });
+    } else if (password.length < 8) {
+        return res.json({
+            'alert': 'Your password should be at least eight letters long'
         });
     } else if (!tac) {
         return res.json({
-            'alert': 'you must agree to our terms and conditions'
+            'alert': 'You must agree to our terms and conditions'
         });
     } else {
         //store user in e.g. firebase
     }
-    res.json('data recieved');
+    res.json('Account data recieved');
 })
 
 // 404 route
