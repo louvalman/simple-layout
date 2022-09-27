@@ -411,8 +411,13 @@ header .nav-list button {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    min-height: 8vh;
+    height: 8vh;
+    min-height: 54px;
     position: relative;
+}
+
+.sidebartop a {
+    height: 20px;
 }
 
 .sidebartop svg {
@@ -550,12 +555,6 @@ article {
     text-decoration: underline;
 }
 
-#section-main p {
-    font-family: var(--WorkSans);
-    font-weight: 300;
-    color: var(--text-color);
-}
-
 #faq {
     display: flex;
     max-width: 55%;
@@ -622,6 +621,13 @@ article {
     transition: max-height 0.2s ease-out;
 }
 
+.section-text {
+    font-family: var(--WorkSans);
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--text-color);
+}
+
 /** Slider **/
 
 .sliderParent {
@@ -638,29 +644,27 @@ article {
 }
 
 .toph3 {
-    font-family: var(--WorkSans);
-    font-weight: 300;
-    font-size: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
 }
 
-.toph3 h3:hover {
+.toph3 h3 {
+    font-family: var(--WorkSans);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.toph3:hover {
     color: var(--hover-color);
     cursor: pointer;
     transition: 0.3s;
+    transform: scale(1.02);
 }
 
 .toph3 i {
     font-size: 12px;
-}
-
-.toph3 i:hover {
-    color: var(--hover-color);
-    cursor: pointer;
-    transition: 0.3s;
 }
 
 .arrow {
@@ -681,8 +685,8 @@ article {
     font-family: var(--WorkSans);
     font-size: 24px;
     position: relative;
-    width: 20vw;
-    height: 14vw !important;
+    width: 22vw;
+    height: 14vw;
     border-radius: 8px;
     margin: 1.5vmin;
     display: flex !important;
@@ -691,10 +695,14 @@ article {
 }
 
 .slick-item {
-    width: 20%;
+    font-size: 18px;
+    font-weight: 200;
+    letter-spacing: 0.5px;
 }
 
 .slick-description {
+    font-family: var(--WorkSans);
+    font-weight: 200;
     font-size: 14px;
     margin-left: 1.5vmin;
     margin-top: -1.3vmin;
@@ -703,9 +711,10 @@ article {
 
 .slick-content-background:hover {
     background-color: var(--hover-color);
-    color: #f3f3f3;
     transition: 0.3s;
     cursor: pointer;
+    color: whitesmoke !important;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 
@@ -1174,9 +1183,10 @@ input:focus {
 .alert-msg {
     font-size: 14px;
     font-family: var(--WorkSans);
+    color: var(--text-color);
     text-align: left;
     line-height: 20px;
-    font-weight: 400;
+    font-weight: 300;
     margin-left: 8px;
 }
 
@@ -1317,16 +1327,16 @@ input:focus {
     }
 
     .slick-content-background {
-        width: 38vw;
-        height: 26vw;
+        width: 48vw;
+        height: 32vw;
     }
 
     .slick-item {
-        width: 25%;
+        font-size: 14px;
     }
 
     .slick-description {
-        font-size: 14px;
+        font-size: 12px;
         margin-left: 1.5vmin;
         margin-top: -1.3vmin;
     }
