@@ -666,6 +666,7 @@ article {
 
 .toph3 i {
     font-size: 12px;
+    margin-top: 1px;
 }
 
 .arrow {
@@ -767,7 +768,7 @@ article {
     width: 33%;
     color: var(--text-color);
     font-family: var(--WorkSans);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -1290,12 +1291,13 @@ input:focus {
     }
 
     .sidebarbottom {
-        margin-top: -32vmin;
+        margin-top: -20vmin;
     }
 
     .main-title {
         max-width: 100%;
         font-size: 22px;
+        font-weight: 300;
     }
 
     .article-container svg {
