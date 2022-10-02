@@ -174,9 +174,9 @@ header .nav-list text {
     padding-left: 1.5vmin;
 }
 
-header .nav-list svg {
-    font-size: 10px;
-    color: rgb(227, 50, 50);
+header .nav-list svg:hover {
+    fill: green;
+    stroke: green;
 }
 
 header .nav-list .wallet-container:hover {
