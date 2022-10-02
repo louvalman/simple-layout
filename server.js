@@ -3,6 +3,36 @@ const express = require('express');
 const admin = require('firebase-admin');
 const bcrypt = require('bcrypt');
 const path = require('path');
+require('dotenv').config();
+
+console.log(process.env);
+
+const {
+    MongoClient
+} = require('mongodb');
+
+async function main() {
+    const uri = process.env.MONGO_URI;
+    const client = new MongoClient(uri);
+
+    try {
+        await client.connect();
+        await listDatabases(client);
+    } catch (e) {
+        console.error(e);
+    } finally {
+        await client.close();
+    }
+}
+
+main().catch(console.error);
+
+async function listDatabases(client) {
+    databasesList = await client.db().admin().listDatabases();
+
+    console.log("Databases:");
+    databasesList.databases.forEach(db => console.log(` - ${db.name}`));
+};
 
 // declare static path
 let staticPath = path.join(__dirname, "public");
