@@ -3,9 +3,8 @@ const express = require('express');
 const admin = require('firebase-admin');
 const bcrypt = require('bcrypt');
 const path = require('path');
+const port = process.env.PORT || 3000
 require('dotenv').config();
-
-console.log(process.env);
 
 const {
     MongoClient
@@ -111,6 +110,6 @@ app.use((req, res) => {
     res.redirect('/404');
 })
 
-app.listen(3000, () => {
-    console.log('listening on port 3000.......');
+app.listen(process.env.PORT || 3000, () => {
+    console.log(`Server running at port ` + port);
 })
