@@ -6,6 +6,8 @@ const path = require('path');
 const port = process.env.PORT || 3000
 require('dotenv').config();
 
+// trying out mongodb
+
 const {
     MongoClient
 } = require('mongodb');
@@ -32,6 +34,8 @@ async function listDatabases(client) {
     console.log("Databases:");
     databasesList.databases.forEach(db => console.log(` - ${db.name}`));
 };
+
+// mongo end
 
 // declare static path
 let staticPath = path.join(__dirname, "public");

@@ -27,6 +27,29 @@ body {
     margin: 0vmin 0vmin;
 }
 
+/** Spinner on index load **/
+
+#preloader {
+    align-items: center;
+    background: var(--bggradient);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    transition: opacity 0.2s linear;
+    opacity: 1;
+    transform: opacity 1s linear;
+}
+
+#preloader span {
+    display: block;
+    transition: opacity 0.2s linear;
+}
+
 /** Navigation top bar **/
 
 #navbar {
@@ -174,10 +197,14 @@ header .nav-list text {
     padding-left: 1.5vmin;
 }
 
-header .nav-list svg:hover {
+/** activate code when wallet integration is complete
+
+header .nav-list svg:after {
     fill: green;
     stroke: green;
 }
+
+**/
 
 header .nav-list .wallet-container:hover {
     border-style: none;

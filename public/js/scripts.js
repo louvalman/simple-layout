@@ -2,6 +2,19 @@ let sectionMain = document.getElementById("section-main");
 let navbar = document.getElementById("navbar");
 let navPos = navbar.getBoundingClientRect().top;
 
+const preloader = document.getElementById("preloader");
+const fadeOutEffect = setInterval(() => {
+  if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeOutEffect);
+    preloader.style.display = "none";
+  }
+}, 10);
+
 window.addEventListener("scroll", e => {
   let viewportHeight = window.innerHeight;
   let scrollPos = window.scrollY;
