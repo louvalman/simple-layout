@@ -13,7 +13,7 @@ const createsideNav = () => {
                     fill="currentColor" />
             </svg>
         </a>
-        <span onclick="toggleNav()" style="margin-left:auto;">
+        <span onclick="toggleNav()" style="margin-left:auto;color:var(--text-color);">
             <i class="iconoir-cancel"></i>
         </span>
     </div>
