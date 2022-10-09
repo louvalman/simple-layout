@@ -625,7 +625,7 @@ article {
 .main-title {
     font-family: var(--WorkSans);
     font-size: 28px;
-    font-weight: 200;
+    font-weight: 300;
     color: var(--text-color);
     text-align: center;
     margin: auto;
@@ -1377,7 +1377,7 @@ input:focus {
     }
 
     .sidebarbottom {
-        margin-top: -20vmin;
+        margin-top: -24vmin;
     }
 
     .main-title {
