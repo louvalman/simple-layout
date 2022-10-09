@@ -516,10 +516,8 @@ header .nav-list button {
 
 .toggle-container span {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 5px;
-    flex-direction: column;
+    gap: 1.5vmin;
 }
 
 .toggle-container span span {
@@ -534,6 +532,7 @@ header .nav-list button {
 
 .theme-btn {
     transition: ease-in-out 0.33s;
+    align-items: center;
 }
 
 .theme-btn:hover {
@@ -552,7 +551,7 @@ header .nav-list button {
 
 .dark .theme-btn.light {
     display: flex;
-    color: #fffdf5;
+    color: yellow;
 }
 
 .dark .theme-btn.dark {
@@ -640,6 +639,7 @@ article {
     color: var(--third-color);
     text-decoration: none;
     font-weight: 300;
+    transition: color ease-in-out 0.33s;
 }
 
 .main-title a:hover {

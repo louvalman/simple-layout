@@ -28,16 +28,16 @@ const createsideNav = () => {
             <div class="toggle-container">
             
             <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+            <i class="iconoir-sun-light"></i>  
             <span>
-            Set theme
-            </span>
-            <i class="iconoir-sun-light"></i>        
+            Light mode
+            </span>      
             </span>
             <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-            <span>
-            Set theme
-            </span>
             <i class="iconoir-half-moon"></i> 
+            <span>
+            Dark mode
+            </span>
             </span>
             </div>
         </div>
