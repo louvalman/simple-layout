@@ -2,6 +2,22 @@ let sectionMain = document.getElementById("section-main");
 let navbar = document.getElementById("navbar");
 let navPos = navbar.getBoundingClientRect().top;
 
+// Light and dark mode toggle and save selection in local storage
+
+const setTheme = (theme) => {
+  document.documentElement.className = theme;
+  localStorage.setItem('theme', theme);
+}
+
+const getTheme = () => {
+  const theme = localStorage.getItem('theme');
+  theme && setTheme(theme);
+}
+
+getTheme();
+
+// Preloader
+
 const preloader = document.getElementById("preloader");
 const fadeOutEffect = setInterval(() => {
   if (!preloader.style.opacity) {
@@ -14,6 +30,8 @@ const fadeOutEffect = setInterval(() => {
     preloader.style.display = "none";
   }
 }, 10);
+
+// Navbar JS
 
 window.addEventListener("scroll", e => {
   let viewportHeight = window.innerHeight;

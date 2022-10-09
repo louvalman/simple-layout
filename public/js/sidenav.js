@@ -19,12 +19,29 @@ const createsideNav = () => {
     </div>
     <div class="sidebarmain">
         <div class="sidebarmenu">
-            <a href="login"><i class="iconoir-log-in"></i>Login</a>
-            <a href="signup"><i class="iconoir-add-circled-outline"></i>Sign up</a>
-            <a href="account"><i class="iconoir-profile-circled"></i>Account</a>
-            <a href="favorites"><i class="iconoir-heart"></i>Favorites</a>
+            <div class="sidebarmenu-items">
+                <a href="login"><i class="iconoir-log-in"></i>Login</a>
+                <a href="signup"><i class="iconoir-add-circled-outline"></i>Sign up</a>
+                <a href="account"><i class="iconoir-profile-circled"></i>Account</a>
+                <a href="favorites"><i class="iconoir-heart"></i>Favorites</a>
+            </div>
+            <div class="toggle-container">
+            
+            <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+            <span>
+            Set theme
+            </span>
+            <i class="iconoir-sun-light"></i>        
+            </span>
+            <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+            <span>
+            Set theme
+            </span>
+            <i class="iconoir-half-moon"></i> 
+            </span>
+            </div>
         </div>
-    </div>
+        </div>
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Learn more</button>
         <div class="socials">
