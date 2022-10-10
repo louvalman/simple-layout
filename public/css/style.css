@@ -26,7 +26,7 @@
     --third-color: #4d8a63;
     --fourth-color: #84c47c;
     --text-color: whitesmoke;
-    --white-text-color: #80db56;
+    --white-text-color: whitesmoke;
     --bggradient: #1e1e1e;
 }
 
@@ -45,6 +45,8 @@ body {
 #preloader {
     align-items: center;
     background: var(--bggradient);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -383,7 +385,7 @@ header .nav-list button {
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
-    border-color: var(--text-color);
+    border-color: var(--third-color);
     margin: 0vmin 1vmin 0vmin 1vmin;
     background-color: var(--fourth-color);
 }
@@ -428,7 +430,7 @@ header .nav-list button {
 }
 
 .walletborder {
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--third-color);
 }
 
 /** Sidenav **/
@@ -668,8 +670,8 @@ article {
     display: flex;
     align-items: center;
     font-family: var(--WorkSans);
-    background-color: var(--fourth-color);
-    color: var(--text-color);
+    background-color: var(--third-color);
+    color: var(--white-text-color);
     cursor: pointer;
     border-radius: 8px;
     border: none;
@@ -680,6 +682,7 @@ article {
     transition: color 0.25s;
     outline: none;
     margin-top: 4px;
+    transition: ease-in-out 0.2s;
 }
 
 .accordion h3 {
@@ -1345,11 +1348,11 @@ input:focus {
     }
 
     .walletitem p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .walletitem img {
-        height: 34px;
+        height: 28px;
     }
 
     .sidenavclass {
