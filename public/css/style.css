@@ -734,11 +734,11 @@ article {
     justify-content: center;
     align-items: center;
     gap: 4px;
+    color: var(--text-color);
 }
 
 .toph3 h3 {
     font-family: var(--WorkSans);
-    color: var(--text-color);
     font-weight: 300;
     font-size: 16px;
 }
@@ -751,8 +751,7 @@ article {
 }
 
 .toph3 i {
-    color: var(--text-color);
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 1px;
 }
 
@@ -770,8 +769,8 @@ article {
 }
 
 .slick-content-background {
-    background-color: var(--fourth-color);
-    color: var(--third-color);
+    background-color: var(--third-color);
+    color: var(--fourth-color);
     font-family: var(--WorkSans);
     font-size: 24px;
     position: relative;
@@ -1297,7 +1296,6 @@ input:focus {
     }
 
     #logotop {
-        color: var(--third-color);
         display: none;
     }
 
@@ -1429,6 +1427,7 @@ input:focus {
     .slick-content-background {
         width: 48vw;
         height: 32vw;
+        background-color: var(--third-color);
     }
 
     .slick-item {
