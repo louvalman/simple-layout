@@ -27,6 +27,9 @@
 
 <body>
     <header>
+        <div id="preloader" style="visibility: hidden;">
+            <span class="loader" alt="spinner"></span>
+        </div>
         <div id="sidenavid" class="sidenavclass">
             <script src="js/sidenav.js"></script>
         </div>
@@ -85,18 +88,32 @@
                         <h1 class="main-title-sign-up">Create your account</h1>
                         <div class="signupmain">
                             <span class="loader" alt="spinner"></span>
-                            <div class="container">
-                                <i class="iconoir-add-circled-outline logo" alt=""></i>
-                                <div>
-                                    <input type="text" focus autocomplete="off" id="name" placeholder="Full name">
-                                    <input type="email" focus autocomplete="off" id="email" placeholder="E-mail">
-                                    <input type="text" focus autocomplete="off" id="number" placeholder="Phone">
-                                    <input type="password" autocomplete="off" minlength="8" id="password"
-                                        placeholder="Password">
-                                    <input type="password" autocomplete="off" minlength="8" id="password-confirm"
-                                        placeholder="Confirm password">
+                            <div class="form-container">
+                                <div class="input-container">
+                                    <input type="text" focus autocomplete="name" id="name" required />
+                                    <label class="input-label" for="name">Full name</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="email" focus autocomplete="email" id="email" required />
+                                    <label class="input-label" for="email">E-mail</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="text" focus autocomplete="tel" id="number" required />
+                                    <label class="input-label" for="number">Phone</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" autocomplete="new-password" minlength="8" id="password"
+                                        required />
+                                    <label class="input-label" for="password">Password</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="password" autocomplete="new-password" minlength="8"
+                                        id="password-confirm" required />
+                                    <label class="input-label" for="password-confirm">Confirm password</label>
+                                </div>
+                                <div class="checkbox-containers">
                                     <div class="checkbox-container">
-                                        <input type="checkbox" class="checkbox" id="terms-and-cond">
+                                        <input type="checkbox" class="checkbox" id="terms-and-cond" required />
                                         <label class="label-style" for="terms-and-cond">Agree to our <a href="">terms
                                                 and
                                                 conditions</a></label>
@@ -107,20 +124,21 @@
                                         <label class="label-style" for="notification">Sign up to our
                                             newsletter</a></label>
                                     </div>
-                                    <button class="submit-btn"><a>Create account</a></button>
-                                    <div class="line-container">
-                                        <div class="line-2"></div>
-                                    </div>
-                                    <button class="submit-btn-social"><i class="iconoir-twitter"></i> <a>Login with
-                                            Twitter</a>
-                                    </button>
-                                    <button class="submit-btn-social"><i class="iconoir-google"></i><a>Login with
-                                            Google</a>
-                                    </button>
                                 </div>
+                                <button class="submit-btn"><a>Create account</a></button>
+                                <div class="line-container">
+                                    <div class="line-2"></div>
+                                </div>
+                                <button class="submit-btn-social"><i class="iconoir-twitter"></i> <a>Login with
+                                        Twitter</a>
+                                </button>
+                                <button class="submit-btn-social"><i class="iconoir-google"></i><a>Login with
+                                        Google</a>
+                                </button>
+
                                 <a href="/login" class="label-style-alternative">Already have an account?</a>
                             </div>
-                            <div class="alert-box">
+                            <div class="alert-box" id="alert-box">
                                 <img src="assets/ev-plug-error.svg" class="alert-img" alt="Something went wrong">
                                 <p class="alert-msg">Error message</p>
                             </div>

@@ -87,7 +87,7 @@ app.post('/signup', (req, res) => {
         return res.json({
             'alert': 'Please enter your phone number'
         });
-    } else if (!Number(number) || number.length < 10) {
+    } else if (!Number(number) || number.length < 8) {
         return res.json({
             'alert': 'Invalid phone number, please enter valid one (at least eight numbers)'
         });

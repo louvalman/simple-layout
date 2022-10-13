@@ -11,7 +11,7 @@
     --hover-color: #084f58;
     --third-color: #028090;
     --fourth-color: #D7FAFE;
-    --focus-color: #307d58;
+    --focus-color: #7168cb;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
     --white-text-color: whitesmoke;
@@ -22,9 +22,9 @@
 }
 
 :root.dark {
-    --hover-color: #15412f;
+    --hover-color: #1e5e44;
     --third-color: #4d8a63;
-    --fourth-color: #84c47c;
+    --fourth-color: #a7cfa2;
     --text-color: whitesmoke;
     --white-text-color: whitesmoke;
     --bggradient: #1e1e1e;
@@ -38,6 +38,10 @@ html {
 
 body {
     margin: 0vmin 0vmin;
+}
+
+a:visited {
+    color: var(--focus-color);
 }
 
 /** Spinner on index load **/
@@ -118,6 +122,7 @@ header .navbar-brand a {
 #logotop:hover {
     cursor: pointer;
     color: var(--hover-color);
+    transition: ease-in-out 0.2s;
 }
 
 .iconoir-cancel {
@@ -300,7 +305,7 @@ header .nav-list button {
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     background-color: rgba(0, 0, 0, 0.1);
-    transition: ease-in-out 2s;
+    transition: ease-in-out 0.5s;
 }
 
 /* Modal Content/Box */
@@ -314,7 +319,7 @@ header .nav-list button {
     -webkit-animation-name: animatebot;
     -webkit-animation-duration: 0.5s;
     animation-name: animatebot;
-    animation-duration: 0.5s
+    animation-duration: 0.5s;
 }
 
 @-webkit-keyframes animatebot {
@@ -392,7 +397,7 @@ header .nav-list button {
 
 .walletitem {
     padding: 1.5vmin 2vmin 1.5vmin 2vmin;
-    transition: 0.2s;
+    transition: ease-in-out 0.1s;
 }
 
 .walletitem:hover {
@@ -470,6 +475,7 @@ header .nav-list button {
 .sidebartop svg:hover {
     cursor: pointer;
     color: var(--hover-color);
+    transition: ease-in-out 0.2s;
 }
 
 .sidebartop i {
@@ -641,12 +647,28 @@ article {
     color: var(--third-color);
     text-decoration: none;
     font-weight: 300;
-    transition: color ease-in-out 0.33s;
+    transition: ease-in-out 0.3s;
 }
 
 .main-title a:hover {
     color: var(--hover-color);
-    text-decoration: underline;
+}
+
+.un {
+    display: inline-block;
+}
+
+.un::after {
+    content: '';
+    width: 0px;
+    height: 2px;
+    display: block;
+    background: var(--hover-color);
+    transition: 333ms;
+}
+
+.un:hover::after {
+    width: 100%;
 }
 
 #faq {
@@ -671,7 +693,7 @@ article {
     align-items: center;
     font-family: var(--WorkSans);
     background-color: var(--third-color);
-    color: var(--white-text-color);
+    color: var(--fourth-color);
     cursor: pointer;
     border-radius: 8px;
     border: none;
@@ -927,6 +949,9 @@ h4 {
     width: max-content;
     width: -moz-max-content;
     border-radius: 6px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: var(--third-color);
     font-size: 12px;
     background-color: var(--tooltip-bg-color);
     box-shadow: 0px 0px 24px rgba(156, 154, 154, 0.1);
@@ -1062,11 +1087,40 @@ h4 {
     }
 }
 
-.logo {
-    height: 80px;
-    display: none !important;
-    align-items: center;
-    justify-content: center;
+.input-container {
+    position: relative;
+    height: 48px;
+    transition: background-color 500ms;
+}
+
+.input-label {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    color: var(--placeholder-color);
+    font-family: var(--WorkSans);
+    font-weight: 300;
+    font-size: 12.5px;
+    transform: translateY(-50%);
+    transform-origin: left top;
+    user-select: none;
+    transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
+}
+
+input:focus+.input-label {
+    transform: translateY(-100%) scale(0.75);
+    color: var(--focus-color);
+}
+
+input:focus+.input-label,
+input:valid+.input-label {
+    transform: translateY(-100%) scale(0.75);
+}
+
+input:focus+.input-label,
+input.is-valid+.input-label {
+    transform: translateY(-100%) scale(0.75);
 }
 
 input[type="text"],
@@ -1074,33 +1128,40 @@ input[type="password"],
 input[type="email"],
 textarea {
     display: block;
-    width: 300px;
-    height: 40px;
-    padding: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px 6px;
+    border: 1px solid var(--third-color);
     border-radius: 8px;
     background: var(--bggradient);
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--third-color);
-    outline: none;
     margin: 10px 0;
     color: var(--text-color);
     font-size: 14px;
     font-weight: 300;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
-    font-family: var(--Lato), sans-serif;
+    transition: border 500ms;
+    font-family: var(--WorkSans), sans-serif;
 }
 
 input:focus {
+    outline: none;
+    border-bottom-width: 3px;
     border-color: var(--focus-color);
-    border-width: 1.5px;
 }
 
 ::placeholder {
     color: var(--placeholder-color);
 }
 
+input:-webkit-autofill {
+    -webkit-text-fill-color: #1e1e1e !important;
+}
+
 /* checkbox styles */
+
+
+.checkbox-containers {
+    margin: 14px 0 0 0px;
+}
 
 .checkbox-container {
     display: inline-flex;
@@ -1121,7 +1182,7 @@ input:focus {
 }
 
 .checkbox:checked {
-    background: var(--bggradient);
+    background: var(--fourth-color);
 }
 
 .checkbox::after {
@@ -1165,7 +1226,7 @@ input:focus {
 
 .submit-btn {
     width: 300px;
-    height: 40px;
+    height: 48px;
     line-height: 40px;
     background: var(--third-color);
     color: var(--white-text-color);
@@ -1188,6 +1249,7 @@ input:focus {
 .submit-btn:hover {
     background: var(--hover-color);
     color: var(--white-text-color);
+    transition: ease-in-out 0.2s;
 }
 
 .submit-btn:focus {
@@ -1199,7 +1261,7 @@ input:focus {
     align-items: center;
     justify-content: center;
     width: 300px;
-    height: 40px;
+    height: 34px;
     cursor: pointer;
     border-radius: 8px;
     border-width: 1px;
@@ -1210,7 +1272,7 @@ input:focus {
     font-family: var(--WorkSans);
     font-weight: 300;
     font-size: 14px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .submit-btn-social:focus {
@@ -1230,6 +1292,7 @@ input:focus {
 .submit-btn-social:hover {
     color: var(--white-text-color) !important;
     background: var(--hover-color);
+    transition: ease-in-out 0.2s;
     border: none;
 }
 

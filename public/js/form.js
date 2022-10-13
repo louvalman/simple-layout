@@ -9,6 +9,20 @@ const number = document.querySelector('#number');
 const tac = document.querySelector('#terms-and-cond');
 const notification = document.querySelector('#notification');
 
+// floating labels (valid fix)
+
+const inputs = document.querySelectorAll("input");
+
+inputs.forEach((input) => {
+    input.addEventListener("blur", (event) => {
+        if (event.target.value) {
+            input.classList.add("is-valid");
+        } else {
+            input.classList.remove("is-valid");
+        }
+    });
+});
+
 submitBtn.addEventListener('click', () => {
     if (name.value.length < 3) {
         showAlert('Your name must be at least three letters long');

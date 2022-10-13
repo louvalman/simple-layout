@@ -82,6 +82,13 @@ if ($(window).width() > 768) {
       element.style.display = "none";
     }
 
+    var element = document.getElementById("alert-box");
+    if (element.style.marginLeft == "175px") {
+      element.style.marginLeft = "0px";
+    } else {
+      element.style.marginLeft = "175px";
+    }
+
   }
 } else {
   function toggleNav() {
