@@ -4,7 +4,7 @@ const createtopNav = () => {
     nav.innerHTML = `
     <div class="navbar-brand">
     <span onclick="toggleNav()">
-        <i onclick="toggleIcon(this)" class="iconoir-menu"></i>
+        <i onclick="toggleIcon(this)" class="iconoir-menu" id="sidetoggle"></i>
     </span>
     <a href="/">
         <svg id="logotop" width="145" height="20" viewBox="0 0 145 20" fill="none"

@@ -16,21 +16,6 @@ const getTheme = () => {
 
 getTheme();
 
-// Preloader
-
-const preloader = document.getElementById("preloader");
-const fadeOutEffect = setInterval(() => {
-  if (!preloader.style.opacity) {
-    preloader.style.opacity = 1;
-  }
-  if (preloader.style.opacity > 0) {
-    preloader.style.opacity -= 0.1;
-  } else {
-    clearInterval(fadeOutEffect);
-    preloader.style.display = "none";
-  }
-}, 50);
-
 // Navbar JS
 
 window.addEventListener("scroll", e => {
@@ -38,10 +23,8 @@ window.addEventListener("scroll", e => {
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
     navbar.classList.add('sticky');
-    sidenavid.style.borderTopRightRadius = "0px";
   } else {
     navbar.classList.remove('sticky');
-    sidenavid.style.borderTopRightRadius = "8px";
   }
 });
 
@@ -56,7 +39,7 @@ if ($(window).width() > 768) {
 
     var element = document.getElementById("sidenavid");
     if (element.style.width == "350px") {
-      element.style.boxShadow = "0.5px -1px 1px 0px #929498";
+      element.style.boxShadow = "0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%)";
     } else {
       element.style.boxShadow = "none";
     }
@@ -76,8 +59,29 @@ if ($(window).width() > 768) {
     }
 
     var element = document.getElementById("logotop");
+    if (element.style.opacity == "0") {
+      element.style.opacity = "1";
+    } else {
+      element.style.opacity = "0";
+    }
+
+    var element = document.getElementById("logotopside");
+    if (element.style.opacity == "1") {
+      element.style.opacity = "0";
+    } else {
+      element.style.opacity = "1";
+    }
+
+    var element = document.getElementById("closesidenav");
+    if (element.style.opacity == "1") {
+      element.style.opacity = "0";
+    } else {
+      element.style.opacity = "1";
+    }
+
+    var element = document.getElementById("sidetoggle");
     if (element.style.display == "none") {
-      element.style.display = "flex";
+      element.style.display = "block";
     } else {
       element.style.display = "none";
     }
@@ -101,14 +105,7 @@ if ($(window).width() > 768) {
   }
 }
 
-function toggleIcon(x) {
-  if ($(window).width() > 768) {
-    x.classList.toggle("iconoir-cancel");
-    x.classList.toggle("iconoir-menu");
-  } else {
-    x.classList.toggle("none")
-  }
-}
+
 
 // Get the modal
 var modal = document.getElementById("connect-modal");
