@@ -18,16 +18,19 @@
     --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --tooltip-bg-color: #1e1e1e;
-    --light-gray: rgba(255, 255, 255, 0.877)
+    --light-gray: rgba(255, 255, 255, 0.877);
+    --placeholder-background: #f5f5f5;
 }
 
 :root.dark {
     --hover-color: #1e5e44;
     --third-color: #4d8a63;
-    --fourth-color: #a7cfa2;
+    --fourth-color: #bbd2b8;
     --text-color: whitesmoke;
     --white-text-color: whitesmoke;
     --bggradient: #1e1e1e;
+    --placeholder-background: #d3d9d0;
+    --placeholder-color: #757975;
 }
 
 html {
@@ -1050,6 +1053,7 @@ h4 {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     font-family: var(--WorkSans), sans-serif;
 }
 
@@ -1075,6 +1079,7 @@ h4 {
     position: absolute;
     top: 35%;
     display: none;
+    z-index: 1;
 }
 
 @keyframes rotation {
@@ -1087,10 +1092,27 @@ h4 {
     }
 }
 
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5vmin;
+    gap: 8px;
+    width: 95%;
+    max-width: 400px;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 2px 0 rgb(111, 111, 111, 8%), 0 0 4px 0 rgb(111, 111, 111, 2%), 0 0 5px 4px rgba(111, 111, 111, 0.06);
+}
+
 .input-container {
+    background-color: var(--placeholder-background);
     position: relative;
     height: 48px;
+    width: 85%;
     transition: background-color 500ms;
+    border-radius: 8px;
 }
 
 .input-label {
@@ -1125,27 +1147,32 @@ input.is-valid+.input-label {
 
 input[type="text"],
 input[type="password"],
-input[type="email"],
-textarea {
-    display: block;
+input[type="email"] {
     width: 100%;
     height: 100%;
     padding: 20px 16px 6px;
     border: 1px solid var(--third-color);
     border-radius: 8px;
-    background: var(--bggradient);
-    margin: 10px 0;
-    color: var(--text-color);
+    background-color: transparent;
+    color: #2e2e2e;
     font-size: 14px;
     font-weight: 300;
     transition: border 500ms;
     font-family: var(--WorkSans), sans-serif;
+    transition: ease-in-out 0.2s;
 }
 
-input:focus {
+.input-container:hover {
+    background: var(--fourth-color) !important;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
     outline: none;
     border-bottom-width: 3px;
     border-color: var(--focus-color);
+    border-radius: 8px;
 }
 
 ::placeholder {
@@ -1153,7 +1180,7 @@ input:focus {
 }
 
 input:-webkit-autofill {
-    -webkit-text-fill-color: #1e1e1e !important;
+    -webkit-text-fill-color: #2e2e2e !important;
 }
 
 /* checkbox styles */
@@ -1219,13 +1246,13 @@ input:-webkit-autofill {
     text-align: center;
     display: block;
     margin-top: 2.5vmin;
-    margin-bottom: 10vmin;
+    margin-bottom: 5vmin;
 }
 
 /** Buttons **/
 
 .submit-btn {
-    width: 300px;
+    width: 85%;
     height: 48px;
     line-height: 40px;
     background: var(--third-color);
@@ -1260,7 +1287,7 @@ input:-webkit-autofill {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 300px;
+    width: 85%;
     height: 34px;
     cursor: pointer;
     border-radius: 8px;
@@ -1299,6 +1326,7 @@ input:-webkit-autofill {
 .line-container {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .line-2 {
