@@ -35,7 +35,7 @@
 
 html {
     background: var(--bggradient);
-    transition: background ease-in-out 0.33s;
+    transition: background ease-in-out 0.2s;
     height: 100%;
 }
 
@@ -82,7 +82,7 @@ a:visited {
     position: relative;
     height: 8vh;
     min-height: 54px;
-    transition: ease-in-out 0.33s;
+    transition: ease-in-out 0.2s;
 }
 
 #navbar.sticky {
@@ -119,7 +119,7 @@ header .navbar-brand a {
 #logotop {
     color: var(--third-color);
     opacity: 1;
-    transition: ease-in-out 0.1s;
+    transition: color ease-in-out 0.1s;
 }
 
 #logotop:hover {
@@ -449,7 +449,7 @@ header .nav-list button {
     background-color: var(--bggradient);
     overflow-x: hidden;
     padding-top: 0vmin;
-    transition: ease-in-out 0.5s;
+    transition: width ease-in-out 0.5s, background ease-in-out 0.2s;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -470,12 +470,12 @@ header .nav-list button {
 
 .sidebartop svg {
     color: var(--third-color);
+    transition: color ease-in-out 0.2s;
 }
 
 .sidebartop svg:hover {
     cursor: pointer;
     color: var(--hover-color);
-    transition: ease-in-out 0.2s;
 }
 
 .sidebartop i {
@@ -483,7 +483,7 @@ header .nav-list button {
     margin-right: 3vmin;
     font-size: 20px;
     color: var(--text-color);
-    transition: ease-in-out 0.1s;
+    transition: color ease-in-out 0.2s;
     cursor: pointer;
 }
 
