@@ -119,7 +119,7 @@ header .navbar-brand a {
 #logotop {
     color: var(--third-color);
     opacity: 1;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.1s;
 }
 
 #logotop:hover {
@@ -483,7 +483,7 @@ header .nav-list button {
     margin-right: 3vmin;
     font-size: 20px;
     color: var(--text-color);
-    transition: ease-in-out 0.15s;
+    transition: ease-in-out 0.1s;
     cursor: pointer;
 }
 
@@ -1494,7 +1494,6 @@ input:-webkit-autofill {
         max-width: 100%;
         margin: auto;
         flex-direction: column;
-        padding-top: 16vmin;
     }
 
     .accordion {
@@ -1537,6 +1536,13 @@ input:-webkit-autofill {
 
     .arrow {
         display: none;
+    }
+
+    .form-container {
+        gap: 8px;
+        width: 100%;
+        max-width: 800px;
+        margin: 8vmin 0;
     }
 
 
