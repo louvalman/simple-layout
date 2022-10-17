@@ -20,6 +20,7 @@
     --tooltip-bg-color: #1e1e1e;
     --light-gray: rgba(255, 255, 255, 0.877);
     --placeholder-background: #f5f5f5;
+    --sticky-trans-bg: linear-gradient(to top, rgba(255, 253, 245, 0.9), rgba(255, 253, 245, 1));
 }
 
 :root.dark {
@@ -28,9 +29,10 @@
     --fourth-color: #bbd2b8;
     --text-color: whitesmoke;
     --white-text-color: whitesmoke;
-    --bggradient: #1e1e1e;
+    --bggradient: #262626;
     --placeholder-background: #d3d9d0;
     --placeholder-color: #757975;
+    --sticky-trans-bg: linear-gradient(to top, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 1));
 }
 
 html {
@@ -80,18 +82,21 @@ a:visited {
     justify-content: space-between;
     width: 100%;
     position: relative;
-    height: 8vh;
+    height: 9vh;
     min-height: 54px;
     transition: ease-in-out 0.2s;
 }
 
 #navbar.sticky {
+    height: 9vh;
     position: sticky;
     top: 0;
     z-index: 2;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-color: var(--bggradient);
+    background-image: var(--sticky-trans-bg);
+    backdrop-filter: blur(1px);
+
 }
 
 header .navbar-brand {
