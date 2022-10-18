@@ -11,7 +11,7 @@
     --hover-color: #084f58;
     --third-color: #028090;
     --fourth-color: #f6fefd;
-    --focus-color: #7168cb;
+    --focus-color: #b6acf0;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
     --white-text-color: whitesmoke;
@@ -20,29 +20,30 @@
     --tooltip-bg-color: #1e1e1e;
     --light-gray: rgba(255, 255, 255, 0.877);
     --placeholder-background: #f5f5f5;
-    --sticky-trans-bg: linear-gradient(to top, rgba(255, 253, 245, 0.9), rgba(255, 253, 245, 1));
+    --sticky-trans-bg: linear-gradient(to top, rgba(255, 253, 245, 0.001), rgba(255, 253, 245, 1));
 }
 
 :root.dark {
     --hover-color: #1e5e44;
     --third-color: #4d8a63;
     --fourth-color: #bbd2b8;
+    --focus-color: #53476d;
     --text-color: whitesmoke;
     --white-text-color: whitesmoke;
     --bggradient: #262626;
     --placeholder-background: #d3d9d0;
     --placeholder-color: #757975;
-    --sticky-trans-bg: linear-gradient(to top, rgba(38, 38, 38, 0.9), rgba(38, 38, 38, 1));
+    --sticky-trans-bg: linear-gradient(to top, rgba(38, 38, 38, 0.3), rgba(38, 38, 38, 1));
 }
 
 html {
     background: var(--bggradient);
-    transition: background ease-in-out 0.2s;
+    transition: background ease-in-out 0.5s;
     height: 100%;
 }
 
 body {
-    margin: 0vmin 0vmin;
+    margin: 0;
 }
 
 a:visited {
@@ -84,25 +85,43 @@ a:visited {
     position: relative;
     height: 9vh;
     min-height: 54px;
-    transition: ease-in-out 0.2s;
+    background: transparent;
+    transition: background ease-in-out 0.2s;
+    z-index: 2;
 }
 
 #navbar.sticky {
-    height: 9vh;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    background-image: var(--sticky-trans-bg);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(0.75px);
+}
 
+.trans::before {
+    background: var(--sticky-trans-bg);
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity ease-in-out 0.33s;
+    z-index: -1;
+}
+
+.trans#navbar.sticky::before {
+    opacity: 1;
 }
 
 header .navbar-brand {
     margin-left: 8.7vmin;
     display: flex;
     align-items: center;
+    z-index: inherit;
 }
 
 header .navbar-brand i {
@@ -139,6 +158,7 @@ header .nav-list {
     display: flex;
     margin-right: 8.7vmin;
     padding-inline-start: 0;
+    z-index: inherit;
 }
 
 header .nav-list .nav-listcontainer {
@@ -451,10 +471,10 @@ header .nav-list button {
     z-index: 3;
     top: 0;
     left: 0;
-    background-color: var(--bggradient);
+    background-color: transparent;
     overflow-x: hidden;
     padding-top: 0vmin;
-    transition: width ease-in-out 0.5s, background ease-in-out 0.2s;
+    transition: width ease-in-out 0.5s, background ease-in-out 0.5s, border-top-right-radius ease-in-out 0.2s;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -464,9 +484,10 @@ header .nav-list button {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 8vh;
+    height: 9vh;
     min-height: 54px;
     position: relative;
+    background: var(--sticky-trans-bg);
 }
 
 .sidebartop a {
@@ -627,8 +648,27 @@ header .nav-list button {
 
 /** Main **/
 
+.bgfixed {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.bgfixed .bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, var(--focus-color) 0%, var(--bggradient) 50%);
+    transform: translate(-50%, -50%) scale(3.5);
+}
+
 #main {
-    transition: ease-in-out 0.33s;
+    transition: margin-left ease-in-out 0.5s, background ease-in-out 0.5s;
 }
 
 section {
@@ -736,7 +776,7 @@ article {
 .panelAccordion {
     padding: 0 18px 0 36px;
     font-size: 14px;
-    background-color: var(--bggradient);
+    background-color: transparent;
     overflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out;
@@ -873,6 +913,10 @@ article {
 }
 
 /** Footer **/
+
+#footer {
+    transition: margin-left ease-in-out 0.5s;
+}
 
 .footer-main {
     box-shadow: 0 0 1px 0 rgb(111 111 111 / 2%), 0 0 2px 0 rgb(111 111 111 / 1%), 0 0 5px 2px rgb(111 111 111 / 3%);
@@ -1456,6 +1500,7 @@ input:-webkit-autofill {
     .sidenavclass {
         z-index: 5;
         transition: 0.2s !important;
+        background: var(--bggradient);
     }
 
     .sidebartop {
@@ -1463,7 +1508,6 @@ input:-webkit-autofill {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        min-height: 8vh;
         position: relative;
     }
 

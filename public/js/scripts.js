@@ -16,6 +16,21 @@ const getTheme = () => {
 
 getTheme();
 
+// Background gradient change on scroll
+
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".bgfixed .bg", {
+  scrollTrigger: {
+    trigger: "body",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 0
+  },
+  filter: "hue-rotate(50deg)",
+  rotation: 180
+})
+
 // Navbar JS
 
 window.addEventListener("scroll", e => {
@@ -23,8 +38,10 @@ window.addEventListener("scroll", e => {
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
     navbar.classList.add('sticky');
+    sidenavid.style.borderTopRightRadius = "0px";
   } else {
     navbar.classList.remove('sticky');
+    sidenavid.style.borderTopRightRadius = "8px";
   }
 });
 
@@ -61,8 +78,10 @@ if ($(window).width() > 768) {
     var element = document.getElementById("logotop");
     if (element.style.opacity == "0") {
       element.style.opacity = "1";
+      element.style.display = "flex"
     } else {
       element.style.opacity = "0";
+      element.style.display = "none";
     }
 
     var element = document.getElementById("logotopside");
@@ -84,6 +103,13 @@ if ($(window).width() > 768) {
       element.style.display = "block";
     } else {
       element.style.display = "none";
+    }
+
+    var element = document.getElementById("footer");
+    if (element.style.marginLeft == "350px") {
+      element.style.marginLeft = "0px";
+    } else {
+      element.style.marginLeft = "350px";
     }
 
     var element = document.getElementById("alert-box");
@@ -170,9 +196,6 @@ $(document).ready(function () {
           infinite: true
         }
       }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
     ]
   });
 });
