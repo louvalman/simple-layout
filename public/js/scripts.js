@@ -25,10 +25,10 @@ gsap.to(".bgfixed .bg", {
     trigger: "body",
     start: "top top",
     end: "bottom bottom",
-    scrub: 0
+    scrub: 1
   },
-  filter: "hue-rotate(50deg)",
-  rotation: 180
+  filter: "hue-rotate(70deg)",
+  rotation: 360
 })
 
 // Navbar JS

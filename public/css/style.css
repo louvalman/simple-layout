@@ -11,7 +11,7 @@
     --hover-color: #084f58;
     --third-color: #028090;
     --fourth-color: #f6fefd;
-    --focus-color: #b6acf0;
+    --focus-color: #a3f4a0;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
     --white-text-color: whitesmoke;
@@ -637,13 +637,15 @@ header .nav-list button {
 }
 
 .sidebarbottom .socials i {
-    color: var(--hover-color);
-    font-size: 20px;
+    font-size: 22px;
+    transition: 0.2s;
 }
 
 .sidebarbottom .socials i:hover {
-    color: var(--third-color);
-    transition: 0.25s;
+    background: var(--hover-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /** Main **/
@@ -663,8 +665,8 @@ header .nav-list button {
     top: 50%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, var(--focus-color) 0%, var(--bggradient) 50%);
-    transform: translate(-50%, -50%) scale(3.5);
+    background-image: linear-gradient(to top, var(--focus-color) 10%, rgb(245, 221, 159), var(--bggradient) 50%);
+    transform: translate(-50%, -50%) scale(3);
 }
 
 #main {
@@ -942,16 +944,58 @@ article {
 .footer-content {
     text-align: center;
     justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.footer-content i {
-    display: inline-block;
-    font-size: 22px;
-    color: var(--hover-color);
+.footer-content .socials {
+    display: flex;
+    gap: 6px;
 }
 
-.footer-content i:hover {
-    color: var(--third-color);
+.footer-content .socials i {
+    display: inline-flex;
+    font-size: 22px !important;
+    transition: 0.22s;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook-square {
+    background: #3b5998;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitter-square {
+    background: #00acee;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-twitch {
+    background: #6441a5;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 21px !important;
+    margin-top: 2px;
+}
+
+.socials .fa:hover {
+    background: var(--hover-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .footer-content li {

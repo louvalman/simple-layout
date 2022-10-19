@@ -45,10 +45,10 @@ const createsideNav = () => {
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Learn more</button>
         <div class="socials">
-            <a href="#"><i class="iconoir-twitter"></i></a>
-            <a href="#"><i class="iconoir-instagram"></i></a>
-            <a href="#"><i class="iconoir-facebook-squared"></i></a>
-            <a href="#"><i class="iconoir-discord"></i></a>
+        <a href="#"><i class="fa fa-twitter-square" id="twitter" aria-hidden="true"></i></i></a>
+        <a href="#"><i class="fa fa-instagram" id="insta" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="true"></i></a>
         </div>
     </div>
     `;
