@@ -27,8 +27,8 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(70deg)",
-  rotation: 360
+  filter: "hue-rotate(20deg)",
+  rotation: 180
 })
 
 // Navbar JS
@@ -158,47 +158,6 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 }
-
-// Slick carousel 
-
-$(document).ready(function () {
-  $('.slick-content').slick({
-    dots: false,
-    infinite: true,
-    autoplay: true,
-    speed: 1200,
-    variableWidth: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    prevArrow: $('.prev-arrow'),
-    nextArrow: $('.next-arrow'),
-    responsive: [{
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true
-        }
-      }
-    ]
-  });
-});
 
 // FAQ accordion functionality
 
