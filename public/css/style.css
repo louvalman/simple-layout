@@ -1609,7 +1609,6 @@ input:-webkit-autofill {
     .accordion {
         cursor: pointer;
         border-radius: 8px;
-        border: none;
         padding: 12px;
         width: 100%;
         height: 60px;
@@ -1631,7 +1630,6 @@ input:-webkit-autofill {
     .slick-content-background {
         width: 48vw;
         height: 32vw;
-        background-color: var(--third-color);
     }
 
     .slick-item {
