@@ -1616,6 +1616,11 @@ input:-webkit-autofill {
         margin-top: 0vmin;
     }
 
+    .toph3 i {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
     .sliderParent {
         margin: auto;
         max-width: 100%;
@@ -1627,7 +1632,7 @@ input:-webkit-autofill {
 
     .slick-content-background {
         width: 48vw;
-        height: 32vw;
+        height: 38vw;
     }
 
     .slick-item {
