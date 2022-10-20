@@ -510,10 +510,6 @@ header .nav-list button {
     text-overflow: ellipsis;
 }
 
-#logotopside {
-    opacity: 0;
-}
-
 .sidebartop a:hover {
     cursor: pointer;
     color: var(--hover-color);
@@ -569,7 +565,7 @@ header .nav-list button {
     height: 5%;
     display: flex;
     justify-content: center;
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
 
 .toggle-container span {
@@ -604,7 +600,7 @@ header .nav-list button {
 }
 
 .theme-btn.dark i {
-    color: #084f58;
+    color: #2e2e2e;
 }
 
 .dark .theme-btn.light {
@@ -680,8 +676,8 @@ header .nav-list button {
     top: 50%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, var(--secondary-color) 15%, var(--primary-color) 15%, var(--bggradient) 52%);
-    transform: translate(-65%, -65%) scale(3.5);
+    background-image: linear-gradient(to top, var(--secondary-color) 15%, var(--primary-color) 15%, var(--bggradient) 50%);
+    transform: translate(-60%, -60%) scale(3.5);
 }
 
 #main {
@@ -875,7 +871,7 @@ article {
 
 .slick-content-background {
     background-color: transparent;
-    color: var(--text-color);
+    color: var(--primary-color);
     font-family: var(--Degular);
     font-size: 24px;
     position: relative;
@@ -1598,7 +1594,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -24vmin;
+        margin-top: -28vmin;
     }
 
     .main-title {
