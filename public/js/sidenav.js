@@ -2,6 +2,7 @@ const createsideNav = () => {
     let sidenavid = document.querySelector('.sidenavclass');
 
     sidenavid.innerHTML = `
+    <div id="sidenavcontent">
     <div class="sidebartop">
         <span onclick="toggleNav()" style="visibility:hidden;margin-right:auto;">
             <i class="iconoir-cancel"></i>
@@ -46,6 +47,7 @@ const createsideNav = () => {
         <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="true"></i></a>
         <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="true"></i></a>
         </div>
+    </div>
     </div>
     `;
 }

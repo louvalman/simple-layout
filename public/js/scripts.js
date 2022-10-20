@@ -27,7 +27,7 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(45deg)",
+  filter: "hue-rotate(72deg)",
   rotation: 180
 })
 
@@ -85,7 +85,7 @@ if ($(window).width() > 768) {
     }
 
     window.setTimeout(function () {
-      var element = document.getElementById("logotopside");
+      var element = document.getElementById("sidenavcontent");
       if (element.style.opacity == "1") {
         element.style.opacity = "0";
       } else {

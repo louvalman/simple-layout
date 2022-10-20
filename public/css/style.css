@@ -28,7 +28,7 @@
     --primary-color: #4d8a63;
     --secondary-color: #bbd2b8;
     --hover-color: #1e5e44;
-    --focus-color: #53476d;
+    --focus-color: #8974b6;
     --text-color: whitesmoke;
     --white-text-color: whitesmoke;
     --bggradient: #262626;
@@ -97,8 +97,14 @@ a:visited {
     z-index: 3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    backdrop-filter: blur(0.75px);
 }
+
+#navbar.sticky::before {
+    backdrop-filter: blur(0.75px);
+    -webkit-backdrop-filter: blur(0.75px);
+}
+
+
 
 .trans::before {
     background: var(--sticky-trans-bg);
@@ -195,16 +201,16 @@ header .nav-list .dropdown-content {
     box-shadow: 0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%);
     overflow: hidden;
     border-radius: 8px !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px);
 }
 
 header .nav-list .dropdown:hover .dropdown-content {
     display: block;
-    -webkit-animation: fadeIn 0.33s;
-    animation: fadeIn 0.33s;
 }
 
 header .nav-list .dropdown-content a {
-    background-color: var(--bggradient);
+    background-color: transparent;
     color: var(--text-color) !important;
     text-decoration: none;
     display: block;
@@ -481,6 +487,9 @@ header .nav-list button {
     transition: width cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s, background ease-in-out 0.5s, border-top-right-radius ease-in-out 0.2s;
     border-bottom-right-radius: 8px;
     border-top-right-radius: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .sidebartop {
@@ -505,9 +514,6 @@ header .nav-list button {
     font-family: var(--Degular);
     font-size: 24px;
     height: 35px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .sidebartop a:hover {
@@ -1424,7 +1430,7 @@ input:-webkit-autofill {
     font-family: var(--Degular);
     font-weight: 300;
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 0px;
 }
 
 .submit-btn-social:focus {
