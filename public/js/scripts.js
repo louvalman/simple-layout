@@ -27,7 +27,7 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(50deg)",
+  filter: "hue-rotate(75deg)",
   rotation: 180
 })
 
@@ -84,12 +84,14 @@ if ($(window).width() > 768) {
       element.style.display = "none";
     }
 
-    var element = document.getElementById("logotopside");
-    if (element.style.opacity == "1") {
-      element.style.opacity = "0";
-    } else {
-      element.style.opacity = "1";
-    }
+    window.setTimeout(function () {
+      var element = document.getElementById("logotopside");
+      if (element.style.opacity == "1") {
+        element.style.opacity = "0";
+      } else {
+        element.style.opacity = "1";
+      }
+    }, 10);
 
     var element = document.getElementById("closesidenav");
     if (element.style.opacity == "1") {
