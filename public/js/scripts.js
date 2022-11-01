@@ -27,15 +27,13 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(0deg)",
+  filter: "hue-rotate(-5deg)",
   rotation: 180
 })
 
 // Navbar JS
 
-window.addEventListener("scroll", {
-  passive: true
-}, e => {
+window.addEventListener("scroll", e => {
   let viewportHeight = window.innerHeight;
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
@@ -216,9 +214,7 @@ $(document).ready(function () {
 var acc = document.querySelectorAll(".accordion");
 
 acc.forEach(function (el) {
-  el.addEventListener("click", {
-    passive: true
-  }, function (e) {
+  el.addEventListener("click", function (e) {
     this.classList.toggle("active");
     let icon = this.querySelector("i");
     icon.classList.toggle("iconoir-nav-arrow-right");
