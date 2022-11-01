@@ -9,7 +9,7 @@
 :root.light {
     --Lato: "Lato", sans-serif;
     --Degular: "degular", sans-serif;
-    --primary-color: #6a90e2;
+    --primary-color: #3F70D9;
     --secondary-color: #f6fefd;
     --focus-color: #daa853;
     --hover-color: #45629f;
@@ -949,7 +949,7 @@ article {
 /** Footer **/
 
 #footer {
-    transition: margin-left ease-in-out 0.5s;
+    transition: margin-left cubic-bezier(0.075, 0.82, 0.165, 1) 0.5s, background ease-in-out 0.5s;
 }
 
 .footer-main {

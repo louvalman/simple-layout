@@ -27,8 +27,8 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(72deg)",
-  rotation: 180
+  filter: "hue-rotate(-48deg)",
+  rotation: 0
 })
 
 // Navbar JS
@@ -92,6 +92,13 @@ if ($(window).width() > 768) {
         element.style.opacity = "1";
       }
     }, 10);
+
+    var element = document.getElementById("logotopside");
+    if (element.style.opacity == "1") {
+      element.style.opacity = "0";
+    } else {
+      element.style.opacity = "1";
+    }
 
     var element = document.getElementById("closesidenav");
     if (element.style.opacity == "1") {

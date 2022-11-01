@@ -2,7 +2,7 @@ const createsideNav = () => {
     let sidenavid = document.querySelector('.sidenavclass');
 
     sidenavid.innerHTML = `
-    <div id="sidenavcontent">
+    
     <div class="sidebartop">
         <span onclick="toggleNav()" style="visibility:hidden;margin-right:auto;">
             <i class="iconoir-cancel"></i>
@@ -14,6 +14,7 @@ const createsideNav = () => {
             <i id="closesidenav" class="iconoir-cancel"></i>
         </span>
     </div>
+    <div id="sidenavcontent">
     <div class="sidebarmain">
         <div class="sidebarmenu">
             <div class="sidebarmenu-items">
