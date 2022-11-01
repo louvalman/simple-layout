@@ -756,7 +756,7 @@ article {
     padding: 8vmin 0vmin;
 }
 
-#faq h1 {
+#faq .title-faq {
     text-align: center;
     color: var(--text-color);
     font-family: var(--Degular);
