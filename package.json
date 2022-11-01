@@ -23,6 +23,7 @@
   "homepage": "https://github.com/louvalman/simple-layout/blob/main/public/README.md",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "compression": "^1.7.4",
     "dotenv": "^16.0.3",
     "express.js": "^1.0.0",
     "firebase-admin": "^11.0.0",

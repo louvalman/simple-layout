@@ -5,6 +5,7 @@ const bcrypt = require('bcrypt');
 const path = require('path');
 const port = process.env.PORT || 3000
 require('dotenv').config();
+var compression = require('compression')
 
 // trying out mongodb
 
@@ -46,6 +47,8 @@ const app = express();
 //middlewares
 app.use(express.static(staticPath));
 app.use(express.json());
+app.use(compression())
+
 
 //routes
 //home route
