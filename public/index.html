@@ -237,13 +237,36 @@
             </section>
         </div>
     </header>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" jQuery.event.special.touchstart={
-        setup: function( _, ns, handle ) { this.addEventListener("touchstart", handle, { passive:
-        !ns.includes("noPreventDefault") }); } }; jQuery.event.special.touchmove={ setup: function( _, ns, handle ) {
-        this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") }); } };
-        jQuery.event.special.wheel={ setup: function( _, ns, handle ){ this.addEventListener("wheel", handle, { passive:
-        true }); } }; jQuery.event.special.mousewheel={ setup: function( _, ns, handle ){
-        this.addEventListener("mousewheel", handle, { passive: true }); } };></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        jQuery.event.special.touchstart = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("touchstart", handle, {
+                    passive: !ns.includes("noPreventDefault")
+                });
+            }
+        };
+        jQuery.event.special.touchmove = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("touchmove", handle, {
+                    passive: !ns.includes("noPreventDefault")
+                });
+            }
+        };
+        jQuery.event.special.wheel = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("wheel", handle, {
+                    passive: true
+                });
+            }
+        };
+        jQuery.event.special.mousewheel = {
+            setup: function (_, ns, handle) {
+                this.addEventListener("mousewheel", handle, {
+                    passive: true
+                });
+            }
+        };
+    </script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
         integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
