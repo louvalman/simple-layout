@@ -27,8 +27,8 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(-48deg)",
-  rotation: 0
+  filter: "hue-rotate(0deg)",
+  rotation: 180
 })
 
 // Navbar JS
