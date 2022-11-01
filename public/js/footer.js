@@ -6,19 +6,23 @@ const createFooter = () => {
     <div class="footer-section">
         <div class="footer-content">
             <p class="footer-content-title">Ressources</p>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
+            <ul>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+            </ul>
         </div>
     </div>
     <div class="footer-section">
         <div class="footer-content">
         <p class="footer-content-title">Legal</p>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
-            <li><a href="#" class="footer-link">link</a></li>
+            <ul>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+                <li><a href="#" class="footer-link">link</a></li>
+            </ul>
         </div>
     </div>
     <div class="footer-section">

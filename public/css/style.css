@@ -977,6 +977,10 @@ article {
     font-weight: 300;
 }
 
+.footer-content ul {
+    padding: 0;
+}
+
 .footer-content {
     text-align: center;
     justify-items: center;
