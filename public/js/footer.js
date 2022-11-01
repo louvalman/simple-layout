@@ -25,10 +25,10 @@ const createFooter = () => {
         <div class="footer-content">
             <h4>Contact us</h4>
             <div class="socials">
-                <a href="#"><i class="fa fa-twitter-square" id="twitter" aria-hidden="false" alt="Twitter"></i></i></a>
-                <a href="#"><i class="fa fa-instagram" id="insta" aria-hidden="false" alt="Instagram"></i></a>
-                <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="false" alt="Facebook"></i></a>
-                <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="false" alt="Twitch"></i></a>
+                <a href="#"><i class="fa fa-twitter-square" id="twitter" aria-hidden="false" aria-label="Twitter"></i></i></a>
+                <a href="#"><i class="fa fa-instagram" id="insta" aria-hidden="false" aria-label="Instagram"></i></a>
+                <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="false" aria-label="Facebook"></i></a>
+                <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="false" aria-label="Twitch"></i></a>
             </div>
             <p class="copyright">© louvalman 2022</p>
         </div>

@@ -43,10 +43,10 @@ const createsideNav = () => {
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Explore other layouts</button>
         <div class="socials">
-        <a href="#"><i class="fa fa-twitter-square" id="twitter" aria-hidden="true"></i></i></a>
-        <a href="#"><i class="fa fa-instagram" id="insta" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="true"></i></a>
-        <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-twitter-square" id="twitter" aria-hidden="false"></i></i></a>
+        <a href="#"><i class="fa fa-instagram" id="insta" aria-hidden="false"></i></a>
+        <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="false"></i></a>
+        <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="false"></i></a>
         </div>
     </div>
     </div>
