@@ -779,7 +779,7 @@ article {
     transition: ease-in-out 0.2s;
 }
 
-.accordion h3 {
+.accordion p {
     padding-left: 8px;
     font-weight: 300;
     font-size: 14px;
@@ -836,7 +836,7 @@ article {
     color: var(--text-color);
 }
 
-.toph3 h3 {
+.toph3 p {
     font-family: var(--Degular);
     font-weight: 300;
     font-size: 16px;
