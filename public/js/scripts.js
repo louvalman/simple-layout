@@ -33,7 +33,9 @@ gsap.to(".bgfixed .bg", {
 
 // Navbar JS
 
-window.addEventListener("scroll", e => {
+window.addEventListener("scroll", {
+  passive: true
+}, e => {
   let viewportHeight = window.innerHeight;
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
@@ -214,7 +216,9 @@ $(document).ready(function () {
 var acc = document.querySelectorAll(".accordion");
 
 acc.forEach(function (el) {
-  el.addEventListener("click", function (e) {
+  el.addEventListener("click", {
+    passive: true
+  }, function (e) {
     this.classList.toggle("active");
     let icon = this.querySelector("i");
     icon.classList.toggle("iconoir-nav-arrow-right");
