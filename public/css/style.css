@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url("https://use.typekit.net/vmp0geq.css");
 
+@font-face {
+    font-family: 'degular';
+    font-style: normal;
+    font-weight: 200;
+    src: url('https://use.typekit.net/vmp0geq.css');
+    font-display: swap;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -177,6 +185,10 @@ header .nav-list .nav-listcontainer {
     margin-right: 32px;
 }
 
+header .nav-list ul {
+    list-style-type: none;
+}
+
 header .nav-list li a {
     display: block;
     color: var(--text-color);
@@ -191,7 +203,6 @@ header .nav-list li a {
 header .nav-list li a:hover {
     color: var(--hover-color);
     transition: 0.3s;
-    text-decoration: none;
 }
 
 header .nav-list .dropdown-content {
