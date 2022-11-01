@@ -1043,7 +1043,7 @@ article {
     color: var(--hover-color);
 }
 
-h4 {
+.footer-content-title {
     font-weight: 400;
     font-size: 14px;
 }

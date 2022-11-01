@@ -5,7 +5,7 @@ const createFooter = () => {
     <div class="footer-main">
     <div class="footer-section">
         <div class="footer-content">
-            <h4>Ressources</h4>
+            <p class="footer-content-title">Ressources</p>
             <li><a href="#" class="footer-link">link</a></li>
             <li><a href="#" class="footer-link">link</a></li>
             <li><a href="#" class="footer-link">link</a></li>
@@ -14,7 +14,7 @@ const createFooter = () => {
     </div>
     <div class="footer-section">
         <div class="footer-content">
-            <h4>Legal</h4>
+        <p class="footer-content-title">Legal</p>
             <li><a href="#" class="footer-link">link</a></li>
             <li><a href="#" class="footer-link">link</a></li>
             <li><a href="#" class="footer-link">link</a></li>
@@ -23,7 +23,7 @@ const createFooter = () => {
     </div>
     <div class="footer-section">
         <div class="footer-content">
-            <h4>Contact us</h4>
+        <p class="footer-content-title">Contact us</p>
             <div class="socials">
                 <a href="#" aria-label="Twitter"><i class="fa fa-twitter-square" id="twitter"></i></i></a>
                 <a href="#" aria-label="Instagram"><i class="fa fa-instagram" id="insta"></i></a>
