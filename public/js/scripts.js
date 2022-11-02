@@ -208,7 +208,7 @@ $(document).ready(function () {
     autoplay: true,
     speed: 1200,
     variableWidth: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: $('.prev-arrow'),
     nextArrow: $('.next-arrow'),

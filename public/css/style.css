@@ -105,8 +105,6 @@ a:visited {
     -webkit-backdrop-filter: blur(0.75px);
 }
 
-
-
 .trans::before {
     background: var(--sticky-trans-bg);
     bottom: 0;
@@ -717,7 +715,7 @@ article {
     max-width: 60%;
     line-height: 44px;
     letter-spacing: 0px;
-    padding: 8vmin 0vmin;
+    padding: 6vmin 0vmin;
 }
 
 .main-title a {
@@ -747,6 +745,89 @@ article {
 .un:hover::after {
     width: 100%;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.btn-cta {
+    margin-bottom: 6vmin;
+    background: var(--primary-color);
+    padding: 12px 18px;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    display: inline-block;
+    cursor: pointer;
+    width: 18em;
+    min-width: 10em;
+    outline: none;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-cta,
+button {
+    color: var(--white-text-color);
+    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1)
+}
+
+.btn-text {
+    margin: 0 0 2.5px 0;
+    font-family: var(--Degular);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-cta:hover,
+button:hover {
+    background: var(--hover-color);
+    border-color: var(--hover-color);
+    color: var(--white-text-color);
+}
+
+.btn-arrow {
+    position: relative;
+    transition: background-color 300ms ease-out;
+}
+
+.btn-arrow span {
+    display: inline-block;
+    position: relative;
+    transition: all 300ms ease-out;
+    will-change: transform;
+}
+
+.btn-arrow:hover span {
+    transform: translate3d(-1rem, 0, 0);
+}
+
+.btn-arrow svg {
+    position: absolute;
+    width: 1.6em;
+    right: 0px;
+    right: 0rem;
+    opacity: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 300ms ease-out;
+    will-change: right, opacity;
+}
+
+.btn-arrow svg * {
+    stroke-width: 1.5;
+    color: var(--white-text-color);
+    font-color: 18px;
+}
+
+.btn-arrow:hover svg {
+    opacity: 1;
+    right: -2rem;
+}
+
 
 #faq {
     display: flex;
@@ -885,8 +966,8 @@ article {
     font-family: var(--Degular);
     font-size: 24px;
     position: relative;
-    width: 22vw;
-    height: 14vw;
+    width: 24vw;
+    height: 16vw;
     border: solid 1px var(--text-color);
     border-radius: 8px;
     margin: 1.5vmin;
@@ -1239,7 +1320,7 @@ article {
     background-color: transparent;
     border-radius: 0.5rem;
     box-shadow: 0 0 2px 0 rgb(111, 111, 111, 8%), 0 0 4px 0 rgb(111, 111, 111, 2%), 0 0 5px 4px rgba(111, 111, 111, 0.06);
-    margin: 8vmin 0;
+    margin: 6vmin 0;
 }
 
 .input-container {
@@ -1615,13 +1696,6 @@ input:-webkit-autofill {
         max-width: 100%;
         font-size: 22px;
         font-weight: 300;
-    }
-
-    .article-container svg {
-        height: 58px;
-        width: 272px;
-        margin-bottom: 8vmin;
-        margin-top: 0vmin;
     }
 
     .toph3 i {
