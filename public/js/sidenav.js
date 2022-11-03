@@ -18,16 +18,19 @@ const createsideNav = () => {
         <div class="sidebarmain">
             <div class="sidebarmenu-items-mobile">
                 <div class="sidebarmenu-items-grid1">
-                <a href="#">Products</a>
+                <a class="sidebarmenu-title" href="#">Products</a>
                 <a href="#">Art</a>
                 <a href="#">Design</a>
                 </div>
                 <div class="sidebarmenu-items-grid2">
-                <a href="#">Docs</a>
+                <a class="sidebarmenu-title" href="#">Docs</a>
                 <a href="#">Information</a>
                 <a href="#">Github</a>
                 <a href="/#faq">FAQ</a>
                 </div>
+            </div>
+            <div class="line-container">
+                <div class="line-3"></div>
             </div>
             <div class="sidebarmenu">
                 <div class="sidebarmenu-items">
