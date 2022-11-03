@@ -1758,6 +1758,14 @@ input:-webkit-autofill {
         display: flex;
     }
 
+    .sidebarmenu {
+        padding-top: 4px;
+    }
+
+    .sidebarmenu a {
+        padding: 8px 0px 8px 0px;
+    }
+
     .toggle-container {
         margin-top: 5vh;
     }
