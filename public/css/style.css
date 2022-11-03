@@ -547,8 +547,9 @@ header .nav-list button {
     display: none;
     font-family: var(--Degular);
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     gap: 12vmin;
+    padding-bottom: 6px;
 }
 
 .sidebarmenu-items-mobile a {
@@ -556,7 +557,7 @@ header .nav-list button {
 }
 
 .sidebarmenu-title {
-    font-size: 16px;
+    font-size: 18px;
     padding-bottom: 8px !important;
     font-weight: 600;
 }
