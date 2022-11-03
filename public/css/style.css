@@ -797,10 +797,10 @@ article {
 .center {
     display: flex;
     justify-content: center;
+    margin-bottom: 6vmin;
 }
 
 .btn-cta {
-    margin-bottom: 6vmin;
     background: var(--primary-color);
     padding: 10px 16px;
     border: 2px solid var(--primary-color);
@@ -865,7 +865,7 @@ button:hover {
 }
 
 .btn-arrow svg * {
-    stroke-width: 1.5;
+    stroke-width: 1.75;
     color: var(--white-text-color);
 }
 
