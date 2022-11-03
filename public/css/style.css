@@ -574,9 +574,15 @@ header .nav-list button {
     color: var(--hover-color);
 }
 
+.line-container-2 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding: 8vmin 0vmin;
+}
+
 .line-3 {
     width: 60%;
-    padding: 8vmin 0vmin;
     border-top: 0.5px solid var(--placeholder-color);
 }
 
@@ -1722,6 +1728,11 @@ input:-webkit-autofill {
     .sidebarmain {
         height: 70vh;
         flex-direction: column;
+        margin-top: -10vmin;
+    }
+
+    .sidebarmenu {
+        margin-top: 0vmin;
     }
 
     .sidebarmenu-items-mobile {
@@ -1739,7 +1750,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -28vmin;
+        margin-top: -18vmin;
     }
 
     .main-title {

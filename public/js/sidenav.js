@@ -29,7 +29,7 @@ const createsideNav = () => {
                 <a href="/#faq">FAQ</a>
                 </div>
             </div>
-            <div class="line-container">
+            <div class="line-container-2">
                 <div class="line-3"></div>
             </div>
             <div class="sidebarmenu">
