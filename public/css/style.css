@@ -575,7 +575,7 @@ header .nav-list button {
 }
 
 .line-container-2 {
-    display: flex;
+    display: none;
     justify-content: center;
     width: 50%;
     padding: 8vmin 0vmin;
@@ -1747,6 +1747,14 @@ input:-webkit-autofill {
     .sidebarmenu-items-grid2 {
         display: flex;
         flex-direction: column;
+    }
+
+    .line-container-2 {
+        display: flex;
+    }
+
+    .toggle-container {
+        margin-top: 5vh;
     }
 
     .sidebarbottom {
