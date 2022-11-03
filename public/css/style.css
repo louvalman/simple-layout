@@ -564,6 +564,10 @@ header .nav-list button {
     transform: scale(1.05);
 }
 
+.sidebarmenu-items-mobile {
+    display: none;
+}
+
 .sidebarmenu-items i {
     font-size: 20px;
     color: var(--primary-color);
@@ -715,7 +719,7 @@ article {
     max-width: 60%;
     line-height: 44px;
     letter-spacing: 0px;
-    padding: 6vmin 0vmin;
+    padding: 8vmin 0vmin 6vmin 0vmin;
 }
 
 .main-title a {
@@ -754,10 +758,10 @@ article {
 .btn-cta {
     margin-bottom: 6vmin;
     background: var(--primary-color);
-    padding: 12px 18px;
+    padding: 10px 16px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
-    background 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
+    background: 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
     display: inline-block;
     cursor: pointer;
     width: 18em;
@@ -808,8 +812,7 @@ button:hover {
 .btn-arrow svg {
     position: absolute;
     width: 1.6em;
-    right: 0px;
-    right: 0rem;
+    right: -0.5rem;
     opacity: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -820,7 +823,6 @@ button:hover {
 .btn-arrow svg * {
     stroke-width: 1.5;
     color: var(--white-text-color);
-    font-color: 18px;
 }
 
 .btn-arrow:hover svg {
@@ -1320,7 +1322,7 @@ button:hover {
     background-color: transparent;
     border-radius: 0.5rem;
     box-shadow: 0 0 2px 0 rgb(111, 111, 111, 8%), 0 0 4px 0 rgb(111, 111, 111, 2%), 0 0 5px 4px rgba(111, 111, 111, 0.06);
-    margin: 6vmin 0;
+    margin: 8vmin 0;
 }
 
 .input-container {
@@ -1686,6 +1688,23 @@ input:-webkit-autofill {
 
     .sidebarmain {
         height: 70vh;
+        flex-direction: column;
+    }
+
+    .sidebarmenu-items-mobile {
+        display: flex;
+        gap: 12vmin;
+        padding-bottom: 20vmin;
+    }
+
+    .sidebarmenu-items-grid1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebarmenu-items-grid2 {
+        display: flex;
+        flex-direction: column;
     }
 
     .sidebarbottom {
