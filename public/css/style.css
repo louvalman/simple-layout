@@ -815,12 +815,14 @@ article {
     text-align: center;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%);
+    transition: all 2s cubic-bezier(0.16, 0.08, 0.355, 1);
 }
 
 .btn-cta,
 button {
     color: var(--white-text-color);
-    transition: color 0.1s cubic-bezier(0.16, 0.08, 0.355, 1)
+    transition: color 2s cubic-bezier(0.16, 0.08, 0.355, 1);
 }
 
 .btn-text {
@@ -835,6 +837,7 @@ button:hover {
     background: var(--hover-color);
     border-color: var(--hover-color);
     color: var(--white-text-color);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .btn-arrow {
@@ -1778,6 +1781,15 @@ input:-webkit-autofill {
         max-width: 100%;
         font-size: 22px;
         font-weight: 300;
+        line-height: 38px;
+    }
+
+    .center {
+        margin-bottom: 12vmin;
+    }
+
+    .btn-cta {
+        padding: 8px 14px;
     }
 
     .toph3 i {
@@ -1795,8 +1807,8 @@ input:-webkit-autofill {
     }
 
     .slick-content-background {
-        width: 48vw;
-        height: 36vw;
+        width: 56vw;
+        height: 42vw;
     }
 
     .slick-item {
