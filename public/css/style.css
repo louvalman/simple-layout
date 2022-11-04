@@ -805,7 +805,6 @@ article {
     padding: 10px 16px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
-    background: 0.1s cubic-bezier(0.16, 0.08, 0.355, 1);
     display: inline-block;
     cursor: pointer;
     width: 18em;
@@ -815,14 +814,12 @@ article {
     text-align: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%);
-    transition: all 2s cubic-bezier(0.16, 0.08, 0.355, 1);
+    box-shadow: 0 0 2px 0 rgba(157, 156, 156, 0.08), 0 0 4px 0 rgb(157, 156, 156 / 2%), 0 0 5px 4px rgb(157, 156, 156 / 6%);
+    transition: all 0.2s ease-in-out !important;
 }
 
-.btn-cta,
-button {
+.btn-cta {
     color: var(--white-text-color);
-    transition: color 2s cubic-bezier(0.16, 0.08, 0.355, 1);
 }
 
 .btn-text {
@@ -832,8 +829,7 @@ button {
     font-weight: 400;
 }
 
-.btn-cta:hover,
-button:hover {
+.btn-cta:hover {
     background: var(--hover-color);
     border-color: var(--hover-color);
     color: var(--white-text-color);

@@ -24,7 +24,7 @@ const createsideNav = () => {
                 </div>
                 <div class="sidebarmenu-items-grid2">
                 <a class="sidebarmenu-title" href="#">Docs</a>
-                <a class="sidebarmenu-item" href="#">Github</a>
+                <a class="sidebarmenu-item" href="https://www.github.com/louvalman">Github</a>
                 <a class="sidebarmenu-item" href="/#faq">FAQ</a>
                 </div>
             </div>

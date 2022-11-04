@@ -23,7 +23,7 @@ const createtopNav = () => {
         <li class="nav-listitems dropdown remove-mobile"><a href="#">Docs</a>
             <div class="dropdown-content">
                 <a href="/#faq">Information</a>
-                <a href="#">Github</a>
+                <a href="https://www.github.com/louvalman">Github</a>
                 <a href="/#faq">FAQ</a>
             </div>
         </li>
