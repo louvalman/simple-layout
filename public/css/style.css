@@ -423,7 +423,7 @@ header .nav-list button {
 .modal-body .walletscontainer {
     top: 50%;
     left: 50%;
-    border-radius: 8px;
+    border-radius: 9px;
     border-width: 1px;
     border-style: solid;
     border-color: var(--primary-color);
@@ -1803,8 +1803,8 @@ input:-webkit-autofill {
     }
 
     .slick-content-background {
-        width: 56vw;
-        height: 42vw;
+        width: 54vw;
+        height: 38vw;
     }
 
     .slick-item {
