@@ -1329,6 +1329,15 @@ article {
     text-align: center;
     line-height: 40px;
     letter-spacing: 0px;
+    margin: 7.5% 0 3.75% 0;
+}
+
+.main-title-text {
+    font-family: var(--Degular);
+    font-weight: 200;
+    font-size: 14px;
+    color: var(--text-color);
+    margin: 0 7.5% 2.5% 7.5%;
 }
 
 .loader {
@@ -1426,7 +1435,7 @@ textarea {
 }
 
 .label-content-mongo {
-    top: 13%;
+    top: 15%;
 }
 
 input:focus+.input-label {
@@ -1579,6 +1588,10 @@ input:-webkit-autofill {
     transition: ease-in-out 0.2s;
 }
 
+.on-contact-form {
+    margin-top: 0vmin !important;
+}
+
 .label-style-alternative:hover {
     color: var(--hover-color);
 }
@@ -1672,7 +1685,7 @@ input:-webkit-autofill {
 /** Error message **/
 
 .alert-box {
-    width: 364px;
+    width: 310px;
     min-height: 100px;
     background: var(--bggradient);
     border-style: solid;
@@ -1917,7 +1930,7 @@ input:-webkit-autofill {
     }
 
     .label-content-mongo {
-        top: 28%;
+        top: 24px;
     }
 
     .footer-section {
