@@ -1368,6 +1368,14 @@ article {
     margin: 8vmin 0;
 }
 
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
 .input-container {
     background-color: var(--placeholder-background);
     position: relative;
@@ -1375,6 +1383,31 @@ article {
     width: 85%;
     transition: background-color 500ms;
     border-radius: 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 20px 16px 6px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: transparent;
+    color: #2e2e2e;
+    font-size: 14px;
+    font-weight: 300;
+    transition: border 500ms;
+    font-family: var(--Degular), sans-serif;
+    transition: ease-in-out 0.2s;
+}
+
+.title-mongo {
+    width: 50% !important;
+    align-self: flex-start;
+    margin-left: 7.5%;
+}
+
+.content-mongo {
+    height: 20vmin !important;
 }
 
 .input-label {
@@ -1392,6 +1425,10 @@ article {
     transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1), color 150ms cubic-bezier(0.4, 0, 0.2, 1), top 500ms;
 }
 
+.label-content-mongo {
+    top: 15%;
+}
+
 input:focus+.input-label {
     transform: translateY(-100%) scale(0.75);
     color: var(--focus-color);
@@ -1406,6 +1443,17 @@ input:focus+.input-label,
 input.is-valid+.input-label {
     transform: translateY(-100%) scale(0.75);
 }
+
+textarea:focus+.input-label {
+    transform: translateY(-100%) scale(0.75);
+    color: var(--focus-color);
+}
+
+textarea:focus+.input-label,
+textarea.is-valid+.input-label {
+    transform: translateY(-100%) scale(0.75);
+}
+
 
 input[type="text"],
 input[type="password"],
@@ -1431,6 +1479,13 @@ input[type="email"] {
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus {
+    outline: none;
+    border-bottom-width: 3px;
+    border-color: var(--focus-color);
+    border-radius: 8px;
+}
+
+textarea:focus {
     outline: none;
     border-bottom-width: 3px;
     border-color: var(--focus-color);
@@ -1502,6 +1557,15 @@ input:-webkit-autofill {
     font-size: 12px;
     font-weight: 300;
     padding-left: 8px;
+    transition: ease-in-out 0.2;
+}
+
+.label-style a {
+    transition: ease-in-out 0.2s !important;
+}
+
+.label-style a:hover {
+    color: var(--hover-color);
 }
 
 .label-style-alternative {
@@ -1512,6 +1576,11 @@ input:-webkit-autofill {
     display: block;
     margin-top: 2.5vmin;
     margin-bottom: 5vmin;
+    transition: ease-in-out 0.2s;
+}
+
+.label-style-alternative:hover {
+    color: var(--hover-color);
 }
 
 /** Buttons **/

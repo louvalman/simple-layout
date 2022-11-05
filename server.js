@@ -1,13 +1,16 @@
-// importing packages
+// importing packages and initializing express
 const express = require('express');
-const admin = require('firebase-admin');
+const app = express();
+
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const path = require('path');
 const port = process.env.PORT || 3000
 require('dotenv').config();
 var compression = require('compression')
 
-// trying out mongodb
+// connect to mongodb
 
 const {
     MongoClient
@@ -41,8 +44,30 @@ async function listDatabases(client) {
 // declare static path
 let staticPath = path.join(__dirname, "public");
 
-//intializing express.js
-const app = express();
+// configure bodyParser
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
+
+// connect mongoose
+mongoose.connect(process.env.MONGO_URI)
+
+// create data schema
+const notesSchema = {
+    title: String,
+    content: String
+}
+
+const Note = mongoose.model("Note", notesSchema);
+
+app.post("/", function (req, res) {
+    let newNote = new Note({
+        title: req.body.title,
+        content: req.body.content
+    })
+    newNote.save();
+    res.redirect('/');
+})
 
 //middlewares
 app.use(express.static(staticPath));
@@ -54,6 +79,11 @@ app.use(compression())
 //home route
 app.get("/", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
+})
+
+//contact route
+app.get('/contact', (req, res) => {
+    res.sendFile(path.join(staticPath, "contact.html"));
 })
 
 //login route

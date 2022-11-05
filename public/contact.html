@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A simple layout - louvalman</title>
+
+    <meta name="simple layout ld" content="A simple layout - louvalman">
+    <meta name="louvalman" content="LD">
+    <meta name="description" content="A simple layout - louvalman">
+    <meta property="og:title" content="A simple layout - louvalman">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://simple-layouts.netlify.app/">
+    <meta property="og:description" content="A simple layout - louvalman">
+    <meta property="og:image" content="image.png">
+
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@master/css/iconoir.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="bgfixed">
+        <div class="bg"></div>
+    </div>
+    <header>
+        <div id="sidenavid" class="sidenavclass">
+            <script src="js/sidenav.js"></script>
+        </div>
+        <div id="main" class="main">
+            <nav id="navbar" class="trans">
+                <script src="js/topnav.js"></script>
+            </nav>
+            <div id="connect-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <div class="modalheadertitle">
+                            <p>Connect your wallet</p>
+                        </div>
+                        <div class="modalheadericon">
+                            <span class="closeicon-2">
+                                <i class="iconoir-cancel"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="walletscontainer">
+                            <div class="walletitem first">
+                                <div class="walletcontent">
+                                    <p class="wallettext">Nami</p>
+                                    <img class="walleticon lazyload" src="assets/nami.svg" alt="Nami wallet">
+                                </div>
+                            </div>
+                            <div class="walletborder"></div>
+                            <div class="walletitem">
+                                <div class="walletcontent">
+                                    <p class="wallettext">Flint</p>
+                                    <img class="walleticon lazyload" src="assets/flint.svg" alt="Flint wallet">
+                                </div>
+                            </div>
+                            <div class="walletborder"></div>
+                            <div class="walletitem">
+                                <div class="walletcontent">
+                                    <p class="wallettext"> Gero</p>
+                                    <img class="walleticon lazyload" src="assets/gero.svg" alt="Gero wallet">
+                                </div>
+                            </div>
+                            <div class="walletborder"></div>
+                            <div class="walletitem last">
+                                <div class="walletcontent">
+                                    <p class="wallettext">Eternl</p>
+                                    <img class="walleticon lazyload" src="assets/eternl.svg" alt="Eternl wallet">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section id="section-main">
+                <div class="article-container">
+                    <article class="section-container">
+                        <div class="signupmain">
+                            <span class="loader" alt="spinner"></span>
+                            <div class="form-container">
+                                <h1 class="main-title-sign-up">Stay in touch for more simple
+                                    layouts</h1>
+                                <form method="post" action="/">
+                                    <div class="input-container title-mongo">
+                                        <input type="text" focus autocomplete="false" id="title-input" name="title"
+                                            required />
+                                        <label class="input-label" for="title-input">Title</label>
+                                    </div>
+                                    <div class="input-container content-mongo">
+                                        <textarea id="content-textarea" name="content"></textarea>
+                                        <label class="input-label label-content-mongo"
+                                            for="content-textarea">Content</label>
+                                    </div>
+                                    <button class="submit-btn"><a>Send feedback</a></button>
+                                </form>
+                                <a href="/" class="label-style-alternative">Go back and check out this layout</a>
+                            </div>
+                            <div class="alert-box" id="alert-box">
+                                <img src="assets/ev-plug-error.svg" class="alert-img" alt="Something went wrong">
+                                <p class="alert-msg">Error message</p>
+                            </div>
+                            <p class="section-text">
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+            integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+            integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="js/lazysizes.min.js" async></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/form.js"></script>
+    </header>
+    <footer class="footerclass">
+        <script src="js/footer.js"></script>
+    </footer>
+</body>
+
+</html>

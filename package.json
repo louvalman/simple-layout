@@ -23,11 +23,13 @@
   "homepage": "https://github.com/louvalman/simple-layout/blob/main/public/README.md",
   "dependencies": {
     "bcrypt": "^5.0.1",
+    "body-parser": "^1.20.1",
     "compression": "^1.7.4",
     "dotenv": "^16.0.3",
     "express.js": "^1.0.0",
     "firebase-admin": "^11.0.0",
     "mongodb": "^4.10.0",
+    "mongoose": "^6.7.1",
     "nodemon": "^2.0.19"
   }
 }
