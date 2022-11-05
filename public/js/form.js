@@ -23,6 +23,16 @@ inputs.forEach((input) => {
     });
 });
 
+inputs.forEach((textarea) => {
+    textarea.addEventListener("blur", (event) => {
+        if (event.target.value) {
+            textarea.classList.add("is-valid");
+        } else {
+            textarea.classList.remove("is-valid");
+        }
+    });
+});
+
 submitBtn.addEventListener('click', () => {
     if (name.value.length < 3) {
         showAlert('Your name must be at least three letters long');

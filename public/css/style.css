@@ -1426,7 +1426,7 @@ textarea {
 }
 
 .label-content-mongo {
-    top: 15%;
+    top: 13%;
 }
 
 input:focus+.input-label {
@@ -1450,7 +1450,7 @@ textarea:focus+.input-label {
 }
 
 textarea:focus+.input-label,
-textarea.is-valid+.input-label {
+textarea:valid+.input-label {
     transform: translateY(-100%) scale(0.75);
 }
 
@@ -1916,6 +1916,9 @@ input:-webkit-autofill {
         margin: 8vmin 0;
     }
 
+    .label-content-mongo {
+        top: 28%;
+    }
 
     .footer-section {
         width: 100%;
