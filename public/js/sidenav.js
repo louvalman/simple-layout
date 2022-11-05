@@ -28,7 +28,7 @@ const createsideNav = () => {
                 <a class="sidebarmenu-item" href="/#faq">FAQ</a>
                 </div>
             </div>
-            <div class="line-container-2">
+            <div class="line-container-2" style="visibility: hidden;">
                 <div class="line-3"></div>
             </div>
             <div class="sidebarmenu">

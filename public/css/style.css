@@ -1870,6 +1870,14 @@ input:-webkit-autofill {
         padding: 8px 14px;
     }
 
+    .btn-text {
+        font-size: 14px;
+    }
+
+    .btn-arrow svg {
+        width: 1.35em;
+    }
+
     .toph3 i {
         font-size: 12px;
         margin-top: 4px;
