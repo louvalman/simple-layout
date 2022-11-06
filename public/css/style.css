@@ -583,7 +583,7 @@ header .nav-list button {
     display: none;
     justify-content: center;
     width: 50%;
-    padding: 8vmin 0vmin;
+    padding: 4vmin 0vmin;
 }
 
 .line-3 {
@@ -618,7 +618,6 @@ header .nav-list button {
 }
 
 .toggle-container {
-    height: 5%;
     display: flex;
     justify-content: center;
     margin-top: 10vh;
@@ -1871,7 +1870,7 @@ input:-webkit-autofill {
     }
 
     .btn-text {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .btn-arrow svg {
