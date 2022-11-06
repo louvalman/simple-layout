@@ -545,11 +545,12 @@ header .nav-list button {
 
 .sidebarmenu-items-mobile {
     display: none;
+    flex-direction: column;
     font-family: var(--Degular);
     font-weight: 400;
     font-size: 16px;
-    gap: 12vmin;
-    padding-bottom: 6px;
+    /* gap: 12vmin; */
+    padding-bottom: 4vmin;
 }
 
 .sidebarmenu-items-mobile a {
@@ -557,20 +558,21 @@ header .nav-list button {
 }
 
 .sidebarmenu-title {
-    font-size: 18px;
+    font-size: 20px !important;
     padding-bottom: 8px !important;
-    font-weight: 600;
+    font-weight: 600 !important;
+    color: var(--primary-color) !important;
 }
 
 .sidebarmenu-item {
     margin-left: 0px;
+    color: var(--text-color) !important;
 }
 
 .sidebarmenu-items-grid1 a,
 .sidebarmenu-items-grid2 a {
     text-decoration: none;
     transition: 0.5s;
-    color: var(--text-color);
 }
 
 .sidebarmenu-items-grid1 a:hover,
@@ -593,6 +595,10 @@ header .nav-list button {
 
 .sidebarmenu {
     margin-top: -12vmin;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .sidebarmenu a {
@@ -605,7 +611,7 @@ header .nav-list button {
     transition: 0.5s;
     display: flex;
     align-items: center;
-    gap: 1.5vmin;
+    gap: 1.6vmin;
 }
 
 .sidebarmenu a:hover {
@@ -626,7 +632,6 @@ header .nav-list button {
 .toggle-container span {
     display: flex;
     justify-content: center;
-    gap: 1.5vmin;
 }
 
 .toggle-container span span {
@@ -637,6 +642,7 @@ header .nav-list button {
 
 .toggle-container span i {
     font-size: 20px;
+    margin-right: 1.6vmin;
 }
 
 .theme-btn {
@@ -1835,7 +1841,7 @@ input:-webkit-autofill {
     }
 
     .line-container-2 {
-        display: flex;
+        display: none;
     }
 
     .sidebarmenu {

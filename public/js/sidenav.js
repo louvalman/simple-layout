@@ -16,6 +16,7 @@ const createsideNav = () => {
     </div>
     <div id="sidenavcontent">
         <div class="sidebarmain">
+        <div class="sidebarmenu">
             <div class="sidebarmenu-items-mobile">
                 <div class="sidebarmenu-items-grid1">
                 <a class="sidebarmenu-title" href="#">Products</a>
@@ -31,11 +32,10 @@ const createsideNav = () => {
             <div class="line-container-2" style="visibility: hidden;">
                 <div class="line-3"></div>
             </div>
-            <div class="sidebarmenu">
                 <div class="sidebarmenu-items">
+                    <a class="sidebarmenu-title" href="account">Account</a>
                     <a href="login"><i class="iconoir-log-in"></i>Login</a>
-                    <a href="signup"><i class="iconoir-add-circled-outline"></i>Sign up</a>
-                    <a href="account"><i class="iconoir-profile-circled"></i>Account</a>
+                    <a href="signup" style="gap:1.4vmin !important;"><i class="iconoir-add-user" style="margin-left:2px;"></i>Sign up</a>
                     <a href="favorites"><i class="iconoir-heart"></i>Favorites</a>
                 </div>
                 <div class="toggle-container">
@@ -55,6 +55,7 @@ const createsideNav = () => {
                 </div>
             </div>
         </div>
+    </div>
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Explore other layouts</button>
         <div class="socials">
