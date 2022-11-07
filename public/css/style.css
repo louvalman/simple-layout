@@ -556,7 +556,6 @@ header .nav-list button {
     flex-direction: column;
     font-family: var(--Degular);
     font-weight: 400;
-    font-size: 16px;
     /* gap: 12vmin;
     padding-bottom: 12vmin; */
 }
@@ -566,7 +565,7 @@ header .nav-list button {
 }
 
 .sidebarmenu-title {
-    font-size: 20px !important;
+    font-size: 24px !important;
     padding-bottom: 4px !important;
     font-weight: 600 !important;
     color: var(--primary-color) !important;
@@ -584,7 +583,7 @@ header .nav-list button {
 .sidebarmenu-items-grid1 a,
 .sidebarmenu-items-grid2 a {
     text-decoration: none;
-    transition: 0.5s;
+    transition: ease-in-out 0.33s;
 }
 
 .sidebarmenu-items-grid1 a:hover,
@@ -610,7 +609,7 @@ header .nav-list button {
     font-weight: 400;
     padding: 12px 0px 12px 0px;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color);
     transition: ease-in-out 0.33s;
     display: flex;
@@ -628,11 +627,11 @@ header .nav-list button {
 }
 
 .iconoir-add-user {
-    margin-left: 0.3vmin;
+    margin-left: 0.35vmin;
 }
 
 .sidebar-signup {
-    gap: 1.3vmin !important;
+    gap: 1.2vmin !important;
 }
 
 
@@ -973,7 +972,7 @@ article {
     justify-content: space-between;
     align-items: center;
     margin-left: 1.5vmin;
-    height: 24px;
+    margin-bottom: -2vmin;
 }
 
 .toph3 {
@@ -1886,15 +1885,15 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu a {
-        padding: 4px 0px 0px 0px;
+        padding: 7px 0px 0px 0px;
     }
 
     .sidebarmenu-items-grid1 {
-        padding-bottom: 4vmin;
+        padding-bottom: 8vmin;
     }
 
     .sidebarmenu-items-grid2 {
-        padding-bottom: 4vmin;
+        padding-bottom: 8vmin;
     }
 
     .toggle-container {

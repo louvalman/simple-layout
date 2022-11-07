@@ -27,7 +27,7 @@ const createFooter = () => {
     </div>
     <div class="footer-section">
         <div class="footer-content">
-        <p class="footer-content-title">Contact us</p>
+        <a href="/contact"<p class="footer-content-title">Contact us</p></a>
             <div class="socials">
                 <a href="#" aria-label="Twitter"><i class="fa fa-twitter-square" id="twitter"></i></i></a>
                 <a href="#" aria-label="Instagram"><i class="fa fa-instagram" id="insta"></i></a>
