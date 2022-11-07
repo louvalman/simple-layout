@@ -615,13 +615,23 @@ header .nav-list button {
 }
 
 .sidebarmenu a:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
+    transform-origin: center;
 }
 
 .sidebarmenu-items i {
     font-size: 20px;
     color: var(--primary-color);
 }
+
+.iconoir-add-user {
+    margin-left: 0.3vmin;
+}
+
+.sidebar-signup {
+    gap: 1.3vmin !important;
+}
+
 
 .toggle-container {
     display: flex;
@@ -1831,15 +1841,15 @@ input:-webkit-autofill {
     }
 
     .iconoir-log-in {
-        margin-left: -0.75vmin;
+        margin-left: -0.7vmin;
     }
 
     .sidebar-login {
-        gap: 2.2vmin !important;
+        gap: 2vmin !important;
     }
 
-    .sidebar-signup {
-        gap: 1.4vmin !important;
+    .iconoir-add-user {
+        margin-left: 0vmin;
     }
 
     .iconoir-heart {
