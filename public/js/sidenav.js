@@ -34,9 +34,9 @@ const createsideNav = () => {
             </div>
                 <div class="sidebarmenu-items">
                     <a class="sidebarmenu-title" href="account">Account</a>
-                    <a href="login"><i class="iconoir-log-in"></i>Login</a>
-                    <a href="signup" style="gap:1.4vmin !important;"><i class="iconoir-add-user" style="margin-left:2px;"></i>Sign up</a>
-                    <a href="favorites"><i class="iconoir-heart"></i>Favorites</a>
+                    <a href="login" class="sidebar-login"><i class="iconoir-log-in"></i>Login</a>
+                    <a href="signup" class="sidebar-signup"><i class="iconoir-add-user"></i>Sign up</a>
+                    <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
                 </div>
                 <div class="toggle-container">
                 

@@ -543,14 +543,22 @@ header .nav-list button {
     align-items: center;
 }
 
+.sidebarmenu {
+    margin-top: -12vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .sidebarmenu-items-mobile {
     display: none;
     flex-direction: column;
     font-family: var(--Degular);
     font-weight: 400;
     font-size: 16px;
-    /* gap: 12vmin; */
-    padding-bottom: 4vmin;
+    /* gap: 12vmin;
+    padding-bottom: 12vmin; */
 }
 
 .sidebarmenu-items-mobile a {
@@ -559,7 +567,7 @@ header .nav-list button {
 
 .sidebarmenu-title {
     font-size: 20px !important;
-    padding-bottom: 8px !important;
+    padding-bottom: 4px !important;
     font-weight: 600 !important;
     color: var(--primary-color) !important;
 }
@@ -591,14 +599,6 @@ header .nav-list button {
 .line-3 {
     width: 60%;
     border-top: 0.5px solid var(--placeholder-color);
-}
-
-.sidebarmenu {
-    margin-top: -12vmin;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .sidebarmenu a {
@@ -1830,6 +1830,26 @@ input:-webkit-autofill {
         display: flex;
     }
 
+    .iconoir-log-in {
+        margin-left: -0.75vmin;
+    }
+
+    .sidebar-login {
+        gap: 2.2vmin !important;
+    }
+
+    .sidebar-signup {
+        gap: 1.4vmin !important;
+    }
+
+    .iconoir-heart {
+        margin-left: -0.5vmin;
+    }
+
+    .sidebar-fav {
+        gap: 1.9vmin !important;
+    }
+
     .sidebarmenu-items-grid1 {
         display: flex;
         flex-direction: column;
@@ -1849,7 +1869,15 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu a {
-        padding: 8px 0px 8px 0px;
+        padding: 4px 0px 0px 0px;
+    }
+
+    .sidebarmenu-items-grid1 {
+        padding-bottom: 4vmin;
+    }
+
+    .sidebarmenu-items-grid2 {
+        padding-bottom: 4vmin;
     }
 
     .toggle-container {
