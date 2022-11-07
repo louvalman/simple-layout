@@ -572,6 +572,10 @@ header .nav-list button {
     color: var(--primary-color) !important;
 }
 
+.remove-desktop {
+    display: none !important;
+}
+
 .sidebarmenu-item {
     margin-left: 0px;
     color: var(--text-color) !important;
@@ -608,15 +612,14 @@ header .nav-list button {
     text-decoration: none;
     font-size: 14px;
     color: var(--text-color);
-    transition: 0.5s;
+    transition: ease-in-out 0.33s;
     display: flex;
     align-items: center;
     gap: 1.6vmin;
 }
 
 .sidebarmenu a:hover {
-    transform: scale(1.03);
-    transform-origin: center;
+    transform: scale(1.05);
 }
 
 .sidebarmenu-items i {
@@ -817,7 +820,7 @@ article {
 
 .btn-cta {
     background: var(--primary-color);
-    padding: 10px 16px;
+    padding: 8px 16px;
     border: 2px solid var(--primary-color);
     border-radius: 8px;
     display: inline-block;
@@ -1748,6 +1751,10 @@ input:-webkit-autofill {
         display: none;
     }
 
+    .remove-desktop {
+        display: flex !important;
+    }
+
     #logotop {
         display: none;
     }
@@ -1919,6 +1926,14 @@ input:-webkit-autofill {
 
     .btn-arrow svg {
         width: 1.35em;
+    }
+
+    .btn-arrow span {
+        transition: all 100ms ease-out;
+    }
+
+    .btn-arrow svg {
+        transition: all 100ms ease-out;
     }
 
     .toph3 i {

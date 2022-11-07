@@ -33,7 +33,7 @@ const createsideNav = () => {
                 <div class="line-3"></div>
             </div>
                 <div class="sidebarmenu-items">
-                    <a class="sidebarmenu-title" href="account">Account</a>
+                    <a class="sidebarmenu-title remove-desktop" href="account">Account</a>
                     <a href="login" class="sidebar-login"><i class="iconoir-log-in"></i>Login</a>
                     <a href="signup" class="sidebar-signup"><i class="iconoir-add-user"></i>Sign up</a>
                     <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
