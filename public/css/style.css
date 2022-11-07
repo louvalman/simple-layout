@@ -648,7 +648,7 @@ header .nav-list button {
 
 .toggle-container span span {
     font-family: var(--Degular);
-    font-size: 14px;
+    font-size: 16px;
     color: var(--text-color);
 }
 
@@ -1826,6 +1826,11 @@ input:-webkit-autofill {
         position: relative;
     }
 
+    .sidebartop h1 {
+        font-size: 28px;
+        height: 43px;
+    }
+
     .sidebartop i {
         display: block;
         margin-right: 6vmin;
@@ -1889,15 +1894,15 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu-items-grid1 {
-        padding-bottom: 8vmin;
+        padding-bottom: 6vmin;
     }
 
     .sidebarmenu-items-grid2 {
-        padding-bottom: 8vmin;
+        padding-bottom: 6vmin;
     }
 
     .toggle-container {
-        margin-top: 5vh;
+        margin-top: 2.5vh;
     }
 
     .sidebarbottom {
