@@ -168,6 +168,14 @@ if ($(window).width() > 768) {
     } else {
       element.style.width = "100%";
     }
+
+    var element = document.getElementById("body");
+    if (element.style.overflow == "hidden") {
+      element.style.overflow = "visible";
+    } else {
+      element.style.overflow = "hidden";
+    }
+
   }
 }
 
