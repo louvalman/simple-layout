@@ -1912,8 +1912,8 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-top: 8vh;
-        margin-left: -52px;
+        margin-top: 4vh;
+        /* margin-left: -52px; */
     }
 
     .toggle-container span i {
