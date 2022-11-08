@@ -1901,15 +1901,15 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu-items-grid1 {
-        padding-bottom: 6vmin;
+        padding-bottom: 4vmin;
     }
 
     .sidebarmenu-items-grid2 {
-        padding-bottom: 6vmin;
+        padding-bottom: 4vmin;
     }
 
     .toggle-container {
-        margin-bottom: 5vh;
+        margin-bottom: 3.5vh;
         margin-left: -3px;
     }
 
