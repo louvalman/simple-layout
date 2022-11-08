@@ -592,10 +592,6 @@ header .nav-list button {
     color: var(--hover-color);
 }
 
-.sidebar-login,
-.sidebar-signup,
-.sidebar-fav {}
-
 .line-container-2 {
     display: none;
     justify-content: center;
@@ -1920,7 +1916,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -12vmin;
+        margin-top: -14vmin;
     }
 
     .main-title {
