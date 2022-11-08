@@ -1840,7 +1840,7 @@ input:-webkit-autofill {
     .sidebarmain {
         height: 70vh;
         flex-direction: column;
-        margin-top: -10vmin;
+        margin-top: -12vmin;
     }
 
     .sidebarmenu {
@@ -1906,7 +1906,7 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-bottom: 2vh;
+        margin-bottom: 4vh;
         margin-left: -3px;
         margin-top: -10vmin;
     }
