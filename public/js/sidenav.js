@@ -40,7 +40,6 @@ const createsideNav = () => {
                     <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
                 </div>
                 <div class="toggle-container">
-                
                 <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
                 <i class="iconoir-light-bulb-on"></i>  
                 <span>
