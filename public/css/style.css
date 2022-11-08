@@ -1844,6 +1844,7 @@ input:-webkit-autofill {
     .sidebarmain {
         height: 70vh;
         flex-direction: column;
+        margin-top: -10vmin;
     }
 
     .sidebarmenu {
