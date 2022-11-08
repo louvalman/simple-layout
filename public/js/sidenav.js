@@ -17,6 +17,20 @@ const createsideNav = () => {
     <div id="sidenavcontent">
         <div class="sidebarmain">
         <div class="sidebarmenu">
+        <div class="toggle-container">
+        <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+        <i class="iconoir-light-bulb-on"></i>  
+        <span>
+        Lighter
+        </span>      
+        </span>
+        <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+        <i class="iconoir-light-bulb-off"></i> 
+        <span>
+        Dimmer
+        </span>
+        </span>
+        </div>
             <div class="sidebarmenu-items-mobile">
                 <div class="sidebarmenu-items-grid1">
                 <a class="sidebarmenu-title" href="#">Products</a>
@@ -38,20 +52,6 @@ const createsideNav = () => {
                     <a href="login" class="sidebar-login"><i class="iconoir-log-in"></i>Login</a>
                     <a href="signup" class="sidebar-signup"><i class="iconoir-add-user"></i>Sign up</a>
                     <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
-                </div>
-                <div class="toggle-container">
-                <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
-                <i class="iconoir-light-bulb-on"></i>  
-                <span>
-                Light mode
-                </span>      
-                </span>
-                <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-                <i class="iconoir-light-bulb-off"></i> 
-                <span>
-                Dark mode
-                </span>
-                </span>
                 </div>
             </div>
         </div>

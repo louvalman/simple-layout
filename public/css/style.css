@@ -15,7 +15,7 @@
     --hover-color: #2f54a4;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
-    --white-text-color: whitesmoke;
+    --white-text-color: #FCFCFC;
     --bggradient: #fffdf5;
     --bggradient2: linear-gradient(220.55deg, #665da1 0%, #418CB7 100%);
     --tooltip-bg-color: #1e1e1e;
@@ -29,8 +29,8 @@
     --secondary-color: #bbd2b8;
     --hover-color: #1e5e44;
     --focus-color: #8974b6;
-    --text-color: whitesmoke;
-    --white-text-color: whitesmoke;
+    --text-color: #FCFCFC;
+    --white-text-color: #FCFCFC;
     --bggradient: #262626;
     --placeholder-background: #d3d9d0;
     --placeholder-color: #757975;
@@ -593,9 +593,7 @@ header .nav-list button {
 
 .sidebar-login,
 .sidebar-signup,
-.sidebar-fav {
-    margin-left: -31px;
-}
+.sidebar-fav {}
 
 .line-container-2 {
     display: none;
@@ -643,8 +641,7 @@ header .nav-list button {
 
 .toggle-container {
     display: flex;
-    justify-content: center;
-    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 .toggle-container span {
@@ -1912,12 +1909,12 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-top: 4vh;
-        /* margin-left: -52px; */
+        margin-bottom: 5vh;
+        margin-left: -3px;
     }
 
     .toggle-container span i {
-        margin-right: 3vmin;
+        margin-right: 2.8vmin;
     }
 
     .sidebarbottom {
