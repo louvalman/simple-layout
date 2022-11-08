@@ -689,12 +689,20 @@ header .nav-list button {
     min-height: 10vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    margin: 0px 60px;
+}
+
+.sidebarbottom p {
+    font-family: var(--Degular);
+    font-size: 12px;
+    font-weight: 200;
+    color: var(--text-color);
 }
 
 .sidebarbottom .primary-btn {
-    width: 200px;
-    height: 40px;
+    width: 100px;
+    height: 30px;
     /* margin-right: 28px;  only when socials are displayed */
     border-style: solid;
     border-width: 1px;
@@ -703,6 +711,7 @@ header .nav-list button {
     font-family: var(--Degular);
     font-size: 14px;
     font-weight: 400;
+    display: none;
 }
 
 .sidebarbottom .primary-btn:hover {
@@ -714,14 +723,14 @@ header .nav-list button {
 }
 
 .sidebarbottom .socials {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 2px;
 }
 
 .sidebarbottom .socials i {
-    font-size: 22px;
+    font-size: 16px;
     transition: 0.2s;
 }
 
@@ -1170,8 +1179,11 @@ article {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 21px !important;
     margin-top: 2px;
+}
+
+.fa-twitch-footer {
+    font-size: 21px !important;
 }
 
 .socials .fa:hover {
