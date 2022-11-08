@@ -565,9 +565,9 @@ header .nav-list button {
 
 .sidebarmenu-title {
     font-size: 24px !important;
-    padding-bottom: 4px !important;
     font-weight: 600 !important;
     color: var(--primary-color) !important;
+    margin-bottom: -4px;
 }
 
 .remove-desktop {
@@ -1831,7 +1831,7 @@ input:-webkit-autofill {
 
     .sidebartop h1 {
         font-size: 28px;
-        height: 43px;
+        height: 44px;
     }
 
     .sidebartop i {
@@ -1918,7 +1918,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -16vmin;
+        margin-top: -12vmin;
     }
 
     .main-title {
