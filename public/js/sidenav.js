@@ -55,7 +55,6 @@ const createsideNav = () => {
                 </div>
             </div>
         </div>
-    </div>
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Feedback</button>
         <p>louvalman © 2022</p>
@@ -65,6 +64,7 @@ const createsideNav = () => {
         <a href="#"><i class="fa fa-facebook-square" id="facebook" aria-hidden="false"></i></a>
         <a href="#"><i class="fa fa-twitch" id="twitch" aria-hidden="false"></i></a>
         </div>
+    </div>
     </div>
     </div>
     `;

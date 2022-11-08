@@ -726,7 +726,7 @@ header .nav-list button {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2px;
+    gap: 4px;
 }
 
 .sidebarbottom .socials i {
@@ -1179,11 +1179,19 @@ article {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 2px;
+    margin-top: 3px;
 }
 
 .fa-twitch-footer {
     font-size: 21px !important;
+}
+
+.sidebarbottom .socials i {
+    background-color: var(--primary-color) !important;
+    background: var(--primary-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .socials .fa:hover {
@@ -1918,9 +1926,9 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-bottom: 7vh;
+        margin-bottom: 5vh;
         margin-left: -3px;
-        margin-top: -18vmin;
+        margin-top: -12vmin;
     }
 
     .toggle-container span i {
