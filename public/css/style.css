@@ -1906,7 +1906,7 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-bottom: 6vh;
+        margin-bottom: 8vh;
         margin-left: -3px;
         margin-top: -20vmin;
     }
@@ -1916,7 +1916,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -16vmin;
+        margin-top: -15vmin;
     }
 
     .main-title {
