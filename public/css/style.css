@@ -1897,6 +1897,7 @@ input:-webkit-autofill {
 
     .sidebarmenu {
         padding-top: 4px;
+        margin-left: 24px;
     }
 
     .sidebarmenu a {
