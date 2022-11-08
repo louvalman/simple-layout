@@ -1908,7 +1908,7 @@ input:-webkit-autofill {
     .toggle-container {
         margin-bottom: 6vh;
         margin-left: -3px;
-        margin-top: -18vmin;
+        margin-top: -20vmin;
     }
 
     .toggle-container span i {
@@ -1961,7 +1961,7 @@ input:-webkit-autofill {
     }
 
     .sliderTopRow {
-        height: 8vmin;
+        height: 10vmin;
     }
 
     .slick-content-background {
