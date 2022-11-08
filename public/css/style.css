@@ -1906,9 +1906,9 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-bottom: 4vh;
+        margin-bottom: 6vh;
         margin-left: -3px;
-        margin-top: -10vmin;
+        margin-top: -18vmin;
     }
 
     .toggle-container span i {
