@@ -592,6 +592,12 @@ header .nav-list button {
     color: var(--hover-color);
 }
 
+.sidebar-login,
+.sidebar-signup,
+.sidebar-fav {
+    margin-left: -33px;
+}
+
 .line-container-2 {
     display: none;
     justify-content: center;
@@ -619,6 +625,7 @@ header .nav-list button {
 
 .sidebarmenu a:hover {
     transform: scale(1.05);
+    color: var(--hover-color);
 }
 
 .sidebarmenu-items i {
@@ -1851,24 +1858,28 @@ input:-webkit-autofill {
         display: flex;
     }
 
+    .sidebar-login {
+        gap: 3.5vmin !important;
+    }
+
     .iconoir-log-in {
         margin-left: -0.7vmin;
     }
 
-    .sidebar-login {
-        gap: 2vmin !important;
+    .sidebar-signup {
+        gap: 2.7vmin !important;
     }
 
     .iconoir-add-user {
         margin-left: 0vmin;
     }
 
-    .iconoir-heart {
-        margin-left: -0.5vmin;
+    .sidebar-fav {
+        gap: 3.3vmin !important;
     }
 
-    .sidebar-fav {
-        gap: 1.9vmin !important;
+    .iconoir-heart {
+        margin-left: -0.5vmin;
     }
 
     .sidebarmenu-items-grid1 {
