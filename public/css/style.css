@@ -548,7 +548,6 @@ header .nav-list button {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .sidebarmenu-items-mobile {
@@ -595,7 +594,7 @@ header .nav-list button {
 .sidebar-login,
 .sidebar-signup,
 .sidebar-fav {
-    margin-left: -33px;
+    margin-left: -31px;
 }
 
 .line-container-2 {
@@ -1913,7 +1912,12 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-top: 2.5vh;
+        margin-top: 8vh;
+        margin-left: -52px;
+    }
+
+    .toggle-container span i {
+        margin-right: 3vmin;
     }
 
     .sidebarbottom {
