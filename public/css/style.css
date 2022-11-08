@@ -1902,16 +1902,17 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu-items-grid1 {
-        padding-bottom: 4vmin;
+        padding-bottom: 5vmin;
     }
 
     .sidebarmenu-items-grid2 {
-        padding-bottom: 4vmin;
+        padding-bottom: 5vmin;
     }
 
     .toggle-container {
         margin-bottom: 3.5vh;
         margin-left: -3px;
+        margin-top: -20vmin;
     }
 
     .toggle-container span i {
