@@ -1861,10 +1861,6 @@ input:-webkit-autofill {
         margin-top: -12vmin;
     }
 
-    .sidebarmenu {
-        margin-top: 0vmin;
-    }
-
     .sidebarmenu-items-mobile {
         display: flex;
     }
@@ -1909,6 +1905,7 @@ input:-webkit-autofill {
 
     .sidebarmenu {
         padding-top: 0px;
+        margin-top: -100px;
     }
 
     .sidebarmenu a {
