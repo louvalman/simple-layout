@@ -25,9 +25,9 @@
 }
 
 :root.dark {
-    --primary-color: #4d8a63;
+    --primary-color: #e6801b;
     --secondary-color: #bbd2b8;
-    --hover-color: #1e5e44;
+    --hover-color: #b66310;
     --focus-color: #8974b6;
     --text-color: #FCFCFC;
     --white-text-color: #FCFCFC;
@@ -651,7 +651,6 @@ header .nav-list button {
 .toggle-container span span {
     font-family: var(--Degular);
     font-size: 16px;
-    color: var(--text-color);
 }
 
 .toggle-container span i {
@@ -661,11 +660,12 @@ header .nav-list button {
 .theme-btn {
     transition: ease-in-out 0.33s;
     align-items: center;
+    color: var(--text-color);
 }
 
 .theme-btn:hover {
     cursor: pointer;
-    color: var(--secondary-color);
+    color: var(--hover-color);
     transform: scale(1.05);
 }
 
@@ -679,6 +679,9 @@ header .nav-list button {
 
 .dark .theme-btn.light {
     display: flex;
+}
+
+.iconoir-light-bulb-on {
     color: yellow;
 }
 
@@ -992,6 +995,7 @@ article {
     align-items: center;
     gap: 4px;
     color: var(--text-color);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.33s;
 }
 
 .toph3 p {
@@ -1003,8 +1007,7 @@ article {
 .toph3:hover {
     color: var(--hover-color);
     cursor: pointer;
-    transition: 0.3s;
-    transform: scale(1.02);
+    transform: scale(1.035);
 }
 
 .toph3 i {
@@ -1197,6 +1200,14 @@ article {
 }
 
 .socials .fa:hover {
+    background: var(--hover-color);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.sidebarbottom .socials i:hover {
+    background-color: var(--hover-color) !important;
     background: var(--hover-color);
     -webkit-background-clip: text;
     background-clip: text;
