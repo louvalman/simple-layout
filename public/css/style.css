@@ -538,6 +538,7 @@ header .nav-list button {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .sidebarmenu {
@@ -634,12 +635,13 @@ header .nav-list button {
 
 .toggle-container {
     display: flex;
-    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .toggle-container span {
     display: flex;
     justify-content: center;
+    gap: 1.6vmin;
 }
 
 .toggle-container span span {
@@ -650,7 +652,6 @@ header .nav-list button {
 
 .toggle-container span i {
     font-size: 20px;
-    margin-right: 1.6vmin;
 }
 
 .theme-btn {
@@ -901,7 +902,7 @@ article {
     max-width: 55%;
     margin: auto;
     flex-direction: column;
-    padding: 10vmin 0vmin;
+    padding: 8vmin 0vmin;
 }
 
 #faq .title-faq {
@@ -910,6 +911,7 @@ article {
     font-family: var(--Degular);
     font-weight: 300;
     font-size: 24px;
+    margin-top: 0;
 }
 
 .accordion {
@@ -968,7 +970,7 @@ article {
 /** Slider **/
 
 .sliderParent {
-    margin: 0 12vmin;
+    padding: 0vmin 12vmin 12vmin 12vmin;
     max-width: 100%;
 }
 
@@ -1906,7 +1908,7 @@ input:-webkit-autofill {
     }
 
     .sidebarmenu {
-        padding-top: 4px;
+        padding-top: 0px;
     }
 
     .sidebarmenu a {
@@ -1922,13 +1924,12 @@ input:-webkit-autofill {
     }
 
     .toggle-container {
-        margin-bottom: 5vh;
-        margin-left: -3px;
-        margin-top: -10vmin;
+        margin-left: -1px;
+        margin-top: 10vmin;
     }
 
     .toggle-container span i {
-        margin-right: 2.8vmin;
+        margin-right: 1.3vmin;
     }
 
     .sidebarbottom {
@@ -1973,8 +1974,9 @@ input:-webkit-autofill {
     }
 
     .sliderParent {
-        margin: auto;
+        margin: 0vmin auto 12vmin auto;
         max-width: 100%;
+        padding: 0;
     }
 
     .sliderTopRow {

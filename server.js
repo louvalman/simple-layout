@@ -81,6 +81,11 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(staticPath, "index.html"));
 })
 
+//FAQ route
+app.get('/faq', (req, res) => {
+    res.sendFile(path.join(staticPath, "faq.html"));
+})
+
 //contact route
 app.get('/contact', (req, res) => {
     res.sendFile(path.join(staticPath, "contact.html"));

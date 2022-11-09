@@ -17,20 +17,6 @@ const createsideNav = () => {
     <div id="sidenavcontent">
         <div class="sidebarmain">
         <div class="sidebarmenu">
-        <div class="toggle-container">
-        <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
-        <i class="iconoir-light-bulb-on"></i>  
-        <span>
-        Lighter
-        </span>      
-        </span>
-        <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
-        <i class="iconoir-light-bulb-off"></i> 
-        <span>
-        Dimmer
-        </span>
-        </span>
-        </div>
             <div class="sidebarmenu-items-mobile">
                 <div class="sidebarmenu-items-grid1">
                 <a class="sidebarmenu-title" href="#">Products</a>
@@ -39,9 +25,9 @@ const createsideNav = () => {
                 </div>
                 <div class="sidebarmenu-items-grid2">
                 <a class="sidebarmenu-title" href="#">Docs</a>
-                <a class="sidebarmenu-item" href="/#faq">Information</a>
+                <a class="sidebarmenu-item" href="/faq">Information</a>
                 <a class="sidebarmenu-item" href="https://www.github.com/louvalman">Github</a>
-                <a class="sidebarmenu-item" href="/#faq">FAQ</a>
+                <a class="sidebarmenu-item" href="/faq">FAQ</a>
                 </div>
             </div>
             <div class="line-container-2" style="visibility: hidden;">
@@ -53,8 +39,23 @@ const createsideNav = () => {
                     <a href="signup" class="sidebar-signup"><i class="iconoir-add-user"></i>Sign up</a>
                     <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
                 </div>
+                <div class="toggle-container">
+            <span class="theme-btn light" onclick="setTheme('light')" title="Light mode">
+            <i class="iconoir-light-bulb-on"></i>  
+            <span>
+            Lighter
+            </span>      
+            </span>
+            <span class="theme-btn dark" onclick="setTheme('dark')" title="Dark mode">
+            <i class="iconoir-light-bulb-off"></i> 
+            <span>
+            Dimmer
+            </span>
+            </span>
+            </div>
             </div>
         </div>
+    </div>
     <div class="sidebarbottom">
         <button class="primary-btn btn draw-border">Feedback</button>
         <p>louvalman © 2022</p>
