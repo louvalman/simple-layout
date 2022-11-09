@@ -259,6 +259,10 @@ header .nav-list svg:after {
 
 **/
 
+header .wallet-container-inline {
+    margin-top: 0.3vmin;
+}
+
 header .nav-list .wallet-container:hover {
     border-style: none;
 }
