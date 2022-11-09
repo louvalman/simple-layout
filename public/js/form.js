@@ -93,3 +93,38 @@ const showAlert = (msg) => {
         alertBox.classList.remove('show');
     }, 3000);
 }
+
+// success contactForm
+
+/*
+document.forms['contactForm'].addEventListener('submit', function (event) {
+    // Do something with the form's data here
+    event.preventDefault();
+
+    this.style['display'] = 'none';
+
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+    setTimeout(function () {
+        $(this).submit();
+    }, 5000);
+});
+
+$(window).load(function () {
+    var submit = false;
+    $("#contactForm").submit(function (e) {
+        setTimeout(function () {
+            alert("me after 1000 mili seconds");
+            submit = true;
+            $("#contactForm").submit(); // if you want            
+        }, 6000);
+        if (!submit)
+            e.preventDefault();
+    });
+});
+
+*/

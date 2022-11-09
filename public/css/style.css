@@ -246,10 +246,6 @@ header .nav-list .wallet-container {
     border-color: var(--text-color);
 }
 
-.wallet-container-inline {
-    display: flex;
-}
-
 header .nav-list text {
     padding-left: 1.5vmin;
 }
@@ -1183,7 +1179,7 @@ article {
 }
 
 .fa-twitch-footer {
-    font-size: 21px !important;
+    margin-top: 2px !important;
 }
 
 .sidebarbottom .socials i {

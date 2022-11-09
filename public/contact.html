@@ -93,8 +93,8 @@
                                 <p class="main-title-text">I will save your feedback entry in MongoDB and get
                                     back to
                                     you as soon as possible if you leave your contact info.</p>
-                                <form method="post" action="/">
-                                    <div class="input-container title-mongo">
+                                <form method="post" action="/" name="contactForm" id="contactForm" class="contactForm">
+                                    <div class=" input-container title-mongo">
                                         <input type="text" focus autocomplete="false" id="title-input" name="title"
                                             required />
                                         <label class="input-label" for="title-input">Title</label>
@@ -106,6 +106,10 @@
                                     </div>
                                     <button class="submit-btn"><a>Send feedback</a></button>
                                 </form>
+                                <div id="myDIV" class="2" style="display:none">
+                                    <h1>ThankYou</h1>
+                                    <h6>We will get back to you shortly on the same.</h6>
+                                </div>
                                 <a href="/" class="label-style-alternative on-contact-form">Go back and explore this
                                     layout</a>
                             </div>
