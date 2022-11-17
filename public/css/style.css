@@ -26,9 +26,9 @@
 
 :root.dark {
     --primary-color: #e6801b;
-    --secondary-color: #bbd2b8;
+    --secondary-color: #ffe091;
     --hover-color: #b66310;
-    --focus-color: #8974b6;
+    --focus-color: #93b674;
     --text-color: #FCFCFC;
     --white-text-color: #FCFCFC;
     --bggradient: #262626;
