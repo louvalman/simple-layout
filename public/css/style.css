@@ -11,7 +11,7 @@
     --Degular: "degular", sans-serif;
     --primary-color: #3F70D9;
     --secondary-color: #f6fefd;
-    --focus-color: #daa853;
+    --focus-color: #da53af;
     --hover-color: #2f54a4;
     --placeholder-color: #828A95;
     --text-color: #2e2e2e;
@@ -28,11 +28,11 @@
     --primary-color: #e6801b;
     --secondary-color: #ffe091;
     --hover-color: #b66310;
-    --focus-color: #93b674;
+    --focus-color: #b84b8e;
     --text-color: #FCFCFC;
     --white-text-color: #FCFCFC;
     --bggradient: #262626;
-    --placeholder-background: #d3d9d0;
+    --placeholder-background: #e1d2ad;
     --placeholder-color: #757975;
     --sticky-trans-bg: linear-gradient(to top, rgba(38, 38, 38, 0.3), rgba(38, 38, 38, 1));
 }
