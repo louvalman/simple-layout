@@ -122,7 +122,7 @@ if ($(window).width() > 768) {
       } else {
         element.style.opacity = "1";
       }
-    }, 100);
+    }, 0);
 
     var element = document.getElementById("logotopside");
     if (element.style.opacity == "1") {
