@@ -53,7 +53,7 @@ a:visited {
     color: var(--focus-color);
 }
 
-/** Spinner on index load **/
+/** Spinner on index load - disabled in html **/
 
 #preloader {
     align-items: center;
