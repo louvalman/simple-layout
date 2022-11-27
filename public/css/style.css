@@ -762,7 +762,7 @@ header .nav-list button {
     top: 50%;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, var(--secondary-color) 15%, var(--primary-color) 15%, var(--bggradient) 50%);
+    background-image: linear-gradient(to top, var(--secondary-color) 15%, var(--primary-color) 15%, var(--bggradient) 47.5%);
     transform: translate(-60%, -60%) scale(3.5);
 }
 
@@ -1947,8 +1947,7 @@ input:-webkit-autofill {
     }
 
     .sidebarbottom {
-        margin-top: -15vmin;
-        margin: 0vmin 12vmin;
+        margin: -16vmin 12vmin 0vmin 12vmin;
         flex-direction: column;
         justify-content: start;
     }

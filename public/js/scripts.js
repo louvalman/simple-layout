@@ -58,7 +58,7 @@ gsap.to(".bgfixed .bg", {
     end: "bottom bottom",
     scrub: 1
   },
-  filter: "hue-rotate(-5deg)",
+  filter: "hue-rotate(-40deg)",
   rotation: 180
 })
 
