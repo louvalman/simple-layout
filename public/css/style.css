@@ -1874,6 +1874,8 @@ input:-webkit-autofill {
         height: 70vh;
         flex-direction: column;
         margin-top: -12vmin;
+        margin-left: 12vmin;
+        align-items: baseline;
     }
 
     .sidebarmenu-items-mobile {
@@ -1946,6 +1948,9 @@ input:-webkit-autofill {
 
     .sidebarbottom {
         margin-top: -15vmin;
+        margin: 0vmin 12vmin;
+        flex-direction: column;
+        justify-content: start;
     }
 
     .main-title {
