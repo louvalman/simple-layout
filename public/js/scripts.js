@@ -56,9 +56,9 @@ gsap.to(".bgfixed .bg", {
     trigger: "body",
     start: "top top",
     end: "bottom bottom",
-    scrub: 1
+    scrub: 2
   },
-  filter: "hue-rotate(-5deg)",
+  filter: "hue-rotate(-55deg)",
   rotation: 180
 })
 
