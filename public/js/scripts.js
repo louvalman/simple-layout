@@ -1,36 +1,36 @@
-let sectionMain = document.getElementById("section-main");
-let navbar = document.getElementById("navbar");
+let sectionMain = document.getElementById('section-main');
+let navbar = document.getElementById('navbar');
 let navPos = navbar.getBoundingClientRect().top;
 
 // jQuery eventlisteners
 
 jQuery.event.special.touchstart = {
   setup: function (_, ns, handle) {
-    this.addEventListener("touchstart", handle, {
-      passive: !ns.includes("noPreventDefault")
+    this.addEventListener('touchstart', handle, {
+      passive: !ns.includes('noPreventDefault'),
     });
-  }
+  },
 };
 jQuery.event.special.touchmove = {
   setup: function (_, ns, handle) {
-    this.addEventListener("touchmove", handle, {
-      passive: !ns.includes("noPreventDefault")
+    this.addEventListener('touchmove', handle, {
+      passive: !ns.includes('noPreventDefault'),
     });
-  }
+  },
 };
 jQuery.event.special.wheel = {
   setup: function (_, ns, handle) {
-    this.addEventListener("wheel", handle, {
-      passive: true
+    this.addEventListener('wheel', handle, {
+      passive: true,
     });
-  }
+  },
 };
 jQuery.event.special.mousewheel = {
   setup: function (_, ns, handle) {
-    this.addEventListener("mousewheel", handle, {
-      passive: true
+    this.addEventListener('mousewheel', handle, {
+      passive: true,
     });
-  }
+  },
 };
 
 // Light and dark mode toggle and save selection in local storage
@@ -38,12 +38,12 @@ jQuery.event.special.mousewheel = {
 const setTheme = (theme) => {
   document.documentElement.className = theme;
   localStorage.setItem('theme', theme);
-}
+};
 
 const getTheme = () => {
   const theme = localStorage.getItem('theme');
   theme && setTheme(theme);
-}
+};
 
 getTheme();
 
@@ -51,163 +51,160 @@ getTheme();
 
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".bgfixed .bg", {
+gsap.to('.bgfixed .bg', {
   scrollTrigger: {
-    trigger: "body",
-    start: "top top",
-    end: "bottom bottom",
-    scrub: 1
+    trigger: 'body',
+    start: 'top top',
+    end: 'bottom bottom',
+    scrub: 2,
   },
-  filter: "hue-rotate(-4deg)",
-  rotation: 180
-})
+  filter: 'hue-rotate(-4deg)',
+  rotation: 360,
+});
 
 // Navbar JS
 
-window.addEventListener("scroll", e => {
+window.addEventListener('scroll', (e) => {
   let viewportHeight = window.innerHeight;
   let scrollPos = window.scrollY;
   if (scrollPos > navPos) {
     navbar.classList.add('sticky');
-    sidenavid.style.borderTopRightRadius = "0px";
+    sidenavid.style.borderTopRightRadius = '0px';
   } else {
     navbar.classList.remove('sticky');
-    sidenavid.style.borderTopRightRadius = "8px";
+    sidenavid.style.borderTopRightRadius = '8px';
   }
 });
 
 if ($(window).width() > 768) {
   function toggleNav() {
-    var element = document.getElementById("sidenavid");
-    if (element.style.width == "350px") {
-      element.style.width = "0px";
+    var element = document.getElementById('sidenavid');
+    if (element.style.width == '350px') {
+      element.style.width = '0px';
     } else {
-      element.style.width = "350px";
+      element.style.width = '350px';
     }
 
-    var element = document.getElementById("sidenavid");
-    if (element.style.width == "350px") {
-      element.style.boxShadow = "0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%)";
+    var element = document.getElementById('sidenavid');
+    if (element.style.width == '350px') {
+      element.style.boxShadow =
+        '0 0 2px 0 rgb(111 111 111 / 8%), 0 0 4px 0 rgb(111 111 111 / 2%), 0 0 5px 4px rgb(111 111 111 / 6%)';
     } else {
-      element.style.boxShadow = "none";
+      element.style.boxShadow = 'none';
     }
 
-    var element = document.getElementById("main");
-    if (element.style.marginLeft == "350px") {
-      element.style.marginLeft = "0px";
+    var element = document.getElementById('main');
+    if (element.style.marginLeft == '350px') {
+      element.style.marginLeft = '0px';
     } else {
-      element.style.marginLeft = "350px";
+      element.style.marginLeft = '350px';
     }
 
-    var element = document.getElementById("navbar");
-    if (element.style.borderBottomLeftRadius == "0px") {
-      element.style.borderBottomLeftRadius = "8px";
+    var element = document.getElementById('navbar');
+    if (element.style.borderBottomLeftRadius == '0px') {
+      element.style.borderBottomLeftRadius = '8px';
     } else {
-      element.style.borderBottomLeftRadius = "0px";
+      element.style.borderBottomLeftRadius = '0px';
     }
 
-    var element = document.getElementById("logotop");
-    if (element.style.opacity == "0") {
-      element.style.opacity = "1";
-      element.style.display = "flex"
+    var element = document.getElementById('logotop');
+    if (element.style.opacity == '0') {
+      element.style.opacity = '1';
+      element.style.display = 'flex';
     } else {
-      element.style.opacity = "0";
-      element.style.display = "none";
+      element.style.opacity = '0';
+      element.style.display = 'none';
     }
 
     window.setTimeout(function () {
-      var element = document.getElementById("sidenavcontent");
-      if (element.style.opacity == "1") {
-        element.style.opacity = "0";
+      var element = document.getElementById('sidenavcontent');
+      if (element.style.opacity == '1') {
+        element.style.opacity = '0';
       } else {
-        element.style.opacity = "1";
+        element.style.opacity = '1';
       }
     }, 0);
 
-    var element = document.getElementById("logotopside");
-    if (element.style.opacity == "1") {
-      element.style.opacity = "0";
+    var element = document.getElementById('logotopside');
+    if (element.style.opacity == '1') {
+      element.style.opacity = '0';
     } else {
-      element.style.opacity = "1";
+      element.style.opacity = '1';
     }
 
-    var element = document.getElementById("closesidenav");
-    if (element.style.opacity == "1") {
-      element.style.opacity = "0";
+    var element = document.getElementById('closesidenav');
+    if (element.style.opacity == '1') {
+      element.style.opacity = '0';
     } else {
-      element.style.opacity = "1";
+      element.style.opacity = '1';
     }
 
-    var element = document.getElementById("sidetoggle");
-    if (element.style.display == "none") {
-      element.style.display = "block";
+    var element = document.getElementById('sidetoggle');
+    if (element.style.display == 'none') {
+      element.style.display = 'block';
     } else {
-      element.style.display = "none";
+      element.style.display = 'none';
     }
 
-    var element = document.getElementById("footer");
-    if (element.style.marginLeft == "350px") {
-      element.style.marginLeft = "0px";
+    var element = document.getElementById('footer');
+    if (element.style.marginLeft == '350px') {
+      element.style.marginLeft = '0px';
     } else {
-      element.style.marginLeft = "350px";
+      element.style.marginLeft = '350px';
     }
 
-    var element = document.getElementById("alert-box");
-    if (element.style.marginLeft == "175px") {
-      element.style.marginLeft = "0px";
+    var element = document.getElementById('alert-box');
+    if (element.style.marginLeft == '175px') {
+      element.style.marginLeft = '0px';
     } else {
-      element.style.marginLeft = "175px";
+      element.style.marginLeft = '175px';
     }
-
   }
 } else {
   function toggleNav() {
-    var element = document.getElementById("sidenavid");
-    if (element.style.width == "100%") {
-      element.style.width = "0px";
+    var element = document.getElementById('sidenavid');
+    if (element.style.width == '100%') {
+      element.style.width = '0px';
     } else {
-      element.style.width = "100%";
+      element.style.width = '100%';
     }
 
-    var element = document.getElementById("body");
-    if (element.style.overflow == "hidden") {
-      element.style.overflow = "visible";
+    var element = document.getElementById('body');
+    if (element.style.overflow == 'hidden') {
+      element.style.overflow = 'visible';
     } else {
-      element.style.overflow = "hidden";
+      element.style.overflow = 'hidden';
     }
-
   }
 }
 
-
-
 // Get the modal
-var modal = document.getElementById("connect-modal");
+var modal = document.getElementById('connect-modal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("connect-open");
+var btn = document.getElementById('connect-open');
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("closeicon-2")[0];
+var span = document.getElementsByClassName('closeicon-2')[0];
 
 // When the user clicks on the button, open the modal
 btn.onclick = function () {
-  modal.style.display = "block";
-}
+  modal.style.display = 'block';
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
-  modal.style.display = "none";
-}
+  modal.style.display = 'none';
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.display = 'none';
   }
-}
+};
 
-// Slick carousel 
+// Slick carousel
 
 $(document).ready(function () {
   $('.slick-content').slick({
@@ -220,49 +217,50 @@ $(document).ready(function () {
     slidesToScroll: 1,
     prevArrow: $('.prev-arrow'),
     nextArrow: $('.next-arrow'),
-    responsive: [{
+    responsive: [
+      {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
           infinite: true,
-          dots: false
-        }
+          dots: false,
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          infinite: true
-        }
-      }
-    ]
+          infinite: true,
+        },
+      },
+    ],
   });
 });
 
 // FAQ accordion functionality
 
-var acc = document.querySelectorAll(".accordion");
+var acc = document.querySelectorAll('.accordion');
 
 acc.forEach(function (el) {
-  el.addEventListener("click", function (e) {
-    this.classList.toggle("active");
-    let icon = this.querySelector("i");
-    icon.classList.toggle("iconoir-nav-arrow-right");
-    icon.classList.toggle("iconoir-nav-arrow-down");
+  el.addEventListener('click', function (e) {
+    this.classList.toggle('active');
+    let icon = this.querySelector('i');
+    icon.classList.toggle('iconoir-nav-arrow-right');
+    icon.classList.toggle('iconoir-nav-arrow-down');
     let panelAccordion = this.nextElementSibling;
     if (panelAccordion.style.maxHeight) {
       panelAccordion.style.maxHeight = null;
     } else {
-      panelAccordion.style.maxHeight = panelAccordion.scrollHeight + "px";
+      panelAccordion.style.maxHeight = panelAccordion.scrollHeight + 'px';
     }
   });
 });
