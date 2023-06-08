@@ -1,6 +1,6 @@
 # simple
 
-check it out at: https://www.simple-layout.onrender.com
+check it out at: https://simple-layout.onrender.com/
 
 an example of a simple web app layout on a nodejs server environment by @louvalman
 
