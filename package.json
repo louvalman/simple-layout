@@ -30,7 +30,7 @@
     "firebase-admin": "^11.0.0",
     "jsonwebtoken": "^9.0.0",
     "mongodb": "^4.10.0",
-    "mongoose": "^6.7.1",
+    "mongoose": "^6.11.3",
     "nodemon": "^2.0.19"
   }
 }
