@@ -1,17 +1,17 @@
 const createsideNav = () => {
-    let sidenavid = document.querySelector('.sidenavclass');
+  let sidenavid = document.querySelector('.sidenavclass');
 
-    sidenavid.innerHTML = `
+  sidenavid.innerHTML = `
     
     <div class="sidebartop">
         <span onclick="toggleNav()" style="visibility:hidden;margin-right:auto;">
-            <i class="iconoir-cancel"></i>
+            <i class="iconoir-xmark"></i>
         </span>
         <a href="/">
         <h1 id="logotopside">Simple Layout</h1>
         </a>
         <span onclick="toggleNav()" style="margin-left:auto;color:var(--text-color);">
-            <i id="closesidenav" class="iconoir-cancel"></i>
+            <i id="closesidenav" class="iconoir-xmark"></i>
         </span>
     </div>
     <div id="sidenavcontent">
@@ -36,7 +36,7 @@ const createsideNav = () => {
                 <div class="sidebarmenu-items">
                     <a class="sidebarmenu-title remove-desktop" href="account">Account</a>
                     <a href="login" class="sidebar-login"><i class="iconoir-log-in"></i>Login</a>
-                    <a href="signup" class="sidebar-signup"><i class="iconoir-add-user"></i>Sign up</a>
+                    <a href="signup" class="sidebar-signup"><i class="iconoir-user-plus"></i>Sign up</a>
                     <a href="favorites" class="sidebar-fav"><i class="iconoir-heart"></i>Favorites</a>
                 </div>
                 <div class="toggle-container">
@@ -69,6 +69,6 @@ const createsideNav = () => {
     </div>
     </div>
     `;
-}
+};
 
 createsideNav();

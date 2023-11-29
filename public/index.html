@@ -1,200 +1,269 @@
 <!DOCTYPE html>
 
 <html lang="zxx">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>A simple layout - louvalman</title>
 
-    <meta name="simple layout ld" content="A simple layout - louvalman">
-    <meta name="louvalman" content="LD">
-    <meta name="description" content="A simple layout - louvalman">
-    <meta property="og:title" content="A simple layout - louvalman">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://simple-layouts.netlify.app/">
-    <meta property="og:description" content="A simple layout - louvalman">
-    <meta property="og:image" content="image.png">
+    <meta name="simple layout ld" content="A simple layout - louvalman" />
+    <meta name="louvalman" content="LD" />
+    <meta name="description" content="A simple layout - louvalman" />
+    <meta property="og:title" content="A simple layout - louvalman" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://simple-layouts.netlify.app/" />
+    <meta property="og:description" content="A simple layout - louvalman" />
+    <meta property="og:image" content="image.png" />
 
-    <link rel="icon" href="assets/favicon.ico">
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="assets/favicon.png">
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/favicon.png" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@master/css/iconoir.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lucaburgio/iconoir@master/css/iconoir.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      rel="stylesheet" />
+  </head>
 
-<body id="body">
+  <body id="body">
     <div class="bgfixed">
-        <div class="bg"></div>
+      <div class="bg"></div>
     </div>
     <header>
-        <div id="preloader">
-            <script src="js/preloader.js"></script>
-            <span class="loader" aria-label="spinner"></span>
-        </div>
-        <div id="sidenavid" class="sidenavclass">
-            <script src="js/sidenav.js"></script>
-        </div>
-        <div id="main" class="main">
-            <nav id="navbar" class="trans">
-                <script src="js/topnav.js"></script>
-            </nav>
-            <div id="connect-modal" class="modal">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <div class="modalheadertitle">
-                            <p>Connect your wallet</p>
-                        </div>
-                        <div class="modalheadericon">
-                            <span class="closeicon-2">
-                                <i class="iconoir-cancel"></i>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="modal-body">
-                        <div class="walletscontainer">
-                            <div class="walletitem first">
-                                <div class="walletcontent">
-                                    <p class="wallettext">Nami</p>
-                                    <img class="walleticon lazyload" src="assets/nami.svg" alt="Nami wallet">
-                                </div>
-                            </div>
-                            <div class="walletborder"></div>
-                            <div class="walletitem">
-                                <div class="walletcontent">
-                                    <p class="wallettext">Flint</p>
-                                    <img class="walleticon lazyload" src="assets/flint.svg" alt="Flint wallet">
-                                </div>
-                            </div>
-                            <div class="walletborder"></div>
-                            <div class="walletitem">
-                                <div class="walletcontent">
-                                    <p class="wallettext"> Gero</p>
-                                    <img class="walleticon lazyload" src="assets/gero.svg" alt="Gero wallet">
-                                </div>
-                            </div>
-                            <div class="walletborder"></div>
-                            <div class="walletitem last">
-                                <div class="walletcontent">
-                                    <p class="wallettext">Eternl</p>
-                                    <img class="walleticon lazyload" src="assets/eternl.svg" alt="Eternl wallet">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div id="preloader">
+        <script src="js/preloader.js"></script>
+        <span class="loader" aria-label="spinner"></span>
+      </div>
+      <div id="sidenavid" class="sidenavclass">
+        <script src="js/sidenav.js"></script>
+      </div>
+      <div id="main" class="main">
+        <nav id="navbar" class="trans">
+          <script src="js/topnav.js"></script>
+        </nav>
+        <div id="connect-modal" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="modalheadertitle">
+                <p>Connect your wallet</p>
+              </div>
+              <div class="modalheadericon">
+                <span class="closeicon-2">
+                  <i class="iconoir-xmark"></i>
+                </span>
+              </div>
             </div>
-            <section id="section-main">
-                <div class="article-container">
-                    <article class="section-container">
-                        <h2 class="main-title">Lorem, ipsum dolor sit amet <span class="un"><a href="#"
-                                    aria-label="consectetur">consectetur</a></span>, adipisicing
-                            elit. Lorem ipsum dolor. Eaque, explicabo
-                            <span class="un"><a href="#" aria-label="adipisci">adipisci</a></span> atque dolorem
-                            <span class=" un"><a href="#" aria-label="possimus">possimus</a></span>, soluta animi
-                            reiciendis
-                            odit in ex
-                            ullam?
-                        </h2>
-                        <div class="center">
-                            <a href="/contact">
-                                <button class="btn-cta btn-arrow">
-                                    <span>
-                                        <p class="btn-text">Leave your feedback</p>
-                                        <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px"
-                                            stroke-width="1" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg" color="#fff">
-                                            <path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="#fff" stroke-width="1.44"
-                                                stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="sliderParent">
-                            <div class="sliderTopRow">
-                                <div class="toph3">
-                                    <p>Highlights</p>
-                                    <i class="iconoir-play"></i>
-                                </div>
-                                <div class="arrow">
-                                    <i class="iconoir-nav-arrow-left prev-arrow"></i>
-                                    <i class="iconoir-nav-arrow-right next-arrow"></i>
-                                </div>
-                            </div>
-                            <div class="slick-content">
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 1,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 2,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 3,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 4,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 5,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 6,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 7,<br> 2022.</p>
-                                </div>
-                                <div class="slick-transform">
-                                    <div class="slick-content-background">
-                                        <p class="slick-item">Content</p>
-                                    </div>
-                                    <p class="slick-description">Example description 8,<br> 2022.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </article>
+            <div class="modal-body">
+              <div class="walletscontainer">
+                <div class="walletitem first">
+                  <div class="walletcontent">
+                    <p class="wallettext">Nami</p>
+                    <img
+                      class="walleticon lazyload"
+                      src="assets/nami.svg"
+                      alt="Nami wallet" />
+                  </div>
                 </div>
-            </section>
+                <div class="walletborder"></div>
+                <div class="walletitem">
+                  <div class="walletcontent">
+                    <p class="wallettext">Flint</p>
+                    <img
+                      class="walleticon lazyload"
+                      src="assets/flint.svg"
+                      alt="Flint wallet" />
+                  </div>
+                </div>
+                <div class="walletborder"></div>
+                <div class="walletitem">
+                  <div class="walletcontent">
+                    <p class="wallettext">Gero</p>
+                    <img
+                      class="walleticon lazyload"
+                      src="assets/gero.svg"
+                      alt="Gero wallet" />
+                  </div>
+                </div>
+                <div class="walletborder"></div>
+                <div class="walletitem last">
+                  <div class="walletcontent">
+                    <p class="wallettext">Eternl</p>
+                    <img
+                      class="walleticon lazyload"
+                      src="assets/eternl.svg"
+                      alt="Eternl wallet" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <section id="section-main">
+          <div class="article-container">
+            <article class="section-container">
+              <h2 class="main-title">
+                Lorem, ipsum dolor sit amet
+                <span class="un">
+                  <a href="#" aria-label="consectetur">consectetur</a>
+                </span>
+                , adipisicing elit. Lorem ipsum dolor. Eaque, explicabo
+                <span class="un">
+                  <a href="#" aria-label="adipisci">adipisci</a>
+                </span>
+                atque dolorem
+                <span class="un">
+                  <a href="#" aria-label="possimus">possimus</a>
+                </span>
+                , soluta animi reiciendis odit in ex ullam?
+              </h2>
+              <div class="center">
+                <a href="/contact">
+                  <button class="btn-cta btn-arrow">
+                    <span>
+                      <p class="btn-text">Leave your feedback</p>
+                      <?xml version="1.0" encoding="UTF-8"?>
+                      <svg
+                        width="24px"
+                        height="24px"
+                        stroke-width="1"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        color="#fff">
+                        <path
+                          d="M6 12h12.5m0 0l-6-6m6 6l-6 6"
+                          stroke="#fff"
+                          stroke-width="1.44"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </span>
+                  </button>
+                </a>
+              </div>
+              <div class="sliderParent">
+                <div class="sliderTopRow">
+                  <div class="toph3">
+                    <p>Highlights</p>
+                    <i class="iconoir-play"></i>
+                  </div>
+                  <div class="arrow">
+                    <i class="iconoir-nav-arrow-left prev-arrow"></i>
+                    <i class="iconoir-nav-arrow-right next-arrow"></i>
+                  </div>
+                </div>
+                <div class="slick-content">
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 1,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 2,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 3,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 4,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 5,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 6,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 7,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                  <div class="slick-transform">
+                    <div class="slick-content-background">
+                      <p class="slick-item">Content</p>
+                    </div>
+                    <p class="slick-description">
+                      Example description 8,
+                      <br />
+                      2022.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
     </header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
-        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
-        integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+      integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"
+      integrity="sha512-tHvUcUQYi35zApvAa5TNR3fNhBQkVtkmWKfacnpxmix4/VTGz1lGjIVyLMp7gLgAvg+aKJjnVKokXJNS5GZ+/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
     <script src="js/lazysizes.min.js" async></script>
     <script src="js/scripts.js"></script>
     <footer class="footerclass" id="footer">
-        <script src="js/footer.js"></script>
+      <script src="js/footer.js"></script>
     </footer>
-</body>
-
+  </body>
 </html>

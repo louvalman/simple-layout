@@ -632,11 +632,6 @@ header .nav-list button {
     margin-left: 0.35vmin;
 }
 
-.sidebar-signup {
-    gap: 1.2vmin !important;
-}
-
-
 .toggle-container {
     display: flex;
     margin-top: 10vh;
