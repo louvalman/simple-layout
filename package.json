@@ -22,15 +22,14 @@
   },
   "homepage": "https://github.com/louvalman/simple-layout/blob/main/public/README.md",
   "dependencies": {
-    "bcrypt": "^5.0.1",
-    "body-parser": "^1.20.1",
-    "compression": "^1.7.4",
-    "dotenv": "^16.0.3",
-    "express.js": "^1.0.0",
-    "firebase-admin": "^11.0.0",
-    "jsonwebtoken": "^9.0.0",
-    "mongodb": "^4.17.0",
-    "mongoose": "^6.13.6",
-    "nodemon": "^3.1.0"
+    "bcrypt": "^5.1.1",
+    "compression": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^12.0.0",
+    "jsonwebtoken": "^9.1.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.0.0",
+    "nodemon": "^3.0.2"
   }
 }
