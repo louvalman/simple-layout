@@ -3,7 +3,6 @@ const express = require('express');
 const app = express();
 
 const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const path = require('path');
 const port = process.env.PORT || 3000
@@ -44,8 +43,11 @@ async function listDatabases(client) {
 // declare static path
 let staticPath = path.join(__dirname, "public");
 
-// configure bodyParser
-app.use(bodyParser.urlencoded({
+// compress responses (must come before anything that sends one)
+app.use(compression())
+
+// parse form submissions
+app.use(express.urlencoded({
     extended: true
 }));
 
@@ -72,7 +74,6 @@ app.post("/", function (req, res) {
 //middlewares
 app.use(express.static(staticPath));
 app.use(express.json());
-app.use(compression())
 
 
 //routes
@@ -102,7 +103,6 @@ app.get('/signup', (req, res) => {
 })
 
 app.post('/signup', (req, res) => {
-    console.log(req.body);
     let {
         name,
         email,
